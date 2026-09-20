@@ -1,0 +1,13 @@
+{
+  "name": "ganpati-message",
+  "version": "1.0.0",
+  "description": "Ganpati Bappa Business Drishti - Mahant Software",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "start": "python -m http.server 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Bappa's Business Drishti | Mahant Software</title>
+  <meta name="description" content="Ask Ganpati Bappa about your business and discover your digital blessings & vighna!">
+  <meta name="theme-color" content="#751113">
+
+  <!-- Typography: Authentic Indian Editorial Craft -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rozha+One&family=Yatra+One&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+<body>
+  <!-- Ambient Marigold & Gold Petal Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Audio Toggle (Auspicious Temple Bell) -->
+  <button id="soundToggle" class="sound-toggle" aria-label="Toggle Sound" title="Sound Effects">
+    <svg class="bell-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+      <path d="M12 2a4 4 0 0 0-4 4v1.2C5.5 8.1 4 10.4 4 13v4l-2 2v1h20v-1l-2-2v-4c0-2.6-1.5-4.9-4-5.8V6a4 4 0 0 0-4-4zm0 20a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22z"/>
+    </svg>
+    <span class="sound-text">Bell Sound</span>
+  </button>
+
+  <!-- Mobile App Frame Container -->
+  <main class="mobile-container">
+
+    <!-- ============================================ -->
+    <!-- STEP 1: WELCOME & AUSPICIOUS BUSINESS INPUT -->
+    <!-- ============================================ -->
+    <section id="step1Screen" class="app-screen active">
+      <div class="patrika-envelope">
+        <!-- Auspicious Top Ribbon -->
+        <div class="auspicious-heading-band">
+          <div class="shree-symbol">॥ श्री गणेशाय नमः ॥</div>
+          <div class="band-subtext">विघ्नहर्ता बिज़नेस दृष्टि • गणेशोत्सव विशेष</div>
+        </div>
+
+        <!-- Sacred Deity Arch Frame -->
+        <div class="sacred-portrait-wrapper">
+          <div class="temple-arch-gold"></div>
+          <div class="portrait-halo"></div>
+          <img src="assets/ganpati_bappa.jpg" alt="Ganpati Bappa" class="bappa-portrait">
+          <div class="diya-stand left">
+            <svg class="diya-svg" viewBox="0 0 32 32" width="24" height="24">
+              <path class="diya-flame" d="M16 2 C16 2 20 8 20 12 C20 14.5 18.2 16.5 16 16.5 C13.8 16.5 12 14.5 12 12 C12 8 16 2 16 2 Z" fill="#FFA000"/>
+              <path class="diya-flame-inner" d="M16 5 C16 5 18.5 9 18.5 11.5 C18.5 13 17.4 14.2 16 14.2 C14.6 14.2 13.5 13 13.5 11.5 C13.5 9 16 5 16 5 Z" fill="#FFF176"/>
+              <path class="diya-bowl" d="M6 16 C8 24 24 24 26 16 L22 16 C20 20 12 20 10 16 Z" fill="#C59239"/>
+              <path class="diya-base" d="M11 22 L21 22 L23 25 L9 25 Z" fill="#9E6C18"/>
+            </svg>
+          </div>
+          <div class="diya-stand right">
+            <svg class="diya-svg" viewBox="0 0 32 32" width="24" height="24">
+              <path class="diya-flame" d="M16 2 C16 2 20 8 20 12 C20 14.5 18.2 16.5 16 16.5 C13.8 16.5 12 14.5 12 12 C12 8 16 2 16 2 Z" fill="#FFA000"/>
+              <path class="diya-flame-inner" d="M16 5 C16 5 18.5 9 18.5 11.5 C18.5 13 17.4 14.2 16 14.2 C14.6 14.2 13.5 13 13.5 11.5 C13.5 9 16 5 16 5 Z" fill="#FFF176"/>
+              <path class="diya-bowl" d="M6 16 C8 24 24 24 26 16 L22 16 C20 20 12 20 10 16 Z" fill="#C59239"/>
+              <path class="diya-base" d="M11 22 L21 22 L23 25 L9 25 Z" fill="#9E6C18"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Headline & Welcome -->
+        <div class="patrika-header-text">
+          <h1 class="patrika-title">Bappa’s Business Drishti</h1>
+          <p class="patrika-desc">
+            Take 30 seconds this festive season to see what divine blessings and digital gaps Bappa discovers in your enterprise.
+          </p>
+        </div>
+
+        <!-- Thoughtfully Crafted Form -->
+        <form id="businessForm" class="patrika-form" onsubmit="return false;">
+          <!-- Corner Filigree Ornaments -->
+          <div class="corner-filigree top-left"></div>
+          <div class="corner-filigree top-right"></div>
+          <div class="corner-filigree bottom-left"></div>
+          <div class="corner-filigree bottom-right"></div>
+
+          <div class="form-field">
+            <label for="ownerName">
+              <span class="field-title">Business Owner’s Name</span>
+              <span class="field-hint">e.g. Ramesh Patel</span>
+            </label>
+            <div class="input-container">
+              <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input type="text" id="ownerName" placeholder="Your full name" autocomplete="name" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="businessName">
+              <span class="field-title">Enterprise / Firm Name</span>
+              <span class="field-hint">e.g. Patel Engineering Works</span>
+            </label>
+            <div class="input-container">
+              <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18"></path>
+                <path d="M5 21V7l8-4v18"></path>
+                <path d="M19 21V11l-6-4"></path>
+                <path d="M9 9h1"></path>
+                <path d="M9 13h1"></path>
+                <path d="M9 17h1"></path>
+              </svg>
+              <input type="text" id="businessName" placeholder="Your business or trade name" autocomplete="organization" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="digitalStatus">
+              <span class="field-title">Business Category / Trade</span>
+              <span class="field-hint">Optional • Auto-detects</span>
+            </label>
+            <div class="input-container select-box">
+              <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <select id="digitalStatus">
+                <option value="auto">✨ Let Bappa Auto-Detect from Business Name</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" id="btnAskBappa" class="btn-royal-cta">
+            <span class="btn-emboss-layer"></span>
+            <span class="btn-content">
+              <span class="btn-text">Consult Bappa for My Business</span>
+              <svg class="btn-arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </button>
+        </form>
+
+        <div class="patrika-credit-note">
+          <span>A festive initiative by <strong>Mahant Software</strong> • Dedicated to SME Growth</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- STEP 2: AUSPICIOUS CONTEMPLATION & BLESSING -->
+    <!-- ============================================ -->
+    <section id="step2Screen" class="app-screen">
+      <div class="ceremony-container">
+        <div class="ceremony-mandala">
+          <div class="mandala-ring"></div>
+          <div class="mandala-petals"></div>
+          <div class="sacred-center-frame">
+            <img src="assets/ganpati_bappa.jpg" alt="Divine Contemplation" class="ceremony-bappa-img">
+            <div class="sacred-flame-glow"></div>
+          </div>
+        </div>
+
+        <div class="ceremony-mantra">
+          ॥ ॐ गं गणपतये नमः ॥
+        </div>
+        <p class="ceremony-tagline">Opening the divine ledger for your business...</p>
+
+        <!-- Elegant Contemplation Progress Steps -->
+        <div class="ceremony-timeline">
+          <div class="ceremony-node" id="scanStep1">
+            <div class="node-indicator">
+              <span class="node-bullet"></span>
+            </div>
+            <div class="node-content">
+              <span class="node-label">Observing enterprise commitment & hard work</span>
+            </div>
+          </div>
+
+          <div class="ceremony-node" id="scanStep2">
+            <div class="node-indicator">
+              <span class="node-bullet"></span>
+            </div>
+            <div class="node-content">
+              <span class="node-label">Reading client trust & word-of-mouth goodwill</span>
+            </div>
+          </div>
+
+          <div class="ceremony-node" id="scanStep3">
+            <div class="node-indicator">
+              <span class="node-bullet"></span>
+            </div>
+            <div class="node-content">
+              <span class="node-label">Examining modern digital presence & reach</span>
+            </div>
+          </div>
+
+          <div class="ceremony-node" id="scanStep4">
+            <div class="node-indicator">
+              <span class="node-bullet"></span>
+            </div>
+            <div class="node-content">
+              <span class="node-label">Preparing Bappa's customized Shubh Patrika</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ceremony-progress-track">
+          <div class="ceremony-progress-fill" id="scanProgressFill"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- STEP 2.5: SWEET PRASAD SEAL UNVEILING -->
+    <!-- ============================================ -->
+    <section id="modakLoadingScreen" class="app-screen">
+      <div class="modak-ritual-card">
+        <div class="modak-emblem-wrap">
+          <div class="modak-gold-plate"></div>
+          <!-- Handcrafted Pure SVG Modak -->
+          <svg class="modak-vector-art" viewBox="0 0 100 100" width="80" height="80">
+            <defs>
+              <linearGradient id="modakGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFEAA7"/>
+                <stop offset="45%" stop-color="#FDCB6E"/>
+                <stop offset="85%" stop-color="#E17055"/>
+                <stop offset="100%" stop-color="#D63031"/>
+              </linearGradient>
+            </defs>
+            <!-- Modak Pleats and Body -->
+            <path d="M50 12 C46 22 24 45 22 66 C20 80 32 88 50 88 C68 88 80 80 78 66 C76 45 54 22 50 12 Z" fill="url(#modakGrad)" stroke="#B71540" stroke-width="1.5"/>
+            <!-- Saffron Tilak and Carved Lines -->
+            <path d="M50 12 Q42 50 36 78" fill="none" stroke="#D63031" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            <path d="M50 12 Q58 50 64 78" fill="none" stroke="#D63031" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            <path d="M50 12 L50 84" fill="none" stroke="#E17055" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+            <circle cx="50" cy="22" r="3" fill="#D63031"/>
+          </svg>
+        </div>
+
+        <div class="prasad-stamp-badge">बाप्पांचा प्रसाद • Aashirwaad</div>
+        <h2 class="ritual-title">Unsealing Your Business Patrika</h2>
+        <p class="ritual-subtitle">Just a moment as Bappa finalizes the auspicious observations for your firm.</p>
+
+        <div class="ritual-meter">
+          <div class="ritual-meter-fill" id="modakProgressFill"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- STEP 3: AUTHENTIC SHUBH BUSINESS PATRIKA -->
+    <!-- ============================================ -->
+    <section id="step3Screen" class="app-screen">
+      <div class="patrika-certificate">
+        <!-- Traditional Parchment Seal & Border -->
+        <div class="certificate-inner-border">
+          <div class="cert-corner tl"></div>
+          <div class="cert-corner tr"></div>
+          <div class="cert-corner bl"></div>
+          <div class="cert-corner br"></div>
+
+          <div class="cert-header">
+            <div class="cert-auspicious-mantra">॥ ॐ श्री सिद्धिविनायकाय नमः ॥</div>
+            <div class="cert-seal-stamp">
+              <span class="seal-inner">शुभ<br>लाभ</span>
+            </div>
+            <span class="cert-subheading">गणेशोत्सव बिज़नेस अवलोकन पत्र</span>
+            <h2 class="cert-business-name" id="reportBusinessName">Your Business</h2>
+            <div class="cert-category-pill" id="reportIndustryCategory">General Enterprise</div>
+            <div class="cert-proprietor-tag">
+              <span>Owner & Proprietor: </span>
+              <strong id="reportOwnerName">Hardworking Owner</strong>
+            </div>
+          </div>
+
+          <div class="cert-divider-line">
+            <span class="divider-gem">♦</span>
+          </div>
+
+          <!-- The Verified Strengths List -->
+          <div class="strengths-container">
+            <div class="strength-row">
+              <div class="strength-icon-box">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="strength-details">
+                <h3 class="strength-title">Relentless Proprietor Dedication</h3>
+                <p class="strength-desc">100% genuine effort, personal integrity, and hands-on customer focus.</p>
+              </div>
+            </div>
+
+            <div class="strength-row">
+              <div class="strength-icon-box">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="strength-details">
+                <h3 class="strength-title">Reliable Quality & Service</h3>
+                <p class="strength-desc">Delivering proven value and earning repeat trust from real patrons.</p>
+              </div>
+            </div>
+
+            <div class="strength-row">
+              <div class="strength-icon-box">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="strength-details">
+                <h3 class="strength-title">High Peer Goodwill & Network</h3>
+                <p class="strength-desc">Strong word-of-mouth reputation built brick-by-brick in the local trade.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Relatable Twist: A Chhota Sa Digital Vighna -->
+          <div class="vighna-editorial-card">
+            <div class="vighna-header-row">
+              <span class="vighna-ornament">✦</span>
+              <span class="vighna-label">Par Ek Chhota Sa Digital Vighna...</span>
+              <span class="vighna-ornament">✦</span>
+            </div>
+
+            <div class="vighna-statement-box">
+              <div class="vighna-vector-badge" id="vighnaEmoji">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="vighna-copy">
+                <h4 class="vighna-highlight" id="vighnaStatement">“Official Website missing.”</h4>
+                <p class="vighna-explanation" id="vighnaDesc">In today's digital era, customers look for your business online before visiting, but find no official presence!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next Action Button -->
+          <div class="cert-footer-action">
+            <button id="btnSeeBappasSolution" class="btn-royal-cta">
+              <span class="btn-emboss-layer"></span>
+              <span class="btn-content">
+                <span class="btn-text">What is Bappa’s Verdict?</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- STEP 4: BAPPA'S VERDICT & YASH'S CARD -->
+    <!-- ============================================ -->
+    <section id="step4Screen" class="app-screen">
+      <div class="climax-card-frame">
+        <!-- Bappa Portrait Medallion -->
+        <div class="verdict-deity-medallion">
+          <div class="medallion-gold-border"></div>
+          <img src="assets/ganpati_bappa.jpg" alt="Ganpati Bappa Smiling" class="verdict-bappa-photo">
+          <div class="modak-accent-pin">
+            <svg viewBox="0 0 100 100" width="26" height="26">
+              <path d="M50 12 C46 22 24 45 22 66 C20 80 32 88 50 88 C68 88 80 80 78 66 C76 45 54 22 50 12 Z" fill="#FDCB6E" stroke="#B71540" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Bappa's Punchline Dialogue Box -->
+        <div class="bappa-speech-parchment">
+          <div class="speech-corner-accent"></div>
+          <div class="speech-author-tag">
+            <span>Bappa’s Festive Advice</span>
+          </div>
+          <blockquote class="speech-dialogue">
+            “Business ke vighna main dekh lunga...<br>
+            <span class="punchline-accent">Digital wale Yash ko de do!”</span>
+          </blockquote>
+          <div class="speech-namaste-sign">🙏 शुभ गणेशोत्सव 🙏</div>
+        </div>
+
+        <!-- Mahant Software & Yash: Bespoke Artisan Agency Card -->
+        <div class="agency-visiting-card">
+          <div class="card-gold-accent-bar"></div>
+          <div class="agency-head">
+            <div class="agency-crest">
+              <span class="crest-letter">M</span>
+            </div>
+            <div class="agency-brand">
+              <h3 class="agency-title">Mahant Software</h3>
+              <p class="agency-subtitle">Websites & Digital Growth for Serious Businesses</p>
+            </div>
+          </div>
+
+          <div class="agency-services-summary">
+            <div class="service-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Custom Fast Websites</span>
+            </div>
+            <div class="service-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Google Maps & SEO</span>
+            </div>
+            <div class="service-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span>WhatsApp Lead Systems</span>
+            </div>
+          </div>
+
+          <div class="agency-founder-row">
+            <div class="founder-info">
+              <span class="founder-label">Connect Directly with Founder:</span>
+              <strong class="founder-name">Yash & Team</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons-stack">
+          <!-- WhatsApp CTA to Yash -->
+          <a id="btnChatYash" href="#" target="_blank" class="btn-whatsapp-direct">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.17c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.41c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.26-8.22 8.26zm4.52-6.19c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.74 2.66 4.21 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.28z"/>
+            </svg>
+            <div class="whatsapp-btn-text">
+              <span class="line-primary">Message Yash on WhatsApp</span>
+              <span class="line-secondary">Discuss solutions for your business</span>
+            </div>
+          </a>
+
+          <!-- Viral Share Button -->
+          <button id="btnShareApp" class="btn-secondary-share">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <span>Share Patrika with Business Friends</span>
+          </button>
+
+          <!-- Check Another Business -->
+          <button id="btnResetTest" class="btn-tertiary-reset">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            </svg>
+            <span>Check Another Business</span>
+          </button>
+        </div>
+
+        <div class="closing-traditional-tag">
+          ॥ गणपती बाप्पा मोरया, पुढच्या वर्षा लवकर या ॥
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js?v=4.0"></script>
+</body>
+</html>
