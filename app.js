@@ -1245,68 +1245,21 @@ function populatePatrikaResults() {
     });
   }
 
-  // 2. What's Working For You (Exactly 3 small 1-line points)
-  const strengthsContainer = document.getElementById('strengthsContainer');
-  if (strengthsContainer) {
-    strengthsContainer.innerHTML = '';
-    const strengthsList = [
-      "Strong word-of-mouth trust and respected chapter reputation.",
-      "Hands-on dedication and personalized consultation for every client.",
-      `Proven trade reliability and repeat customer goodwill in ${cat.category}.`
-    ];
-
-    strengthsList.forEach(text => {
-      const row = document.createElement('div');
-      row.className = 'strength-point-row';
-      row.innerHTML = `
-        <span class="strength-check-bullet">✓</span>
-        <span class="strength-point-text">${text}</span>
-      `;
-      strengthsContainer.appendChild(row);
-    });
-  }
-
-  // 3. Your Identified Business Vighna (Strictly 1 Line)
+  // 2. Your Identified Business Vighna (Strictly 1 Line)
   const vighnaEmoji = document.getElementById('vighnaEmoji');
   if (vighnaEmoji) vighnaEmoji.innerHTML = cat.svgIcon;
 
   const vighnaStatement = document.getElementById('vighnaStatement');
   if (vighnaStatement) vighnaStatement.textContent = cat.statement;
 
-  // 4. Ek Sankalp Commitment Options
-  const sankalpContainer = document.getElementById('sankalpOptionsList');
-  if (sankalpContainer) {
-    sankalpContainer.innerHTML = '';
-    state.selectedSankalp = cat.sankalps[0];
-
-    cat.sankalps.forEach((sankalpText, idx) => {
-      const item = document.createElement('div');
-      item.className = `sankalp-choice-item ${idx === 0 ? 'active' : ''}`;
-      item.innerHTML = `
-        <div class="sankalp-radio-bullet"></div>
-        <span class="sankalp-choice-text">${sankalpText}</span>
-      `;
-
-      item.addEventListener('click', () => {
-        templeAudio.playChime();
-        sankalpContainer.querySelectorAll('.sankalp-choice-item').forEach(el => el.classList.remove('active'));
-        item.classList.add('active');
-        state.selectedSankalp = sankalpText;
-        updateWhatsAppCta();
-      });
-
-      sankalpContainer.appendChild(item);
-    });
-  }
-
-  // 5. GBS 30-Second Referral Pitch Prompt
+  // 3. GBS 30-Second Referral Pitch Prompt
   const referralBox = document.getElementById('referralTextBox');
   if (referralBox) {
     const customAsk = `“Hello GBS Glory members! My name is ${state.ownerName} from ${state.businessName}. ${cat.referralAsk}”`;
     referralBox.textContent = customAsk;
   }
 
-  // 6. Update Climax WhatsApp Link to Yash
+  // 4. Update Climax WhatsApp Link to Yash
   updateWhatsAppCta();
 }
 
@@ -2100,7 +2053,6 @@ function updateWhatsAppCta() {
     `Ganpati Bappa just reviewed my business and observed:\n` +
     `🐘 _"Business ke vighna main dekh lunga... Digital wale Yash ko de do!"_\n\n` +
     `📍 Identified Obstacle (Vighna): ${cat.statement}\n` +
-    `✨ My Chosen Sankalp for this week: "${state.selectedSankalp}"\n` +
     `💡 Recommended by Bappa: *${cat.recommendation}*\n\n` +
     `Yash, can we discuss creating this modern digital solution for my business through Mahant Software?`
   );
