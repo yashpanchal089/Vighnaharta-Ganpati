@@ -1119,175 +1119,88 @@ function startSynthesisCeremony() {
   }, 3200);
 }
 
-// Generate Detailed Solutions for the 3 Questions Answered by the User
+// Generate Detailed Solutions for the 3 Questions Answered by the User (Strictly 1-2 lines each)
 function generateDetailedSolutions(quizAnswers, cat) {
   const catName = cat.category;
 
-  // 1. Client Discovery Solution
   const discoverySolutions = {
     referrals: {
       questionTitle: "Question 1 • Discovery Strategy",
       userResponse: "Word-of-Mouth & GBS Referrals",
-      frictionTitle: "The Vighna: Verbal referrals get lost because chapter peers lack an instant link",
-      frictionDesc: `Your clients and GBS chapter members genuinely trust your work in ${catName}. But when a friend or prospect asks for a recommendation, members have to type long messages or search for your old card. Over 60% of warm word-of-mouth referrals drop off before they ever reach your WhatsApp.`,
-      solutionTitle: "Bappa’s Solution: 1-Tap GBS Chapter Referral Card & Digital Credentials",
-      steps: [
-        `Equip every GBS member with your personalized 10-second web showcase highlighting ${catName} capabilities.`,
-        `Pre-fill WhatsApp referral inquiry links with your services so clients can message you in 1 tap.`,
-        `Showcase 3 verified past client testimonials & project photos right at the top for instant credibility.`
-      ],
-      impact: "⚡ Result: Converts 3x more verbal recommendations into confirmed WhatsApp business inquiries."
+      vighna: "Word-of-mouth recommendations drop off because chapter peers lack an instant link to forward on WhatsApp.",
+      solution: "1-tap digital chapter showcase card with verified project credentials and direct WhatsApp inquiry."
     },
     social: {
       questionTitle: "Question 1 • Discovery Strategy",
       userResponse: "Instagram & Social Media",
-      frictionTitle: "The Vighna: Casual 'Price please?' comments & DMs that never convert",
-      frictionDesc: `Social media brings likes and direct messages, but 80% of prospects ask 'What is the price?' and disappear once you reply. Typing out pricing in DMs wastes hours and attracts bargain hunters who don't understand the craft of ${catName}.`,
-      solutionTitle: "Bappa’s Solution: Interactive Bio-Link Funnel & Instant Specification Filter",
-      steps: [
-        `Place an interactive, high-speed estimator link in your Instagram bio and post descriptions.`,
-        `Allow serious buyers to filter by budget, service type, or timeline before contacting you.`,
-        `Direct high-intent prospects straight to your WhatsApp with their selected specifications already filled out.`
-      ],
-      impact: "⚡ Result: Filters out casual window-shoppers and delivers pre-qualified, serious buyer leads."
+      vighna: "Casual social media DMs and 'price please?' comments take hours to reply and rarely convert.",
+      solution: "Interactive bio-link estimator that qualifies serious prospects and routes them to WhatsApp with specs pre-filled."
     },
     search: {
       questionTitle: "Question 1 • Discovery Strategy",
       userResponse: "Google Search & Local Maps",
-      frictionTitle: "The Vighna: High search traffic dropping off due to slow or outdated links",
-      frictionDesc: `When local buyers search for ${catName} on Google, they compare 3 to 4 local businesses in seconds. If your link is slow, not mobile-optimized, or lacks verified reviews, prospects immediately bounce to your competitor.`,
-      solutionTitle: "Bappa’s Solution: High-Speed Mobile Landing Page with Verified Trust Badges",
-      steps: [
-        `Fast, mobile-first Google-optimized landing page with sub-1-second loading speed.`,
-        `Live Google Business reviews and project location tags directly integrated on the page.`,
-        `Instant 'Click to Call / WhatsApp' sticky action bar for immediate mobile conversions.`
-      ],
-      impact: "⚡ Result: Boosts visitor-to-call conversion rate by over 65% for local search traffic."
+      vighna: "Local Google searchers bounce away within seconds if your business lacks a fast, mobile-friendly portfolio.",
+      solution: "Sub-1-second mobile landing page with verified Google reviews and 1-tap call/WhatsApp action bar."
     },
     direct: {
       questionTitle: "Question 1 • Discovery Strategy",
       userResponse: "Direct Walk-ins & Outbound Calls",
-      frictionTitle: "The Vighna: Manual follow-ups get lost after the initial conversation",
-      frictionDesc: `Walk-ins and cold discussions take heavy energy, but after prospects leave your counter or hang up, there is no automated touchpoint. Paper brochures and business cards end up misplaced in drawers.`,
-      solutionTitle: "Bappa’s Solution: Instant QR-Code Digital Brochure & Automated WhatsApp Ping",
-      steps: [
-        `Place a dignified QR counter stand: prospects scan once to receive your complete ${catName} lookbook on WhatsApp.`,
-        `Automatically capture their number for polite, scheduled festive follow-up broadcasts.`,
-        `Replace printed paper catalogs with a zero-cost digital lookbook that you can update anytime.`
-      ],
-      impact: "⚡ Result: Captures 90%+ of walk-in contact details for long-term repeat orders."
+      vighna: "Walk-in inquiries and counter discussions get misplaced with no automated follow-up system.",
+      solution: "Dignified counter QR stand that sends your full digital catalog directly to their WhatsApp."
     }
   };
 
-  // 2. Portfolio / Showcase Solution
   const portfolioSolutions = {
     whatsapp_photos: {
       questionTitle: "Question 2 • Work Presentation",
       userResponse: "Send 40-50 photos or PDFs on WhatsApp",
-      frictionTitle: "The Vighna: WhatsApp media fatigue & buried high-ticket projects",
-      frictionDesc: `Sending 40 loose photos or a 35MB PDF floods the client's phone storage. Clients get overwhelmed, scroll past your finest ${catName} work, and ask for heavy discounts because loose photos look unorganized.`,
-      solutionTitle: "Bappa’s Solution: Curated 1-Tap Mobile Lookbook & Category Filter",
-      steps: [
-        `Organise your best ${catName} projects into high-resolution, instant-loading digital galleries.`,
-        `Let clients tap categories (e.g. Budget, Luxury, Fast Delivery, Commercial) to view exact relevant samples.`,
-        `Include clear 'Budget Starts From' guidelines and client outcome stories alongside each project.`
-      ],
-      impact: "⚡ Result: Projects look 10x more premium; clients make decisions in minutes instead of days."
+      vighna: "Sending 40 loose photos or heavy PDFs floods clients' storage, looks unorganized, and invites bargaining.",
+      solution: "Curated 1-tap mobile lookbook with category filters that loads in 1 second on any smartphone."
     },
     official_site: {
       questionTitle: "Question 2 • Work Presentation",
       userResponse: "Modern Official Fast Website",
-      frictionTitle: "The Vighna: Static brochure site with zero interactive lead capture",
-      frictionDesc: `Having a website is great, but standard static websites act like digital visiting cards where visitors browse for 20 seconds and leave without giving their contact info.`,
-      solutionTitle: "Bappa’s Solution: High-Conversion Lead Magnet & Live WhatsApp Integration",
-      steps: [
-        `Embed interactive calculators or instant catalog download buttons that capture visitor phone numbers.`,
-        `Add 1-tap WhatsApp consultation buttons that ping your phone with the exact project the client was viewing.`,
-        `Display live social proof, client badges, and GBS chapter credibility seals.`
-      ],
-      impact: "⚡ Result: Turns passive website readers into active, inbound WhatsApp consultations."
+      vighna: "Standard static websites act like digital visiting cards with zero interactive lead capture.",
+      solution: "Interactive catalog with 1-tap WhatsApp consultation buttons that ping your phone with the exact project viewed."
     },
     manual_call: {
       questionTitle: "Question 2 • Work Presentation",
       userResponse: "Explain everything manually on phone calls",
-      frictionTitle: "The Vighna: Exhausting 30-minute calls repeating the same explanations",
-      frictionDesc: `Spending half your day on phone calls explaining materials, processes, or scope drains your key executive energy. Without visual proof on screen, clients still remain skeptical about ${catName} pricing.`,
-      solutionTitle: "Bappa’s Solution: Visual Explainer Guide & 3-Step Interactive Process Page",
-      steps: [
-        `Create a clean, visual 3-step walkthrough of how your ${catName} workflow operates.`,
-        `Send a polite 1-tap link before the phone call: 'Please take 60 seconds to review our visual scope here'.`,
-        `Calls shorten from 30 minutes to 5 minutes of focused deal closing.`
-      ],
-      impact: "⚡ Result: Saves 2-3 hours of proprietor time daily while dramatically increasing closing rates."
+      vighna: "Spending 30 minutes on phone calls repeating basic explanations exhausts your daily time.",
+      solution: "Visual 3-step project scope page sent before the call so phone discussions focus only on deal closing."
     },
     showroom: {
       questionTitle: "Question 2 • Work Presentation",
       userResponse: "Invite them to visit showroom / office",
-      frictionTitle: "The Vighna: Busy decision-makers delay visiting in person",
-      frictionDesc: `Asking modern corporate founders or busy clients to travel through traffic to visit your office creates friction. Many postpone for weeks or choose a competitor who offered an instant virtual preview.`,
-      solutionTitle: "Bappa’s Solution: 360° Virtual Walkthrough & Digital Sample Selector",
-      steps: [
-        `Provide an interactive online preview of your showroom samples, models, and material swatches.`,
-        `Enable clients to shortlist 3 favorite items online first before scheduling their VIP physical visit.`,
-        `Offer an instant 'Book a VIP Showroom Slot' scheduler that sends directions and calendar reminder.`
-      ],
-      impact: "⚡ Result: Converts remote and out-of-town inquiries into confirmed in-person showroom visits."
+      vighna: "Busy corporate decision-makers postpone physical showroom visits due to distance and traffic.",
+      solution: "360° virtual walkthrough and digital sample shortlist link with instant VIP slot booking."
     }
   };
 
-  // 3. Operational Time Sink Solution
   const timeSinkSolutions = {
     repetitive_info: {
       questionTitle: "Question 3 • Operational Automation",
       userResponse: "Repeating same basic rates & specs",
-      frictionTitle: "The Vighna: Highly paid staff acting like human answering machines",
-      frictionDesc: `Answering 'What is the starting rate?', 'What are the dimensions?', or 'What is the warranty?' 25 times a day drains your staff's focus from doing actual revenue-generating work in ${catName}.`,
-      solutionTitle: "Bappa’s Solution: Self-Service WhatsApp FAQ & Dynamic Price Estimator",
-      steps: [
-        `Deploy an interactive digital rate card & specification selector with instant transparent estimates.`,
-        `Provide a 1-tap automated WhatsApp FAQ bot that handles standard inquiries 24/7 without manual intervention.`,
-        `Free your team to focus exclusively on negotiation and closing finalized high-margin deals.`
-      ],
-      impact: "⚡ Result: Eliminates 80% of repetitive inquiry calls and replies instantly even at 11 PM."
+      vighna: "Staff wastes 2-3 hours daily typing the exact same pricing, dimensions, and basic specs.",
+      solution: "Automated WhatsApp FAQ and dynamic rate estimator that replies to prospects 24/7."
     },
     chasing_quotes: {
       questionTitle: "Question 3 • Operational Automation",
       userResponse: "Chasing unpaid quotes & follow-ups",
-      frictionTitle: "The Vighna: The awkward quote chase & lost revenue in follow-up limbo",
-      frictionDesc: `Sending written quotations only to have clients ghost or say 'We are reviewing' creates severe cash flow uncertainty. Manual follow-ups feel desperate and often get delayed.`,
-      solutionTitle: "Bappa’s Solution: Interactive Digital Quotation with Expiry & Automated Follow-Up",
-      steps: [
-        `Send clean web-based quotations with itemized breakdowns and instant 1-tap WhatsApp accept buttons.`,
-        `Add polite, automated scheduled reminders: 'Your festive rate lock expires in 48 hours'.`,
-        `Get notified the exact second the prospective client opens and views your proposal.`
-      ],
-      impact: "⚡ Result: Cuts quote decision cycles from 14 days down to 48 hours with zero awkwardness."
+      vighna: "Quotations sent on PDF get delayed in review limbo with awkward manual follow-ups.",
+      solution: "Interactive digital proposals with 1-tap WhatsApp acceptance and automated polite expiry reminders."
     },
     coordinating_slots: {
       questionTitle: "Question 3 • Operational Automation",
       userResponse: "Coordinating appointments & visits",
-      frictionTitle: "The Vighna: 10 back-and-forth messages just to fix one meeting time",
-      frictionDesc: `'Are you free Tuesday at 3 PM?' 'No, how about Thursday?' This endless back-and-forth leads to missed appointments, double-bookings, and frustrated prospective clients.`,
-      solutionTitle: "Bappa’s Solution: 1-Tap Calendar Booking with Automated WhatsApp Confirmations",
-      steps: [
-        `Provide a dedicated booking link where clients choose available inspection or consultation slots.`,
-        `Automate instant WhatsApp & calendar confirmations with Google Maps directions attached.`,
-        `Send an automated reminder 2 hours prior to eliminate no-shows and last-minute cancellations.`
-      ],
-      impact: "⚡ Result: Zero double bookings, zero no-shows, and 100% professional scheduling experience."
+      vighna: "Endless back-and-forth messages to fix meeting times cause double-bookings and no-shows.",
+      solution: "1-tap calendar booking link with automated WhatsApp confirmations and location directions."
     },
     manual_estimates: {
       questionTitle: "Question 3 • Operational Automation",
       userResponse: "Manually drafting custom proposals",
-      frictionTitle: "The Vighna: Spending hours in Excel/Word drafting proposals from scratch",
-      frictionDesc: `Every time an inquiry comes in, spending 2 hours calculating area, quantities, and terms delays proposal delivery. The fastest responder in ${catName} wins 70% of deals.`,
-      solutionTitle: "Bappa’s Solution: Rapid Modular Proposal Builder & Template Engine",
-      steps: [
-        `Standardize your ${catName} offerings into modular pricing building blocks.`,
-        `Generate professional, branded PDF/web proposals in under 3 minutes with pre-set terms.`,
-        `Include digital signature and token advance payment integration for immediate deal locking.`
-      ],
-      impact: "⚡ Result: Deliver stunning, professional proposals within 15 minutes of the client's call."
+      vighna: "Drafting custom proposals from scratch in Excel delays quotes, giving competitors the advantage.",
+      solution: "Rapid modular quote generator that delivers branded, itemized proposals in under 3 minutes."
     }
   };
 
@@ -1305,12 +1218,11 @@ function populatePatrikaResults() {
   document.getElementById('reportBusinessName').textContent = state.businessName;
   document.getElementById('reportOwnerName').textContent = state.ownerName;
   document.getElementById('reportIndustryCategory').textContent = cat.category;
-  document.getElementById('previewBizTitle').textContent = state.businessName;
 
   const solCatLabel = document.getElementById('solutionsCategoryLabel');
   if (solCatLabel) solCatLabel.textContent = cat.category;
 
-  // 1. Render Detailed 3-Answer Solutions
+  // 1. Render Tailored Solutions for 3 Answers (Concise 1-2 lines each)
   const threeSolutionsContainer = document.getElementById('threeSolutionsCardsGrid');
   if (threeSolutionsContainer) {
     threeSolutionsContainer.innerHTML = '';
@@ -1320,124 +1232,46 @@ function populatePatrikaResults() {
       const card = document.createElement('div');
       card.className = 'solution-detail-card';
 
-      const stepsHtml = sol.steps.map(step => `
-        <li class="sol-step-item">
-          <span class="sol-check-icon">✓</span>
-          <span>${step}</span>
-        </li>
-      `).join('');
-
       card.innerHTML = `
         <div class="sol-tag-row">
           <span class="sol-q-badge">${sol.questionTitle}</span>
-          <span class="sol-ans-pill">Your Answer: "${sol.userResponse}"</span>
+          <span class="sol-ans-pill">"${sol.userResponse}"</span>
         </div>
-        <div class="sol-friction-box">
-          <div class="sol-friction-title">⚠️ ${sol.frictionTitle}</div>
-          <p class="sol-friction-desc">${sol.frictionDesc}</p>
-        </div>
-        <div class="sol-solution-box">
-          <div class="sol-solution-title">✨ ${sol.solutionTitle}</div>
-          <ul class="sol-steps-list">
-            ${stepsHtml}
-          </ul>
-        </div>
-        <div class="sol-impact-badge">${sol.impact}</div>
+        <p class="sol-line-vighna"><strong>⚠️ Vighna:</strong> ${sol.vighna}</p>
+        <p class="sol-line-solution"><strong>💡 Solution:</strong> ${sol.solution}</p>
       `;
 
       threeSolutionsContainer.appendChild(card);
     });
   }
 
-  // 2. Strengths based on Answers
+  // 2. What's Working For You (Exactly 3 small 1-line points)
   const strengthsContainer = document.getElementById('strengthsContainer');
   if (strengthsContainer) {
     strengthsContainer.innerHTML = '';
-    const strengthsList = [];
+    const strengthsList = [
+      "Strong word-of-mouth trust and respected chapter reputation.",
+      "Hands-on dedication and personalized consultation for every client.",
+      `Proven trade reliability and repeat customer goodwill in ${cat.category}.`
+    ];
 
-    if (state.quizAnswers.discovery === 'referrals') {
-      strengthsList.push({
-        title: "Strong Referral Goodwill & Chapter Trust",
-        desc: "Built on authentic word-of-mouth and deep peer trust across the GBS network."
-      });
-    } else if (state.quizAnswers.discovery === 'social') {
-      strengthsList.push({
-        title: "Modern Social Presence & Visual Appeal",
-        desc: "Great aesthetic sense and openness to connecting with younger digital audiences."
-      });
-    } else if (state.quizAnswers.discovery === 'search') {
-      strengthsList.push({
-        title: "High Intent & Direct Search Discovery",
-        desc: "Clients actively looking for your industry expertise search and discover your firm."
-      });
-    } else {
-      strengthsList.push({
-        title: "High-Touch Personal Rapport",
-        desc: "Mastery of face-to-face relationship building and direct customer satisfaction."
-      });
-    }
-
-    if (state.quizAnswers.portfolio === 'official_site') {
-      strengthsList.push({
-        title: "Forward-Thinking Digital Approach",
-        desc: "Awareness that serious clients require a credible, modern web presence."
-      });
-    } else {
-      strengthsList.push({
-        title: "Hands-on Proprietor Dedication",
-        desc: "100% genuine effort and personalized, high-touch consultation for every client."
-      });
-    }
-
-    strengthsList.push({
-      title: "Proven Trade Reliability",
-      desc: `Delivering genuine value and earning consistent repeat orders in ${cat.category}.`
-    });
-
-    strengthsList.forEach(s => {
+    strengthsList.forEach(text => {
       const row = document.createElement('div');
-      row.className = 'strength-row';
+      row.className = 'strength-point-row';
       row.innerHTML = `
-        <div class="strength-icon-box">
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </div>
-        <div class="strength-details">
-          <h4 class="strength-title">${s.title}</h4>
-          <p class="strength-desc">${s.desc}</p>
-        </div>
+        <span class="strength-check-bullet">✓</span>
+        <span class="strength-point-text">${text}</span>
       `;
       strengthsContainer.appendChild(row);
     });
   }
 
-  // 3. Primary Identified Vighna
+  // 3. Your Identified Business Vighna (Strictly 1 Line)
   const vighnaEmoji = document.getElementById('vighnaEmoji');
   if (vighnaEmoji) vighnaEmoji.innerHTML = cat.svgIcon;
 
   const vighnaStatement = document.getElementById('vighnaStatement');
   if (vighnaStatement) vighnaStatement.textContent = cat.statement;
-
-  let portfolioAnswerText = "sending loose portfolio photos on WhatsApp";
-  if (state.quizAnswers.portfolio === 'manual_call') portfolioAnswerText = "explaining everything manually on calls";
-  if (state.quizAnswers.portfolio === 'showroom') portfolioAnswerText = "relying solely on in-person showroom visits";
-
-  let timeSinkText = "repeating basic prices & specifications";
-  if (state.quizAnswers.timeSink === 'chasing_quotes') timeSinkText = "manually chasing unpaid quotations & follow-ups";
-  if (state.quizAnswers.timeSink === 'coordinating_slots') timeSinkText = "coordinating meeting & service time slots";
-  if (state.quizAnswers.timeSink === 'manual_estimates') timeSinkText = "manually drafting proposals from scratch";
-
-  const vighnaReasoningTag = document.getElementById('vighnaReasoningTag');
-  if (vighnaReasoningTag) vighnaReasoningTag.textContent = `Reasoning from your answers:`;
-
-  const vighnaDesc = document.getElementById('vighnaDesc');
-  if (vighnaDesc) {
-    vighnaDesc.innerHTML = `
-      You mentioned that you rely on <strong>${portfolioAnswerText}</strong> and spend too much time <strong>${timeSinkText}</strong>.<br><br>
-      ${cat.desc}
-    `;
-  }
 
   // 4. Ek Sankalp Commitment Options
   const sankalpContainer = document.getElementById('sankalpOptionsList');
@@ -1458,7 +1292,6 @@ function populatePatrikaResults() {
         sankalpContainer.querySelectorAll('.sankalp-choice-item').forEach(el => el.classList.remove('active'));
         item.classList.add('active');
         state.selectedSankalp = sankalpText;
-        updateSankalpCanvas();
         updateWhatsAppCta();
       });
 
@@ -1466,21 +1299,15 @@ function populatePatrikaResults() {
     });
   }
 
-  // 5. Interactive Live Working Preview
-  renderInteractivePreview(cat);
-
-  // 6. GBS 30-Second Referral Pitch Prompt
+  // 5. GBS 30-Second Referral Pitch Prompt
   const referralBox = document.getElementById('referralTextBox');
   if (referralBox) {
     const customAsk = `“Hello GBS Glory members! My name is ${state.ownerName} from ${state.businessName}. ${cat.referralAsk}”`;
     referralBox.textContent = customAsk;
   }
 
-  // 7. Update Climax WhatsApp Link to Yash
+  // 6. Update Climax WhatsApp Link to Yash
   updateWhatsAppCta();
-
-  // 8. Update Canvas Card Preview
-  updateSankalpCanvas();
 }
 
 // Render Interactive Working Mini Preview for the Chosen Profile
@@ -2510,24 +2337,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Open/Close Sankalp Modal
-  const openSankalpModal = () => {
-    templeAudio.playChime();
-    sankalpModal.classList.add('active');
-    sankalpModal.setAttribute('aria-hidden', 'false');
-    updateSankalpCanvas();
-  };
-
-  const closeSankalpModal = () => {
-    sankalpModal.classList.remove('active');
-    sankalpModal.setAttribute('aria-hidden', 'true');
-  };
-
-  const btnOpenSankalpModal = document.getElementById('btnOpenSankalpModal');
-  if (btnOpenSankalpModal) btnOpenSankalpModal.addEventListener('click', openSankalpModal);
-  if (btnCloseSankalpModal) btnCloseSankalpModal.addEventListener('click', closeSankalpModal);
-  if (sankalpOverlay) sankalpOverlay.addEventListener('click', closeSankalpModal);
-
   // Open/Close Pulse Modal
   if (btnOpenPulse) {
     btnOpenPulse.addEventListener('click', () => {
@@ -2543,22 +2352,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   if (btnClosePulseModal) btnClosePulseModal.addEventListener('click', closePulseModal);
   if (pulseOverlay) pulseOverlay.addEventListener('click', closePulseModal);
-
-  // Download / Share Canvas
-  if (btnDownloadCanvas) btnDownloadCanvas.addEventListener('click', downloadSankalpCard);
-  if (btnShareCanvas) {
-    btnShareCanvas.addEventListener('click', () => {
-      templeAudio.playChime();
-      const shareMsg = encodeURIComponent(
-        `I just took Ganpati Bappa's Business Drishti for *${state.businessName}*!\n\n` +
-        `✨ *My Shubh Sankalp for this week:*\n` +
-        `"${state.selectedSankalp}"\n\n` +
-        `Discover your business obstacle (Vighna) & weekly Sankalp here 👉 ${window.location.href}\n\n` +
-        `_Created for GBS Glory by Yash Panchal · Mahant Software (+91 90041 68049)_`
-      );
-      window.open(`https://api.whatsapp.com/send?text=${shareMsg}`, '_blank');
-    });
-  }
 
   // Copy Referral Ask
   const btnCopyReferral = document.getElementById('btnCopyReferral');
@@ -2640,24 +2433,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Step 3 -> Step 4 (Climax & Yash's Card)
-  btnSeeBappasSolution.addEventListener('click', () => {
-    templeAudio.playTempleBell();
-    showScreen('step4Screen');
-  });
-
-  // Share
-  btnShareApp.addEventListener('click', () => {
-    templeAudio.playChime();
-    shareApp();
-  });
-
-  // Reset
-  btnResetTest.addEventListener('click', () => {
-    templeAudio.playChime();
-    showScreen('step1Screen');
-    ownerInput.value = '';
-    businessInput.value = '';
-    categorySelect.value = '';
-    state.currentQuizIndex = 0;
-  });
+  if (btnSeeBappasSolution) {
+    btnSeeBappasSolution.addEventListener('click', () => {
+      templeAudio.playTempleBell();
+      showScreen('step4Screen');
+    });
+  }
 });

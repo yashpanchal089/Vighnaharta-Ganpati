@@ -359,7 +359,7 @@
             <!-- Populated dynamically based on answers -->
           </div>
 
-          <!-- Section 2: Identified Business Vighna -->
+          <!-- Section 2: Identified Business Vighna (1 Line) -->
           <div class="vighna-editorial-card">
             <div class="vighna-header-row">
               <span class="vighna-ornament">✦</span>
@@ -372,9 +372,7 @@
                 <!-- SVG Icon -->
               </div>
               <div class="vighna-copy">
-                <div class="vighna-reasoning-tag" id="vighnaReasoningTag">Based on your answers:</div>
                 <h4 class="vighna-highlight" id="vighnaStatement">“Client inquiries slipping away.”</h4>
-                <p class="vighna-explanation" id="vighnaDesc">In today's fast market, prospective buyers need instant clarity.</p>
               </div>
             </div>
           </div>
@@ -392,27 +390,7 @@
             </div>
           </div>
 
-          <!-- Section 4: "See It For My Business" (Interactive Working Mini-Preview) -->
-          <div class="preview-feature-card">
-            <div class="preview-header-bar">
-              <div class="preview-chip">
-                <span class="live-pulse-dot"></span>
-                <span>Interactive Live Preview</span>
-              </div>
-              <h3 class="preview-title">See It For <span id="previewBizTitle">Your Business</span></h3>
-              <p class="preview-subtitle">Here is a miniature working example of how modern digital systems solve this exact bottleneck:</p>
-            </div>
-
-            <!-- Sleek Interactive Frame -->
-            <div class="interactive-demo-viewport" id="interactiveDemoViewport">
-              <!-- Dynamically rendered industry-tailored working preview -->
-            </div>
-            <div class="preview-watermark-note">
-              <span>Crafted by <strong>Mahant Software</strong> • Custom built for your specific workflow</span>
-            </div>
-          </div>
-
-          <!-- Section 5: GBS 30-Second Referral Pitch Prompt -->
+          <!-- Section 4: GBS 30-Second Referral Pitch Prompt -->
           <div class="referral-prompt-card">
             <div class="referral-header">
               <span class="referral-icon">🤝</span>
@@ -428,10 +406,6 @@
               <button type="button" id="btnCopyReferral" class="btn-copy-action">
                 <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 <span id="copyReferralText">Copy GBS Referral Ask</span>
-              </button>
-              <button type="button" id="btnOpenSankalpModal" class="btn-sankalp-action">
-                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                <span>Get Sankalp Card</span>
               </button>
             </div>
           </div>
@@ -532,36 +506,6 @@
               <span class="line-secondary">Discuss solutions for your business (+91 90041 68049)</span>
             </div>
           </a>
-
-          <!-- Download / View Sankalp Card -->
-          <button id="btnViewSankalpCardFinal" class="btn-royal-cta" style="background: linear-gradient(135deg, #9E6C18 0%, #751113 100%);">
-            <span class="btn-emboss-layer"></span>
-            <span class="btn-content">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span class="btn-text">Download My Personal Sankalp Card</span>
-            </span>
-          </button>
-
-          <!-- Viral Share Button -->
-          <button id="btnShareApp" class="btn-secondary-share">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="18" cy="5" r="3"></circle>
-              <circle cx="6" cy="12" r="3"></circle>
-              <circle cx="18" cy="19" r="3"></circle>
-              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-            </svg>
-            <span>Share Patrika with GBS Members</span>
-          </button>
-
-          <!-- Check Another Business -->
-          <button id="btnResetTest" class="btn-tertiary-reset">
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="23 4 23 10 17 10"></polyline>
-              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
-            </svg>
-            <span>Check Another Business</span>
-          </button>
         </div>
 
         <div class="closing-traditional-tag">
@@ -571,40 +515,6 @@
     </section>
 
   </main>
-
-  <!-- ============================================ -->
-  <!-- MODAL: PERSONALIZED SANKALP CARD DOWNLOAD -->
-  <!-- ============================================ -->
-  <div id="sankalpModal" class="app-modal" aria-hidden="true">
-    <div class="modal-overlay" id="sankalpOverlay"></div>
-    <div class="modal-card">
-      <button type="button" class="modal-close-btn" id="btnCloseSankalpModal" aria-label="Close Modal">✕</button>
-      <div class="modal-inner">
-        <h3 class="modal-title">Your Auspicious Sankalp Card</h3>
-        <p class="modal-subtitle">Keep this commitment on your phone or share it with fellow business owners!</p>
-
-        <!-- Live Generated Canvas Card Preview -->
-        <div class="sankalp-canvas-wrapper">
-          <canvas id="sankalpCardCanvas" width="640" height="780"></canvas>
-        </div>
-
-        <div class="modal-actions-row">
-          <button type="button" id="btnDownloadSankalpImg" class="btn-royal-cta">
-            <span class="btn-content">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span>Download Card Image</span>
-            </span>
-          </button>
-          <button type="button" id="btnShareSankalpWhatsApp" class="btn-whatsapp-direct" style="padding: 12px 16px; border-radius: 12px;">
-            <svg class="whatsapp-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.17c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.41c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.26-8.22 8.26zm4.52-6.19c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.74 2.66 4.21 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.28z"/>
-            </svg>
-            <span>Share on WhatsApp</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- ============================================ -->
   <!-- MODAL: GBS VIGHNA WALL / PULSE (FOR MEETING) -->

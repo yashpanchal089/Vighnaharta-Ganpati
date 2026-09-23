@@ -971,22 +971,21 @@ body {
 .solution-detail-card {
   background: #FFF;
   border: 1.5px solid var(--gold-border);
-  border-radius: 14px;
-  padding: 14px;
-  box-shadow: 0 4px 14px rgba(117, 17, 19, 0.05);
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 3px 10px rgba(117, 17, 19, 0.04);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .sol-tag-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 6px;
-  padding-bottom: 8px;
-  border-bottom: 1px dashed rgba(197, 146, 57, 0.35);
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgba(197, 146, 57, 0.28);
 }
 
 .sol-q-badge {
@@ -995,90 +994,57 @@ body {
   text-transform: uppercase;
   color: var(--crimson-royal);
   background: rgba(117, 17, 19, 0.08);
-  padding: 3px 8px;
-  border-radius: 6px;
-  letter-spacing: 0.4px;
+  padding: 2px 7px;
+  border-radius: 5px;
 }
 
 .sol-ans-pill {
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 600;
   color: #1B5E20;
-  background: rgba(27, 94, 32, 0.08);
-  border: 1px solid rgba(27, 94, 32, 0.2);
-  padding: 3px 10px;
-  border-radius: 20px;
+  background: rgba(27, 94, 32, 0.07);
+  padding: 2px 8px;
+  border-radius: 15px;
 }
 
-.sol-friction-box {
-  background: rgba(192, 57, 43, 0.04);
-  border-left: 3px solid var(--vermillion);
-  padding: 9px 12px;
-  border-radius: 0 8px 8px 0;
-}
-
-.sol-friction-title {
+.sol-line-vighna {
   font-size: 0.81rem;
-  font-weight: 700;
   color: var(--vermillion);
-  margin-bottom: 3px;
-}
-
-.sol-friction-desc {
-  font-size: 0.79rem;
-  color: var(--text-espresso);
-  line-height: 1.45;
-}
-
-.sol-solution-box {
-  background: rgba(197, 146, 57, 0.07);
-  border-left: 3px solid var(--gold-foil);
-  padding: 10px 12px;
-  border-radius: 0 8px 8px 0;
-}
-
-.sol-solution-title {
-  font-size: 0.84rem;
-  font-weight: 700;
-  color: var(--crimson-royal);
-  margin-bottom: 6px;
-}
-
-.sol-steps-list {
-  list-style: none;
-  padding: 0;
+  line-height: 1.4;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 
-.sol-step-item {
-  font-size: 0.79rem;
-  color: var(--text-espresso);
-  line-height: 1.45;
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
+.sol-line-solution {
+  font-size: 0.81rem;
+  color: #1B5E20;
+  line-height: 1.4;
+  margin: 0;
 }
 
-.sol-check-icon {
-  color: var(--gold-deep);
+/* 3 Small Points for What's Working For You */
+.strength-point-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(197, 146, 57, 0.2);
+}
+
+.strength-point-row:last-child {
+  border-bottom: none;
+}
+
+.strength-check-bullet {
+  color: var(--verified-green);
   font-weight: bold;
+  font-size: 0.88rem;
   flex-shrink: 0;
 }
 
-.sol-impact-badge {
-  font-size: 0.77rem;
-  font-weight: 700;
-  color: var(--verified-green);
-  background: rgba(27, 94, 32, 0.07);
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: 1px dashed rgba(27, 94, 32, 0.25);
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.strength-point-text {
+  font-size: 0.82rem;
+  color: var(--text-espresso);
+  line-height: 1.35;
 }
 
 /* Editorial Vighna Card */
