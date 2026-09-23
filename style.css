@@ -962,63 +962,110 @@ body {
   line-height: 1.4;
 }
 
-.three-solutions-cards-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.solution-detail-card {
-  background: #FFF;
+/* Clean Single Summary Answer Card */
+.summary-answer-card {
+  background: #FFFFFF;
   border: 1.5px solid var(--gold-border);
-  border-radius: 12px;
-  padding: 10px 12px;
-  box-shadow: 0 3px 10px rgba(117, 17, 19, 0.04);
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 14px rgba(117, 17, 19, 0.05);
+  margin-bottom: 14px;
 }
 
-.sol-tag-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6px;
-  padding-bottom: 5px;
-  border-bottom: 1px dashed rgba(197, 146, 57, 0.28);
+.summary-card-top {
+  text-align: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(197, 146, 57, 0.3);
 }
 
-.sol-q-badge {
+.summary-sacred-badge {
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.6px;
   color: var(--crimson-royal);
-  background: rgba(117, 17, 19, 0.08);
-  padding: 2px 7px;
-  border-radius: 5px;
+  background: rgba(117, 17, 19, 0.07);
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
-.sol-ans-pill {
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: #1B5E20;
-  background: rgba(27, 94, 32, 0.07);
-  padding: 2px 8px;
-  border-radius: 15px;
+.summary-headline {
+  font-family: var(--font-royal);
+  font-size: 1.02rem;
+  color: var(--crimson-dark);
+  margin: 2px 0 0 0;
 }
 
-.sol-line-vighna {
-  font-size: 0.81rem;
-  color: var(--vermillion);
+.summary-points-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary-point-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 10px;
+  background: #FAF7F2;
+  border-radius: 8px;
+  border-left: 3px solid var(--gold-primary);
+}
+
+.summary-num {
+  width: 20px;
+  height: 20px;
+  background: var(--crimson-royal);
+  color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.summary-point-content {
+  font-size: 0.83rem;
   line-height: 1.4;
-  margin: 0;
+  color: #2D3748;
 }
 
-.sol-line-solution {
-  font-size: 0.81rem;
+.summary-key {
+  color: var(--crimson-royal);
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.summary-val {
+  color: #2D3748;
+}
+
+.summary-bottom-takeaway {
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: rgba(27, 94, 32, 0.06);
+  border: 1px dashed rgba(27, 94, 32, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
   color: #1B5E20;
-  line-height: 1.4;
-  margin: 0;
+}
+
+.takeaway-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.takeaway-text {
+  line-height: 1.35;
 }
 
 /* 3 Small Points for What's Working For You */

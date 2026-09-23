@@ -1220,28 +1220,29 @@ function populatePatrikaResults() {
   const solCatLabel = document.getElementById('solutionsCategoryLabel');
   if (solCatLabel) solCatLabel.textContent = cat.category;
 
-  // 1. Render Tailored Solutions for 3 Answers (Ultra-short, crisp, 1-line each)
-  const threeSolutionsContainer = document.getElementById('threeSolutionsCardsGrid');
-  if (threeSolutionsContainer) {
-    threeSolutionsContainer.innerHTML = '';
+  // 1. Render Summary Answer of All Questions
+  const summaryGrid = document.getElementById('threeSolutionsSummaryGrid');
+  if (summaryGrid) {
+    summaryGrid.innerHTML = '';
     const solutions = generateDetailedSolutions(state.quizAnswers, cat);
+    const labels = ["Discovery", "Presentation", "Operations"];
 
-    solutions.forEach(sol => {
-      const card = document.createElement('div');
-      card.className = 'solution-detail-card';
-
-      card.innerHTML = `
-        <div class="sol-tag-row">
-          <span class="sol-q-badge">${sol.questionTitle}</span>
-          <span class="sol-ans-pill">"${sol.userResponse}"</span>
+    solutions.forEach((sol, idx) => {
+      const row = document.createElement('div');
+      row.className = 'summary-point-row';
+      row.innerHTML = `
+        <span class="summary-num">${idx + 1}</span>
+        <div class="summary-point-content">
+          <strong class="summary-key">${labels[idx]}:</strong>
+          <span class="summary-val">${sol.solution}</span>
         </div>
-        <p class="sol-line-vighna"><strong>⚠️ Vighna:</strong> ${sol.vighna}</p>
-        <p class="sol-line-solution"><strong>💡 Solution:</strong> ${sol.solution}</p>
       `;
-
-      threeSolutionsContainer.appendChild(card);
+      summaryGrid.appendChild(row);
     });
   }
+
+  const takeawayText = document.getElementById('summaryCoreSolutionText');
+  if (takeawayText) takeawayText.textContent = cat.recommendation;
 
   // 2. GBS 30-Second Referral Pitch Prompt
   const referralBox = document.getElementById('referralTextBox');
