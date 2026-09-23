@@ -113,6 +113,12 @@ body {
   transform: scale(0.96);
 }
 
+.sound-toggle.active {
+  border-color: var(--gold-foil);
+  background: #FFFDF9;
+  box-shadow: 0 3px 14px rgba(197, 146, 57, 0.22);
+}
+
 .bell-icon {
   color: var(--gold-foil);
 }
@@ -912,6 +918,167 @@ body {
   font-size: 0.78rem;
   color: var(--text-subtle);
   line-height: 1.35;
+}
+
+/* ==========================================================
+   DETAILED 3-ANSWER SOLUTIONS CARDS
+   ========================================================== */
+.three-solutions-container {
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.solutions-header-card {
+  background: linear-gradient(135deg, rgba(117, 17, 19, 0.05), rgba(197, 146, 57, 0.12));
+  border: 1px solid var(--gold-border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(117, 17, 19, 0.04);
+}
+
+.solutions-sacred-pill {
+  display: inline-block;
+  font-family: var(--font-devanagari);
+  color: var(--crimson-royal);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.solutions-header-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--crimson-royal);
+  font-weight: 700;
+  margin: 2px 0 4px 0;
+}
+
+.solutions-header-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-subtle);
+  line-height: 1.4;
+}
+
+.three-solutions-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.solution-detail-card {
+  background: #FFF;
+  border: 1.5px solid var(--gold-border);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 14px rgba(117, 17, 19, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sol-tag-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(197, 146, 57, 0.35);
+}
+
+.sol-q-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--crimson-royal);
+  background: rgba(117, 17, 19, 0.08);
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.4px;
+}
+
+.sol-ans-pill {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #1B5E20;
+  background: rgba(27, 94, 32, 0.08);
+  border: 1px solid rgba(27, 94, 32, 0.2);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.sol-friction-box {
+  background: rgba(192, 57, 43, 0.04);
+  border-left: 3px solid var(--vermillion);
+  padding: 9px 12px;
+  border-radius: 0 8px 8px 0;
+}
+
+.sol-friction-title {
+  font-size: 0.81rem;
+  font-weight: 700;
+  color: var(--vermillion);
+  margin-bottom: 3px;
+}
+
+.sol-friction-desc {
+  font-size: 0.79rem;
+  color: var(--text-espresso);
+  line-height: 1.45;
+}
+
+.sol-solution-box {
+  background: rgba(197, 146, 57, 0.07);
+  border-left: 3px solid var(--gold-foil);
+  padding: 10px 12px;
+  border-radius: 0 8px 8px 0;
+}
+
+.sol-solution-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--crimson-royal);
+  margin-bottom: 6px;
+}
+
+.sol-steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sol-step-item {
+  font-size: 0.79rem;
+  color: var(--text-espresso);
+  line-height: 1.45;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.sol-check-icon {
+  color: var(--gold-deep);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.sol-impact-badge {
+  font-size: 0.77rem;
+  font-weight: 700;
+  color: var(--verified-green);
+  background: rgba(27, 94, 32, 0.07);
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px dashed rgba(27, 94, 32, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 /* Editorial Vighna Card */

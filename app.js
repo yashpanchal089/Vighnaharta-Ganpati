@@ -11,745 +11,761 @@ const CONFIG = {
   CHAPTER_NAME: 'GBS Glory',
   APP_TITLE: "Bappa’s Business Drishti",
 
-  // 45+ Comprehensive GBS Member Profiles & Tailored Solutions
+  // 46 Clean GBS Member Profiles & Tailored Solutions (Deduplicated & Aligned)
   SOLUTIONS_CATALOG: [
-    {
-      id: "commercial_interior",
-      category: "Commercial Interior",
-      keywords: ["commercial interior", "office interior", "retail design", "workspace interior", "corporate interior", "interior designer"],
-      statement: "“High-end corporate projects WhatsApp chats me kho jaate hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
-      desc: "Lakhon rupaye ke luxury corporate & retail interiors banaye, par prospective client ko showcase bhejne ke liye 40 loose WhatsApp photos bhejni padti hain!",
-      recommendation: "Curated 3D Corporate Walkthrough & Category-wise Commercial Portfolio by Mahant Software",
-      sankalps: [
-        "This week, I will organise my best commercial & office projects into 1 digital portfolio link.",
-        "This week, I will stop sending loose WhatsApp photos and send a verified client lookbook.",
-        "This week, I will provide my GBS members a 1-tap link to showcase our turnkey office capability."
-      ],
-      referralAsk: "Please introduce me to corporate founders, doctors opening clinics, or retail store owners planning a commercial interior makeover this quarter.",
-      previewType: "interior_portfolio"
-    },
-    {
-      id: "home_interior",
-      category: "Home Interior",
-      keywords: ["home interior", "residential interior", "flats", "villas", "modular kitchen", "turnkey interior", "home decor"],
-      statement: "“Clients material aur finish quotes me compare karke delay karte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
-      desc: "Client har quote par 10 changes maangta hai aur purane projects ki live photos phone me dhoondne me ghanto nikal jaate hain.",
-      recommendation: "Interactive Residential Moodboard & Modular Package Selector Portal",
-      sankalps: [
-        "This week, I will categorise my 2BHK/3BHK & Villa projects with clear carpet-area filters.",
-        "This week, I will standardise our material & finish lookbook into an interactive web link.",
-        "This week, I will equip my sales team with instant WhatsApp quotation links."
-      ],
-      referralAsk: "Please introduce me to homeowners who recently received possession of 2BHK or 3BHK flats and need a reliable turnkey interior designer.",
-      previewType: "interior_portfolio"
-    },
-    {
-      id: "cash_counting_machine",
-      category: "Cash Counting Machine",
-      keywords: ["cash counting machine", "currency counter", "fake note detector", "note counting", "bundle counter", "sorter"],
-      statement: "“B2B buyers live demo dekhe bina order confirm nahi karte!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>`,
-      desc: "Traders, petrol pumps aur jewellers ko fake note detection live test karna hota hai, par phone call par machine feature compare nahi kar paate.",
-      recommendation: "3-Model Feature Comparison & 1-Tap 'Request Free On-Site Demo' Engine",
-      sankalps: [
-        "This week, I will launch a 1-tap 'Book Free On-Site Demo' page for local retail shops & jewellers.",
-        "This week, I will showcase side-by-side fake note detection videos online.",
-        "This week, I will offer our GBS network an exclusive festive exchange offer on currency counters."
-      ],
-      referralAsk: "Please introduce me to retail store owners, petrol pumps, jewellers, or wholesale traders who handle heavy cash daily and need fake note protection.",
-      previewType: "cash_machine_compare"
-    },
-    {
-      id: "corporate_trainer",
-      category: "Corporate Trainer",
-      keywords: ["corporate trainer", "soft skills", "leadership", "sales training", "executive coach", "communication trainer"],
-      statement: "“HR heads aur decision makers ko workshop syllabus online nahi milta!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
-      desc: "Training methodology aur past corporate participant transformations ek professional company profile ke bina HR heads tak nahi pahunchte.",
-      recommendation: "Executive Corporate Training Syllabus Portal with 1-Tap Discovery Session Booking",
-      sankalps: [
-        "This week, I will publish our 3 flagship corporate modules with curriculum outlines.",
-        "This week, I will gather 5 short video recommendations from corporate clients.",
-        "This week, I will share a direct booking link for HR leaders to schedule a 20-min strategy call."
-      ],
-      referralAsk: "Please introduce me to HR Heads, Managing Directors, or Business Owners with teams of 20+ looking to boost sales performance and leadership skills.",
-      previewType: "trainer_syllabus"
-    },
-    {
-      id: "pest_control",
-      category: "Pest Control & Hygiene Services",
-      keywords: ["pest control", "hygiene", "termite", "cockroach", "bedbugs", "sanitization", "rodent"],
-      statement: "“Customers phone par price sunke delay kar dete hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
-      desc: "Home vs commercial kitchen treatments, warranty period aur eco-friendly herbal chemical safety proof web par na hone se trust banane me waqt lagta hai.",
-      recommendation: "Instant 1-Tap Home & Commercial AMC Estimator with Free Inspection Scheduler",
-      sankalps: [
-        "This week, I will create an instant quote selector for 1BHK/2BHK/3BHK herbal pest treatments.",
-        "This week, I will display our government approved non-toxic safety certifications clearly.",
-        "This week, I will offer a festive home pest safety audit for all GBS chapter members."
-      ],
-      referralAsk: "Please introduce me to restaurant owners, housing society secretaries, or families moving into new homes who need certified, odourless pest control.",
-      previewType: "pest_control_selector"
-    },
-    {
-      id: "courier_logistics",
-      category: "Courier & Logistics Services",
-      keywords: ["courier", "logistics", "shipping", "cargo", "freight", "dispatch", "parcel", "domestic courier", "international courier"],
-      statement: "“Clients har consignment ke rate aur delivery days phone par poochte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>`,
-      desc: "Weight slabs, volumetric charges aur tracking links manual WhatsApp par bhejne me staff ka aadha din chala jata hai.",
-      recommendation: "Rapid Pincode Rate Calculator & 1-Click WhatsApp Pickup Booking Bot",
-      sankalps: [
-        "This week, I will introduce an instant weight-based shipping rate card for ecommerce sellers.",
-        "This week, I will automate pickup requests directly into WhatsApp.",
-        "This week, I will connect with 5 GBS manufacturers to audit their current courier overheads."
-      ],
-      referralAsk: "Please introduce me to manufacturers, e-commerce sellers, or diamond/garment traders who ship 20+ parcels daily and need fast, reliable pickups.",
-      previewType: "logistics_rate"
-    },
-    {
-      id: "sweets_chocolates",
-      category: "Sweets",
-      keywords: ["sweets", "mithai", "mithai shop", "namkeen", "dryfruit", "kaju katli", "ladoo"],
-      statement: "“Festive season me corporate bulk buyers custom hamper rate maangte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>`,
-      desc: "50 ya 500 box ke orders me company branding aur fresh delivery date lock karne ka fast digital calculator na hone se deal miss ho jati hai.",
-      recommendation: "Festive Corporate Mithai Hamper Builder with Live Slab Pricing",
-      sankalps: [
-        "This week, I will publish our 2026 festive corporate gifting catalog with live tier rates.",
-        "This week, I will enable custom company logo embossing preview on gift boxes.",
-        "This week, I will send sample tasting boxes to fellow GBS business leaders."
-      ],
-      referralAsk: "Please introduce me to corporate HRs, business founders, or chartered accountants looking for premium festive mithai and dryfruit hampers for clients.",
-      previewType: "sweets_box"
-    },
-    {
-      id: "cakes_chocolates",
-      category: "Cakes & Chocolates",
-      keywords: ["cakes", "chocolates", "bakery", "pastry", "custom cakes", "birthday cakes", "artisan chocolate"],
-      statement: "“Custom cake designs ke 100 screenshots WhatsApp par confuse kar dete hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s2-1 4-1 4 1 4 1 2-1 4-1 4 1 4 1"/><path d="M2 21h20"/><circle cx="12" cy="6" r="2"/></svg>`,
-      desc: "Flavour, weight, delivery time aur customized photo theme finalize karne me customer se 20 messages exchange karne padte hain.",
-      recommendation: "Interactive Celebration Cake Lookbook & Instant Flavour Booking Engine",
-      sankalps: [
-        "This week, I will organise our bestselling custom cake themes into an easy visual link.",
-        "This week, I will automate delivery date & time slot selection for celebration orders.",
-        "This week, I will launch corporate anniversary & birthday celebration hamper packages."
-      ],
-      referralAsk: "Please introduce me to event planners, corporate HRs, or families hosting birthdays and weddings who want custom designer cakes and luxury chocolates.",
-      previewType: "sweets_box"
-    },
-    {
-      id: "cctv_security",
-      category: "CCTV Security",
-      keywords: ["cctv", "security", "surveillance", "cctv security", "cameras", "ip camera", "dvr", "nvr"],
-      statement: "“Clients unbranded cheap online cameras se compare karte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>`,
-      desc: "Night-vision clarity, mobile phone live stream aur 2-year warranty service AMC ka visual proof web par turant nahi milta.",
-      recommendation: "Interactive 4/8 Camera Package Configurator & Free Site Audit Booker",
-      sankalps: [
-        "This week, I will showcase side-by-side day vs night camera resolution clips on our link.",
-        "This week, I will launch a transparent 4-camera and 8-camera setup package with installation.",
-        "This week, I will offer complimentary CCTV health checkups for 5 GBS member factories/offices."
-      ],
-      referralAsk: "Please introduce me to factory owners, retail showroom managers, or housing societies looking to install or upgrade high-definition CCTV security.",
-      previewType: "cctv_packages"
-    },
-    {
-      id: "cctv_security_amc",
-      category: "CCTC security and AMC",
-      keywords: ["cctv security and amc", "cctv amc", "security maintenance", "biometric amc", "camera repair", "amc"],
-      statement: "“Existing clients ka camera band hone par hi phone aata hai!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
-      desc: "Annual Maintenance Contract (AMC) renewable portal aur scheduled monthly maintenance verification digital na hone se clients slip ho jaate hain.",
-      recommendation: "Digital AMC Service Tracker & 1-Tap Breakdown Service Ticket Portal",
-      sankalps: [
-        "This week, I will launch an automated Annual Maintenance renewal reminder system.",
-        "This week, I will publish verified response time guarantees for commercial clients.",
-        "This week, I will sign 3 new commercial CCTV AMC contracts in our GBS network."
-      ],
-      referralAsk: "Please introduce me to commercial office administrators, warehouse owners, or school principals seeking prompt AMC maintenance for existing CCTV setups.",
-      previewType: "cctv_packages"
-    },
-    {
-      id: "cctv_security_systems",
-      category: "CCTV Security Systems",
-      keywords: ["cctv security systems", "biometric", "access control", "fire alarm", "video door phone"],
-      statement: "“Builders aur commercial sites par technical specifications match nahi hoti!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
-      desc: "Access control, boom barriers aur CCTV systems ka integrated technical architecture document online present na hone se tenders me delay hota hai.",
-      recommendation: "Integrated Security & Access Architecture Showcase Portal",
-      sankalps: [
-        "This week, I will build an integrated security specification sheet for architects & builders.",
-        "This week, I will demonstrate our smartphone biometric integration in a 60-second video.",
-        "This week, I will connect with GBS real estate and redevelopment members for site security."
-      ],
-      referralAsk: "Please introduce me to builders, architects, or commercial facility managers who need integrated security, biometrics, and fire alarm systems.",
-      previewType: "cctv_packages"
-    },
-    {
-      id: "printing_solutions",
-      category: "Printing Solutions",
-      keywords: ["printing", "printing solutions", "brochure", "visiting card", "offset printing", "packaging box", "label printing", "digital print"],
-      statement: "“Clients har order par paper GSM aur finish rate poochte rehte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>`,
-      desc: "Matte lamination, UV spot, foil stamping ya box GSM ka live visual sample guide na hone se client decision lene me 3 din lagata hai.",
-      recommendation: "Digital Print Finishes Visualizer & Instant Bulk Print Estimator",
-      sankalps: [
-        "This week, I will launch a digital finishes guide showing real paper textures & foils.",
-        "This week, I will automate visiting card and brochure volume quotation requests.",
-        "This week, I will print complimentary festive greeting cards for our GBS chapter."
-      ],
-      referralAsk: "Please introduce me to marketing managers, pharma companies, or retail brands who print brochures, custom packaging boxes, or labels every month.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "electrical_services",
-      category: "Electrical Services",
-      keywords: ["electrical", "electrical services", "electrician", "panel wiring", "wiring", "substation", "industrial electrical"],
-      statement: "“Industrial tenders me past safety audit & panel photos maangte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
-      desc: "Heavy factory panels aur HT/LT wiring ki safety compliance verification online present na hone se bidding me disadvantage hota hai.",
-      recommendation: "Certified Industrial Electrical Contractor Credential & Past Sites Showcase",
-      sankalps: [
-        "This week, I will publish our certified electrical safety audit badges on our link.",
-        "This week, I will document 3 landmark industrial panel erections with client testimonials.",
-        "This week, I will audit the power stability setup of fellow GBS manufacturing units."
-      ],
-      referralAsk: "Please introduce me to factory owners, commercial contractors, or warehouse managers needing HT/LT electrical panels, industrial wiring, or power audits.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "tours_travels",
-      category: "Tours & Travels",
-      keywords: ["tours & travels", "tours and travels", "travel agent", "holiday packages", "dubai package", "kashmir", "bali", "visa"],
-      statement: "“Clients online portals se flight compare karke drop ho jaate hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>`,
-      desc: "Curated day-wise luxury itinerary aur 1-tap WhatsApp visa assistance na hone se prospect impersonal OTA apps par chala jata hai.",
-      recommendation: "Interactive Curated International Holiday Itinerary Planner with 1-Tap Visa Lead Engine",
-      sankalps: [
-        "This week, I will publish our top 3 festive holiday itineraries (Dubai, Kashmir, Bali) with day-wise details.",
-        "This week, I will showcase client video reels of hassle-free overseas trips.",
-        "This week, I will share our exclusive corporate retreat packages with GBS business owners."
-      ],
-      referralAsk: "Please introduce me to families planning their Diwali vacations, or business owners arranging corporate incentive tours for their top performers.",
-      previewType: "travel_itinerary"
-    },
-    {
-      id: "hotel_resort",
-      category: "Hotel & Resort",
-      keywords: ["hotel & resort", "hotel and resort", "resort", "hotel", "staycation", "destination wedding", "banquet hall"],
-      statement: "“Direct bookings miss ho rahi hain aur OTAs 20% commission le rahe hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>`,
-      desc: "Guest OTA par search karta hai, jabki direct booking par complimentary upgrade ya direct WhatsApp booking link na hone se commission cut ho jata hai.",
-      recommendation: "Direct High-Margin Room & Destination Wedding Banquet Booking Engine",
-      sankalps: [
-        "This week, I will launch a direct WhatsApp booking offer that saves guest 15% vs OTA.",
-        "This week, I will showcase a 360-degree virtual tour of our resort rooms and banquet lawn.",
-        "This week, I will invite GBS members for an exclusive weekend staycation discount."
-      ],
-      referralAsk: "Please introduce me to families planning destination weddings, corporate groups booking offsites, or weekend holiday travelers seeking luxury stays.",
-      previewType: "travel_itinerary"
-    },
-    {
-      id: "real_estate_property",
-      category: "Real Estate Property",
-      keywords: ["real estate", "real estate property", "property", "realtor", "flats", "commercial property", "investments"],
-      statement: "“Third-party listing portals aapke genuine leads doosre brokers ko bech dete hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
-      desc: "Buyer direct property carpet area, verified legal RERA docs aur sample flat video dhoondhta hai, par unverified portals par misguide ho jata hai.",
-      recommendation: "Exclusive Verified Property Showcase with 1-Click WhatsApp Site Visit Booking",
-      sankalps: [
-        "This week, I will create a dedicated showcase for our top 3 verified residential & commercial properties.",
-        "This week, I will enable 1-click 'Book Free Pick & Drop Site Visit' for buyers.",
-        "This week, I will present high-ROI commercial pre-leased opportunities to GBS investors."
-      ],
-      referralAsk: "Please introduce me to home seekers looking for 2BHK/3BHK flats or investors searching for high-rental pre-leased commercial shops.",
-      previewType: "real_estate_units"
-    },
-    {
-      id: "real_estate_property_big",
-      category: "Real Estate Property – Big",
-      keywords: ["real estate property – big", "land", "large plots", "commercial land", "industrial plot", "bungalow plots", "warehouse land"],
-      statement: "“HNI & Corporate land buyers high-credibility presentation maangte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
-      desc: "Acre plots aur industrial land deals me NA permission, FSI calculation aur clear title papers online present karna essential hota hai.",
-      recommendation: "HNI Private Investment Dossier & Verified Industrial Land Portal",
-      sankalps: [
-        "This week, I will digitise our legal title dossiers & drone site surveys for big parcels.",
-        "This week, I will create an exclusive institutional investor deck for large land acquisitions.",
-        "This week, I will offer prime commercial and industrial options to fellow GBS leaders."
-      ],
-      referralAsk: "Please introduce me to industrialists needing land for new factories, developers seeking redevelopment parcels, or HNIs investing in bulk land.",
-      previewType: "real_estate_units"
-    },
-    {
-      id: "building_redevelopment",
-      category: "Building Redevelopment",
-      keywords: ["building redevelopment", "redevelopment", "society redevelopment", "slum redevelopment", "civil builder", "developer"],
-      statement: "“Housing society members builder credibility aur corpus fund par doubt karte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>`,
-      desc: "Old societies redevelopment ke liye 10 meetings karti hain, par past delivered projects aur verified bank guarantees ka digital profile na hone se decision atakta hai.",
-      recommendation: "Verified Redevelopment Track Record & Society Corpus Calculator Portal",
-      sankalps: [
-        "This week, I will publish our completed building timelines & before-after transformations.",
-        "This week, I will create a transparent guide on extra carpet area & rent compensation.",
-        "This week, I will connect with GBS members living in 30+ year old societies."
-      ],
-      referralAsk: "Please introduce me to committee members, chairmen, or secretaries of housing societies (25+ years old) evaluating trusted redevelopment partners.",
-      previewType: "real_estate_units"
-    },
-    {
-      id: "dental_shop_plan",
-      category: "Dental Shop Plan",
-      keywords: ["dental shop plan", "dental clinic", "dentist", "teeth", "dental implants", "orthodontist", "dental chair", "dental supplies"],
-      statement: "“High-value dental implant cases corporate clinic chains le jaate hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>`,
-      desc: "Top clinical skills aur painless modern technology hone ke bawajood, verified patient transformations aur online 1-tap slot booking na hone se patient drop hota hai.",
-      recommendation: "High-Trust Dental Practice Showcase with Patient Video Testimonials & Instant Slot Booking",
-      sankalps: [
-        "This week, I will showcase 5 before-and-after smile makeover transformations online.",
-        "This week, I will enable 1-tap WhatsApp appointment booking with slot availability.",
-        "This week, I will provide complimentary dental checkup vouchers for GBS member families."
-      ],
-      referralAsk: "Please introduce me to individuals needing root canal, painless dental implants, teeth whitening, or braces, who want high-precision gentle dental care.",
-      previewType: "clinic_slots"
-    },
-    {
-      id: "health_insurance",
-      category: "Health Insurance",
-      keywords: ["health insurance", "mediclaim", "medical insurance", "cashless hospital", "family floater", "super top-up"],
-      statement: "“Clients policy renew karte hain par claim ke waqt panic karte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
-      desc: "Phone par har bar room-rent capping, pre-existing waiting period samjhana padta hai, jabki 1-tap cashless network hospital locator website par chahiye.",
-      recommendation: "Instant Family Health Insurance Comparison & 24x7 Cashless Claim Assistance Portal",
-      sankalps: [
-        "This week, I will launch a 1-tap Cashless Network Hospital lookup for local hospitals.",
-        "This week, I will publish an honest room-rent and copay comparison chart.",
-        "This week, I will conduct free insurance portfolio health audits for 5 GBS business owners."
-      ],
-      referralAsk: "Please introduce me to families, senior citizens, or business owners who want comprehensive 1-Crore health coverage without room-rent capping.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "general_insurance",
-      category: "General Insurance",
-      keywords: ["general insurance", "factory insurance", "fire insurance", "marine insurance", "transit insurance", "stock insurance"],
-      statement: "“Factory owners premium pay karte hain par policy me hidden exclusions hote hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
-      desc: "Industrial fire, burglary aur marine transit policies complex hoti hain, aur audit na hone se claim ke waqt rejection ka risk rehta hai.",
-      recommendation: "Industrial Risk Audit & Transparent Commercial General Insurance Portal",
-      sankalps: [
-        "This week, I will offer a free 15-point risk audit on existing factory fire policies.",
-        "This week, I will digitise transit & marine policy documentation for rapid issuance.",
-        "This week, I will audit the plant & machinery insurance of GBS manufacturers."
-      ],
-      referralAsk: "Please introduce me to factory owners, logistics transporters, or warehouse operators who need comprehensive fire, burglary, and marine cargo coverage.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "lic",
-      category: "LIC",
-      keywords: ["lic", "life insurance", "term plan", "guaranteed pension", "child education plan", "life insurance corporation"],
-      statement: "“Clients traditional plans ko boring samajh kar mutual funds me chale jaate hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-      desc: "Guaranteed lifetime tax-free pension aur sovereign government security ka live return calculator online na hone se youth connect miss hota hai.",
-      recommendation: "Guaranteed Pension & Child Dream Milestone Calculator Portal",
-      sankalps: [
-        "This week, I will launch a 1-tap Guaranteed Tax-Free Retirement Income Calculator.",
-        "This week, I will demonstrate how HNI term plans protect business debt & liability.",
-        "This week, I will review the existing LIC policy status and revival for GBS members."
-      ],
-      referralAsk: "Please introduce me to young parents planning child education, or business owners seeking guaranteed tax-free lifetime retirement income.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "diamond_jewellery",
-      category: "Diamond Jewellery",
-      keywords: ["diamond jewellery", "diamonds", "solitaire", "diamond ring", "hallmark gold", "fine jewellery", "polki"],
-      statement: "“Customers certification aur buyback policies par doubt karte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 18 3 22 9 12 22 2 9 6 3"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="12" y1="22" x2="6" y2="9"/><line x1="12" y1="22" x2="18" y2="9"/></svg>`,
-      desc: "IGI certified solitaire clarity, direct manufacturing price benefit aur 100% buyback guarantee ek ultra-luxury digital lookbook par showcase honi chahiye.",
-      recommendation: "Luxury IGI Certified Diamond Solitaire Lookbook & Custom Ring Visualizer",
-      sankalps: [
-        "This week, I will publish our IGI certified solitaire collection with live carat pricing.",
-        "This week, I will launch a private appointment slot booking for bridal jewellery preview.",
-        "This week, I will offer exclusive diamond valuation & cleaning for fellow GBS members."
-      ],
-      referralAsk: "Please introduce me to families with upcoming weddings, or individuals looking to buy certified solitaires and custom engagement rings at factory prices.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "diamond_jewellers",
-      category: "Diamond Jewellers",
-      keywords: ["diamond jewellers", "jewellers", "diamond wholesale", "solitaires", "custom jewellery"],
-      statement: "“Showroom me 200 design hain, par customer ko latest lightweight patterns online nahi dikhte!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 18 3 22 9 12 22 2 9 6 3"/><line x1="12" y1="2" x2="12" y2="22"/></svg>`,
-      desc: "Lightweight everyday diamond jewellery aur luxury bridal sets ka fast loading mobile visualizer na hone se retail buyers branded chains chale jaate hain.",
-      recommendation: "Mobile-First Lightweight Diamond Jewellery Lookbook with Instant Price Slabs",
-      sankalps: [
-        "This week, I will digitise our bestselling everyday lightweight diamond designs.",
-        "This week, I will display our transparent making charges & 100% exchange policy.",
-        "This week, I will present exclusive festive gifting pendants to GBS members."
-      ],
-      referralAsk: "Please introduce me to corporate professionals and festive shoppers seeking daily-wear hallmarked diamond jewellery with certified buyback guarantees.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "portfolio_management_services",
-      category: "Portfolio Management Services",
-      keywords: ["portfolio management", "pms", "wealth management", "equity pms", "hni investments", "fund manager"],
-      statement: "“HNIs verified alpha generation & past drawdown records dekhna chahte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>`,
-      desc: "₹50 Lakh+ PMS clients ko research methodology, stock selection philosophy aur SEBI audited track record ek dignified private portal par chahiye.",
-      recommendation: "High-Net-Worth Private Wealth & PMS Performance Transparency Portal",
-      sankalps: [
-        "This week, I will build an institutional-grade investment philosophy presentation online.",
-        "This week, I will publish our risk-adjusted CAGR performance metrics vs Nifty 50.",
-        "This week, I will invite 3 GBS business owners for an exhaustive portfolio risk check."
-      ],
-      referralAsk: "Please introduce me to HNIs, business owners, or retired corporate leaders with ₹50L+ liquid capital looking for disciplined equity wealth creation.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "financial_advisory",
-      category: "Financial Advisory",
-      keywords: ["financial advisory", "financial advisor", "mutual funds", "sip", "wealth planning", "tax saving", "asset allocation"],
-      statement: "“Clients unscientific YouTube tips follow karke losses kar lete hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`,
-      desc: "Goal-based financial planning (Retirement, Children Higher Education) ka interactive visual calculator na hone se investor disciplined SIP nahi shuru karta.",
-      recommendation: "Goal-Based Wealth & Financial Freedom Calculator Portal",
-      sankalps: [
-        "This week, I will launch an interactive SIP & Retirement Wealth Freedom tool.",
-        "This week, I will publish a 3-step asset allocation guide for volatile markets.",
-        "This week, I will audit the personal mutual fund folios of 5 GBS members."
-      ],
-      referralAsk: "Please introduce me to professionals or business owners earning ₹15L+ annually who want goal-based, stress-free mutual fund and asset allocation advisory.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "investment_services",
-      category: "Investment Services",
-      keywords: ["investment services", "fixed income", "bonds", "unlisted shares", "alternative investments", "structured products"],
-      statement: "“Clients ko fixed return aur risk transparently compare karne me time lagta hai!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/></svg>`,
-      desc: "Senior corporate bonds, RBI floating rate bonds aur safe capital options ka unified comparative dashboard online na hone se idle cash pada rehta hai.",
-      recommendation: "Curated Fixed Income & High-Yield Bond Comparison Showcase",
-      sankalps: [
-        "This week, I will publish a comparison of AAA-rated bonds yielding 9-11% vs bank FDs.",
-        "This week, I will create a 1-tap WhatsApp alert service for upcoming lucrative bonds.",
-        "This week, I will review surplus working capital yields for fellow GBS businesses."
-      ],
-      referralAsk: "Please introduce me to investors seeking safe 9-11% returns through AAA-rated corporate bonds and regulated debt instruments.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "loan_services",
-      category: "Loan Services",
-      keywords: ["loan services", "business loan", "home loan", "lap", "loan against property", "working capital", "od cc limit", "mortgage"],
-      statement: "“Bankers eligibility bataane me 2 hafte lagate hain aur client deal cancel kar deta hai!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>`,
-      desc: "Business loan ya LAP me accurate eligibility calculator aur 30+ partner banks ke ROI comparison ka instant tool web par na hone se file atakti hai.",
-      recommendation: "Instant Multi-Bank Business Loan & LAP Eligibility Engine with 1-Click Document Checklist",
-      sankalps: [
-        "This week, I will launch an instant Business Loan & LAP EMI eligibility calculator.",
-        "This week, I will publish a 1-page clear checklist of required banking documents.",
-        "This week, I will review existing high-interest business loans of GBS members to reduce EMI."
-      ],
-      referralAsk: "Please introduce me to business owners needing working capital, machinery loans, or property owners looking to transfer existing high-rate loans.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "accountant",
-      category: "Accountant",
-      keywords: ["accountant", "accounting", "bookkeeping", "gst return", "tally", "tds", "payroll", "invoicing"],
-      statement: "“Mahine ke end par clients GST bills WhatsApp par ghum kar dete hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
-      desc: "GSTR-1 aur 3B filing deadlines par WhatsApp par bills collect karne me pura din chala jata hai, automated client submission portal missing hai.",
-      recommendation: "Dedicated Monthly GST & Invoice Submission Vault with Automated Compliance Calendar",
-      sankalps: [
-        "This week, I will launch an automated WhatsApp tax calendar reminder for clients.",
-        "This week, I will standardise a 1-link invoice upload portal to prevent missing bills.",
-        "This week, I will review the GST compliance health for 3 GBS trade partners."
-      ],
-      referralAsk: "Please introduce me to SME business owners, traders, or contractors struggling with delayed monthly GST returns and messy bookkeeping.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "advocate",
-      category: "Advocate",
-      keywords: ["advocate", "lawyer", "legal", "property verification", "agreement", "corporate legal", "trademark", "litigation"],
-      statement: "“Clients internet se copied wrong agreement drafts use karke disputes me phaste hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
-      desc: "Commercial lease, partnership deeds aur property title search ka transparent process showcase na hone se clients unprofessional sources use karte hain.",
-      recommendation: "Transparent Legal Vetting & Commercial Contract Drafting Portal",
-      sankalps: [
-        "This week, I will publish a vital 10-point checklist for commercial lease & partnership agreements.",
-        "This week, I will enable 1-tap WhatsApp consultation scheduling for urgent contract vetting.",
-        "This week, I will offer a legal agreement audit for GBS business contracts."
-      ],
-      referralAsk: "Please introduce me to business partners drafting agreements, landlords leasing commercial premises, or property buyers needing clear title search.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "vastu_numerology",
-      category: "Vastu & Numerology",
-      keywords: ["vastu", "numerology", "vastu consultant", "office vastu", "factory vastu", "home vastu", "name numerology", "astrology"],
-      statement: "“Clients unscientific myths me darr kar expensive demolitions karwa lete hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`,
-      desc: "Non-demolition Vastu remedies aur business growth energy balancing ki scientific case studies online present na hone se clients hesitate karte hain.",
-      recommendation: "Authentic Scientific Vastu Without Demolition & Corporate Energy Balancing Showcase",
-      sankalps: [
-        "This week, I will showcase 5 real factory & office case studies cured without demolition.",
-        "This week, I will publish a 1-tap floor plan submission portal for online Vastu review.",
-        "This week, I will offer an auspicious workplace entrance energy audit for GBS members."
-      ],
-      referralAsk: "Please introduce me to factory owners, retail showroom owners, or families buying new homes who want scientific Vastu without costly structural demolition.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "tarot_card_reader",
-      category: "Tarot Card Reader",
-      keywords: ["tarot", "tarot card reader", "tarot reader", "divination", "angel card", "spiritual guidance", "relationship healing"],
-      statement: "“Clients WhatsApp par timing aur slots ke liye endless messages karte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>`,
-      desc: "Confidentiality assurance, reading topics (Career, Business, Personal) aur advance slot booking link na hone se appointments miss hoti hain.",
-      recommendation: "Confidential Private Tarot Consultation Booking & Guided Topic Selector Portal",
-      sankalps: [
-        "This week, I will launch a 1-tap private slot calendar for online video consultations.",
-        "This week, I will publish clear topic frameworks for career and business decision-making.",
-        "This week, I will conduct an auspicious festive intuitive energy reading for GBS members."
-      ],
-      referralAsk: "Please introduce me to individuals facing critical career crossroads, relationship dilemmas, or seeking spiritual clarity and intuitive guidance.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "makeup_artist",
-      category: "Makeup Artist",
-      keywords: ["makeup artist", "bridal makeup", "hd makeup", "airbrush makeup", "mua", "groom makeup", "fashion makeup"],
-      statement: "“Brides peak muhurat me double booking ke darr se trust nahi kar paati!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>`,
-      desc: "Instagram par compressed blurry photos hoti hain, jabki brides ko high-resolution 4K bridal lookbook aur advance date confirmation chahiye.",
-      recommendation: "VIP 4K Bridal HD Makeup Lookbook & Real-Time Muhurat Slot Reservation Portal",
-      sankalps: [
-        "This week, I will publish our 4K HD bridal lookbook categorized by Haldi, Sangeet & Reception.",
-        "This week, I will enable instant muhurat date availability checks online.",
-        "This week, I will offer exclusive festive grooming packages for GBS member families."
-      ],
-      referralAsk: "Please introduce me to brides-to-be, event planners, or wedding families seeking premium HD & Airbrush bridal makeup with flawless finishes.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "mobile_repairing",
-      category: "Mobile Phone & Phone Repairing",
-      keywords: ["mobile phone & phone repairing", "mobile repair", "iphone repair", "screen replacement", "battery repair", "motherboard repair"],
-      statement: "“Customers phone data privacy aur duplicate parts ke darr se hesitate karte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>`,
-      desc: "Doorstep screen repair, original spare parts warranty aur 100% data safety guarantee web par na hone se customer local shops se bachta hai.",
-      recommendation: "Instant Phone Screen & Battery Replacement Price Finder with 6-Month Warranty Card",
-      sankalps: [
-        "This week, I will launch an instant repair cost estimator for popular iPhone & Samsung models.",
-        "This week, I will publish our verified 100% data privacy & certified parts guarantee.",
-        "This week, I will offer a free battery health diagnostic check for all GBS chapter members."
-      ],
-      referralAsk: "Please introduce me to corporate executives, business owners, or families who need quick, certified doorstep iPhone or Android phone screen/battery repairs.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "computer_sales",
-      category: "Computer Sales",
-      keywords: ["computer sales", "laptops", "desktops", "refurbished laptops", "office it setup", "server", "printers", "it hardware"],
-      statement: "“Offices bulk laptops maangte hain par custom specs & AMC quotation me 2 din lagte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
-      desc: "Corporate laptops, workstation builds aur rental/sales specs ka transparent portal na hone se IT managers online sellers par shift ho jaate hain.",
-      recommendation: "B2B Office IT Hardware Spec Configurator & Rapid Corporate Quotation Portal",
-      sankalps: [
-        "This week, I will publish our top corporate laptop & desktop bundles with 3-year onsite support.",
-        "This week, I will launch a 1-tap bulk RFQ tool for office IT upgrades.",
-        "This week, I will review the existing computer hardware setups of fellow GBS companies."
-      ],
-      referralAsk: "Please introduce me to IT managers, CA firms, or growing startups looking to purchase or rent 5 to 50 laptops and commercial desktop workstations.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "social_media_manager",
-      category: "Social Media Manager",
-      keywords: ["social media manager", "digital marketing", "instagram growth", "reels editing", "meta ads", "content creation", "social media"],
-      statement: "“Clients poochte hain: 'Social media se real business leads aayengi ya sirf likes?'”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>`,
-      desc: "Vanity likes vs real revenue conversions ka case study showcase aur monthly content package pricing web par transparent na hone se deal drop hoti hai.",
-      recommendation: "High-ROI Social Media Lead Case Studies & Monthly Content Retainer Portal",
-      sankalps: [
-        "This week, I will publish 3 real case studies proving revenue generated through viral reels.",
-        "This week, I will launch transparent 12-reels + ads monthly packages for local businesses.",
-        "This week, I will conduct a 15-minute social media audit for 3 GBS chapter members."
-      ],
-      referralAsk: "Please introduce me to retail brands, doctors, or service businesses who want consistent viral Instagram reels and qualified lead-generating ad campaigns.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "business_consultant",
-      category: "Business Consultant",
-      keywords: ["business consultant", "management consultant", "business coach", "sop", "scaling", "family business", "msme consulting"],
-      statement: "“Promoters roz firefighting me fase rehte hain, systems implement nahi kar paate!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`,
-      desc: "Bina standard SOPs, delegation matrix aur digital KPIs ke business owner har choti baat par engage rehta hai.",
-      recommendation: "SME Business Automation Diagnostic & 90-Day Delegation Scaling Roadmap",
-      sankalps: [
-        "This week, I will launch a 2-minute online Business Operational Bottleneck Test.",
-        "This week, I will publish our 90-Day SOP & Delegation framework for family businesses.",
-        "This week, I will gift a 30-minute private business scalability session to 3 GBS owners."
-      ],
-      referralAsk: "Please introduce me to SME business founders doing ₹2 Cr - ₹20 Cr revenue who are stuck in daily firefighting and want system-driven autopilot operations.",
-      previewType: "trainer_syllabus"
-    },
-    {
-      id: "chair_car_doctor",
-      category: "Chair Car Doctor",
-      keywords: ["chair car doctor", "car doctor", "ergonomic chair repair", "car seat repair", "chair repair", "car upholstery", "office chair repair"],
-      statement: "“Offices expensive chairs replace kar dete hain, jabki 70% cost bach sakti hai!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9l-7 7-7-7"/></svg>`,
-      desc: "Hydraulic gas lift repair, castor wheel upgrade aur luxury leatherette seat restoration ka doorstep service visual portal online missing hai.",
-      recommendation: "Doorstep Ergonomic Chair & Car Seat Restoration Calculator with 1-Year Guarantee",
-      sankalps: [
-        "This week, I will launch a 1-tap quote by photo for office chair gas-lift & wheel repairs.",
-        "This week, I will showcase how companies save 70% budget by servicing existing chairs.",
-        "This week, I will offer a free ergonomic chair inspection for 5 GBS corporate offices."
-      ],
-      referralAsk: "Please introduce me to corporate admin managers, co-working spaces, or car enthusiasts looking for prompt, doorstep ergonomic chair and car seat restoration.",
-      previewType: "furniture_selector"
-    },
-    {
-      id: "stallion_comfort",
-      category: "Stallion Comfort – Chair & Table",
-      keywords: ["stallion comfort – chair & table", "stallion comfort", "office chair", "office furniture", "ergonomic table", "cafeteria chair", "workstation"],
-      statement: "“Corporate buyers sample dekhe bina bulk 50-chair order place nahi karte!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>`,
-      desc: "Spine support ergonomics, BIFMA certified hardware aur modular office table dimensions ka fast visualizer na hone se inquiries slow ho jaati hain.",
-      recommendation: "BIFMA Certified Ergonomic Office Seating & Table Visualizer with Sample Trial Request",
-      sankalps: [
-        "This week, I will launch our corporate catalog with 1-click 'Request Sample Chair at Office'.",
-        "This week, I will highlight spine posture ergonomics & 5-year replacement warranty online.",
-        "This week, I will supply demo ergonomic chairs to fellow GBS chapter members."
-      ],
-      referralAsk: "Please introduce me to HR directors, architects, or office founders setting up new workspaces and requiring BIFMA certified ergonomic chairs and tables.",
-      previewType: "furniture_selector"
-    },
-    {
-      id: "water_purifier",
-      category: "Water Purifier",
-      keywords: ["water purifier", "ro water", "commercial ro", "water filter", "water softener", "alkaline water", "ro amc"],
-      statement: "“Customers TDS level aur membrane change timing me confuse rehte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`,
-      desc: "Water TDS testing report, alkaline antioxidant benefits aur scheduled filter replacement AMC ka automated portal online na hone se trust kam hota hai.",
-      recommendation: "1-Tap Water TDS Testing Request & Alkaline RO Filter Replacement Subscription Engine",
-      sankalps: [
-        "This week, I will launch a 1-tap 'Book Free Water TDS & Purity Test at Home' page.",
-        "This week, I will publish an honest comparison of Copper Alkaline vs standard RO.",
-        "This week, I will test drinking water purity for 5 GBS member homes and offices."
-      ],
-      referralAsk: "Please introduce me to families wanting mineral-rich alkaline drinking water, or factories/restaurants requiring commercial heavy-duty RO water systems.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "tarpaulin",
-      category: "Tarpaulin",
-      keywords: ["tarpaulin", "tirpal", "waterproof covers", "monsoon shed cover", "silpaulin", "industrial covers", "truck tarpaulin"],
-      statement: "“Clients unbranded GSM khareed kar monsoon me leakage jhelte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 12 1 23 6 12 11 1 6"/><polygon points="1 18 12 23 23 18 12 13 1 18"/><polygon points="1 12 12 17 23 12 12 7 1 12"/></svg>`,
-      desc: "Heavy-duty UV stabilized 100% waterproof Silpaulin grades aur customized eyelet dimensions ka instant calculator web par hona chahiye.",
-      recommendation: "Heavy-Duty All-Weather Tarpaulin Spec & Custom Size Quote Estimator",
-      sankalps: [
-        "This week, I will launch an instant custom size & GSM waterproof quote calculator.",
-        "This week, I will showcase extreme weather & tear-resistance test videos online.",
-        "This week, I will inspect monsoon shed covers for fellow GBS factory owners."
-      ],
-      referralAsk: "Please introduce me to warehouse managers, transporters, civil contractors, or agro traders needing 100% leakproof, heavy-duty Silpaulin covers.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "envelope_manufacturing",
-      category: "Envelope Manufacturing",
-      keywords: ["envelope manufacturing", "envelopes", "office envelopes", "courier envelopes", "custom printed envelopes", "packing envelopes"],
-      statement: "“Bulk buyers custom paper weight aur peel-and-seal gumming rate poochte hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`,
-      desc: "Cloth-lined envelopes, bank document covers aur corporate tamper-proof gumming specs ka instant online rate matrix na hone se order late hota hai.",
-      recommendation: "Custom Corporate Envelope Specification & Instant MOQ Bulk Quote Portal",
-      sankalps: [
-        "This week, I will publish standard size sheets & paper GSM choices for corporate stationery.",
-        "This week, I will launch a 1-tap bulk rate calculator for 5,000 to 50,000 unit orders.",
-        "This week, I will print customized auspicious festive envelopes for our GBS chapter."
-      ],
-      referralAsk: "Please introduce me to corporate procurement managers, banks, diagnostic labs, or packaging buyers who purchase 5,000+ envelopes every month.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "education",
-      category: "Education",
-      keywords: ["education", "coaching", "classes", "tuition", "entrance exam", "school", "college", "edtech", "academy"],
-      statement: "“Parents results aur faculty verification dekhe bina fees commit nahi karte!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
-      desc: "Rank holders ki verified marksheet, batch timings aur 1-tap Free Demo Class booking portal na hone se parents doosre coaching center chale jaate hain.",
-      recommendation: "High-Achiever Results Showcase with 1-Tap Free Trial Class Booking Portal",
-      sankalps: [
-        "This week, I will showcase our past students' top percentile rank cards and parent video reviews.",
-        "This week, I will enable 1-tap registration for upcoming weekend scholarship demo classes.",
-        "This week, I will offer a career counseling and aptitude test for GBS member children."
-      ],
-      referralAsk: "Please introduce me to parents of students in 8th to 12th standard looking for result-oriented coaching with personal doubt-solving sessions.",
-      previewType: "trainer_syllabus"
-    },
-    {
-      id: "swimming_pool",
-      category: "Swimming pool",
-      keywords: ["swimming pool", "swmiing poll", "pool maintenance", "pool construction", "pool filtration", "chlorine", "swimming"],
-      statement: "“Resort aur society pools me water filtration aur pH hygiene issues aate hain!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M2 17h20"/><path d="M2 7h20"/></svg>`,
-      desc: "Leakage proofing, modern glass-bead filtration aur crystal clear chemical balancing ka scheduled AMC tracker web par na hone se pool band rehta hai.",
-      recommendation: "Turnkey Swimming Pool Construction & Automated Water Hygiene AMC Portal",
-      sankalps: [
-        "This week, I will publish our crystal-clear water filtration technology guide.",
-        "This week, I will launch a 1-tap inspection booking for monsoon pool reopening & waterproofing.",
-        "This week, I will inspect the swimming pool water hygiene of GBS member societies/resorts."
-      ],
-      referralAsk: "Please introduce me to resort managers, farm-house owners, or housing society committees needing swimming pool construction, repair, or regular water AMC.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "website_development",
-      category: "Website Development",
-      keywords: ["website development", "web design", "software", "web app", "developer", "ecommerce website", "coding"],
-      statement: "“Aapki apni agency site ultra-fast & high-converting honi chahiye!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
-      desc: "Fast load speed, interactive lead tools aur modern UI aesthetics ke bina clients quality aur technical depth judge nahi kar paate.",
-      recommendation: "Flagship High-Performance Web & Interactive Business Tool Architecture by Mahant Software",
-      sankalps: [
-        "This week, I will build an interactive live tool for all GBS chapter members.",
-        "This week, I will eliminate all slow-loading elements from client web apps.",
-        "This week, I will empower 10 local businesses with high-converting digital portals."
-      ],
-      referralAsk: "Please introduce me to serious business owners wanting custom fast websites, automated lead portals, and interactive digital customer journeys.",
-      previewType: "generic_showcase"
-    },
-    {
-      id: "general_business",
-      category: "Other / General Business",
-      keywords: ["other", "general", "trader", "manufacturer", "service provider"],
-      statement: "“Valuable offline goodwill internet par reflect nahi ho rahi!”",
-      svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
-      desc: "Saalon ki mehnat aur genuine customer trust ke baad bhi, digital presence structured na hone se naye clients pehli nazar me judge kar lete hain.",
-      recommendation: "Modern High-Trust Brand Website with 1-Tap Direct WhatsApp Lead System by Yash",
-      sankalps: [
-        "This week, I will organise our core offerings into a clean, mobile-friendly link.",
-        "This week, I will automate answering repetitive basic customer questions on WhatsApp.",
-        "This week, I will share our verified credibility credentials with my networking circle."
-      ],
-      referralAsk: "Please introduce me to business leaders who value genuine quality and want to elevate their brand credibility through modern web systems.",
-      previewType: "generic_showcase"
-    }
-  ]
+  {
+    id: "website_development",
+    category: "Website Development",
+    keywords: ["website development", "software", "web design", "app development", "ecommerce", "portal", "coding", "web"],
+    statement: "“Client quotes mangte hain aur custom scope me 10 din lag jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+    desc: "Clients manual Scope of Work (SOW) aur quotations mangte rehte hain, jabki interactive web package calculator na hone se 50% prospects price comparison me slip ho jaate hain.",
+    recommendation: "Interactive Web Project Scope Estimator & Instant Quotation Engine by Mahant Software",
+    sankalps: [
+      "This week, I will launch an interactive 60-second website package estimator for GBS members.",
+      "This week, I will showcase our 5 best UI/UX web applications in 1 digital lookbook.",
+      "This week, I will offer complimentary website speed & SEO audits for 5 chapter members."
+    ],
+    referralAsk: "Please introduce me to founders, manufacturers, or service providers looking for a modern, high-converting website or custom web portal.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "courier_logistics",
+    category: "Courier & Logistics Services",
+    keywords: ["courier", "logistics", "shipping", "cargo", "freight", "dispatch", "parcel", "domestic courier", "international courier"],
+    statement: "“Clients har consignment ke rate aur delivery days phone par poochte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>`,
+    desc: "Weight slabs, volumetric charges aur tracking links manual WhatsApp par bhejne me staff ka aadha din chala jata hai.",
+    recommendation: "Rapid Pincode Rate Calculator & 1-Click WhatsApp Pickup Booking Bot",
+    sankalps: [
+      "This week, I will introduce an instant weight-based shipping rate card for ecommerce sellers.",
+      "This week, I will automate pickup requests directly into WhatsApp.",
+      "This week, I will connect with 5 GBS manufacturers to audit their current courier overheads."
+    ],
+    referralAsk: "Please introduce me to manufacturers, e-commerce sellers, or diamond/garment traders who ship 20+ parcels daily and need fast, reliable pickups.",
+    previewType: "logistics_rate"
+  },
+  {
+    id: "commercial_interior",
+    category: "Commercial Interior Designer",
+    keywords: ["commercial interior", "commercial interior designer", "office interior", "retail design", "workspace interior", "corporate interior"],
+    statement: "“High-end corporate projects WhatsApp chats me kho jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 12 22 17"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
+    desc: "Lakhon rupaye ke luxury corporate & retail interiors banaye, par prospective client ko showcase bhejne ke liye 40 loose WhatsApp photos bhejni padti hain!",
+    recommendation: "Curated 3D Corporate Walkthrough & Category-wise Commercial Portfolio by Mahant Software",
+    sankalps: [
+      "This week, I will organise my best commercial & office projects into 1 digital portfolio link.",
+      "This week, I will stop sending loose WhatsApp photos and send a verified client lookbook.",
+      "This week, I will provide my GBS members a 1-tap link to showcase our turnkey office capability."
+    ],
+    referralAsk: "Please introduce me to corporate founders, doctors opening clinics, or retail store owners planning a commercial interior makeover this quarter.",
+    previewType: "interior_portfolio"
+  },
+  {
+    id: "home_interior",
+    category: "Home Interior Designer",
+    keywords: ["home interior", "home interior designer", "residential interior", "flats", "villas", "modular kitchen", "turnkey interior", "home decor", "interior designer"],
+    statement: "“Clients material aur finish quotes me compare karke delay karte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+    desc: "Client har quote par 10 changes maangta hai aur purane projects ki live photos phone me dhoondne me ghanto nikal jaate hain.",
+    recommendation: "Interactive Residential Moodboard & Modular Package Selector Portal",
+    sankalps: [
+      "This week, I will categorise my 2BHK/3BHK & Villa projects with clear carpet-area filters.",
+      "This week, I will standardise our material & finish lookbook into an interactive web link.",
+      "This week, I will equip my sales team with instant WhatsApp quotation links."
+    ],
+    referralAsk: "Please introduce me to homeowners who recently received possession of 2BHK or 3BHK flats and need a reliable turnkey interior designer.",
+    previewType: "interior_portfolio"
+  },
+  {
+    id: "printing_solutions",
+    category: "Printing Solutions",
+    keywords: ["printing", "printing solutions", "brochure", "visiting card", "offset printing", "packaging box", "label printing", "digital print"],
+    statement: "“Clients har order par paper GSM aur finish rate poochte rehte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>`,
+    desc: "Matte lamination, UV spot, foil stamping ya box GSM ka live visual sample guide na hone se client decision lene me 3 din lagata hai.",
+    recommendation: "Digital Print Finishes Visualizer & Instant Bulk Print Estimator",
+    sankalps: [
+      "This week, I will launch a digital finishes guide showing real paper textures & foils.",
+      "This week, I will automate visiting card and brochure volume quotation requests.",
+      "This week, I will print complimentary festive greeting cards for our GBS chapter."
+    ],
+    referralAsk: "Please introduce me to marketing managers, pharma companies, or retail brands who print brochures, custom packaging boxes, or labels every month.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "electrical_services",
+    category: "Electrical Services",
+    keywords: ["electrical", "electrical services", "electrician", "panel wiring", "wiring", "substation", "industrial electrical"],
+    statement: "“Industrial tenders me past safety audit & panel photos maangte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+    desc: "Heavy factory panels aur HT/LT wiring ki safety compliance verification online present na hone se bidding me disadvantage hota hai.",
+    recommendation: "Certified Industrial Electrical Contractor Credential & Past Sites Showcase",
+    sankalps: [
+      "This week, I will publish our certified electrical safety audit badges on our link.",
+      "This week, I will document 3 landmark industrial panel erections with client testimonials.",
+      "This week, I will audit the power stability setup of fellow GBS manufacturing units."
+    ],
+    referralAsk: "Please introduce me to factory owners, commercial contractors, or warehouse managers needing HT/LT electrical panels, industrial wiring, or power audits.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "portfolio_management_services",
+    category: "Portfolio Management Services",
+    keywords: ["portfolio management", "pms", "wealth management", "equity", "stocks", "asset allocation", "portfolio management services"],
+    statement: "“High Networth clients past performance track record verify kiye bina trust nahi karte!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+    desc: "HNI clients equity investment me direct data chahte hain, par static PDF sheets unhe risk vs reward visualize nahi karne deti.",
+    recommendation: "High-Trust PMS Performance Dashboard & Secure Client Risk Profiler",
+    sankalps: [
+      "This week, I will publish a verified rolling returns infographic link for our flagship PMS strategy.",
+      "This week, I will offer a confidential 15-minute portfolio risk-audit for 5 GBS business leaders.",
+      "This week, I will equip existing clients with an easy 1-tap referral link."
+    ],
+    referralAsk: "Please introduce me to business owners, directors, or NRIs with investible surplus of ₹50L+ looking for disciplined, research-backed wealth creation.",
+    previewType: "finance_calculator"
+  },
+  {
+    id: "eis_wealth_advisor",
+    category: "EIS Wealth Advisor",
+    keywords: ["eis wealth advisor", "eis", "wealth advisor", "financial advisory", "financial planner", "retirement planning", "wealth growth"],
+    statement: "“HNIs tax saving aur wealth preservation ke structured blueprints maangte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>`,
+    desc: "Bespoke wealth succession, trust planning aur tax-efficient asset distribution ke modules online na hone se investor decision delay karta hai.",
+    recommendation: "Interactive Net-Worth Growth Roadmap & HNIs Wealth Preservation Calculator",
+    sankalps: [
+      "This week, I will formulate a 3-pillar wealth growth roadmap visualizer for our clients.",
+      "This week, I will send personalized financial health checkpoints to 10 top HNI contacts.",
+      "This week, I will share an estate & tax preservation guide with GBS founders."
+    ],
+    referralAsk: "Please introduce me to high-net-worth business owners and senior professionals wanting comprehensive wealth management and estate planning.",
+    previewType: "finance_calculator"
+  },
+  {
+    id: "investment_services",
+    category: "Investment Services",
+    keywords: ["investment", "investment services", "mutual funds", "sip", "bonds", "fixed income", "financial growth"],
+    statement: "“Clients SIP market dip me panic karte hain aur online direct apps par chale jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>`,
+    desc: "Long term compounding ka visual proof aur personalized goal tracking web link na hone se client market noise me SIP pause kar deta hai.",
+    recommendation: "Goal-Based SIP Return Simulator & Personalized Wealth Milestone Portal",
+    sankalps: [
+      "This week, I will create an interactive 'Retire Early / Child Education' SIP calculator link.",
+      "This week, I will send market perspective voice-notes with compounding charts to all active investors.",
+      "This week, I will launch a festive child-wealth gifting plan for our GBS network."
+    ],
+    referralAsk: "Please introduce me to salaried executives or business owners looking to start ₹25,000+ monthly SIPs or invest lump-sum bonuses wisely.",
+    previewType: "finance_calculator"
+  },
+  {
+    id: "loan_services",
+    category: "Loan Services",
+    keywords: ["loan", "loan services", "home loan", "business loan", "mortgage", "lap", "working capital", "od cc"],
+    statement: "“Document checklist clear na hone se loan file approval me hafte nikal jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 15h0M2 9.5h20"/></svg>`,
+    desc: "Banking criteria, CIBIL eligibility aur required documents list structured web form me na hone se borrower bar-bar call karta hai.",
+    recommendation: "1-Tap Loan Eligibility & EMI Calculator with Instant WhatsApp Document Checklist",
+    sankalps: [
+      "This week, I will launch an instant Business & Home Loan eligibility estimator on our link.",
+      "This week, I will create 1-tap WhatsApp document checklist PDFs for 5 major bank partners.",
+      "This week, I will audit the borrowing rates of 3 GBS member manufacturing units to reduce interest."
+    ],
+    referralAsk: "Please introduce me to business owners planning warehouse/factory expansion, or home buyers seeking the lowest interest rate and fastest sanction.",
+    previewType: "finance_calculator"
+  },
+  {
+    id: "chartered_accountant",
+    category: "Chartered Accountant",
+    keywords: ["chartered accountant", "ca", "accountant", "gst", "income tax", "audit", "tax filing", "accounting", "company incorporation"],
+    statement: "“Due date ke aakhiri 3 din clients documents ke liye panic karte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`,
+    desc: "GST billing, advance tax calculation aur statutory compliance deadline reminders manual bhejne me office staff exhaust ho jata hai.",
+    recommendation: "Digital Client Document Portal with Automated GST & Tax Due Date Reminders",
+    sankalps: [
+      "This week, I will deploy an automated GST & Advance Tax reminder system for all retainers.",
+      "This week, I will publish our firm's core corporate advisory credentials in a clean link.",
+      "This week, I will conduct an internal tax savings check for 5 fellow GBS chapter members."
+    ],
+    referralAsk: "Please introduce me to growing private limited companies, LLP firms, or high-turnover traders seeking proactive tax planning and flawless auditing.",
+    previewType: "finance_calculator"
+  },
+  {
+    id: "advocate",
+    category: "Advocate",
+    keywords: ["advocate", "lawyer", "legal", "court", "litigation", "property dispute", "corporate law", "trademark", "contracts"],
+    statement: "“Clients case study aur legal expertise bina phone consult samjh nahi paate!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 19 8 12 14 5 8 12 2"/><line x1="12" y1="14" x2="12" y2="22"/><circle cx="12" cy="18" r="3"/></svg>`,
+    desc: "Property title search, trademark registration ya contract drafting ka transparent process web par na hone se clients price bargaining karte hain.",
+    recommendation: "Prestigious Legal Practice Credential Portal & Confidential Consultation Booker",
+    sankalps: [
+      "This week, I will publish our practice areas (Property, Corporate, Arbitration) with clear FAQs.",
+      "This week, I will enable 1-tap confidential appointment scheduling for client consultations.",
+      "This week, I will offer a complimentary legal compliance contract audit for 3 GBS startups."
+    ],
+    referralAsk: "Please introduce me to builders, property buyers, or corporate founders requiring title clearance, contract drafting, or civil/commercial litigation support.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "vastu_numerology",
+    category: "Vastu & Numerology",
+    keywords: ["vastu", "numerology", "vastu & numerology", "astrology", "home vastu", "commercial vastu", "name correction"],
+    statement: "“People modern science vs traditional vastu balance dekhna chahte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/><circle cx="12" cy="12" r="3"/></svg>`,
+    desc: "Bina tod-fod (non-demolition) remedial vastu ka scientific explanation aur client transformation stories digital link me organize nahi hain.",
+    recommendation: "Floorplan Audit Request Portal & Digital Energy Balance Consultation System",
+    sankalps: [
+      "This week, I will launch a 1-tap 'Upload Floorplan for Vastu Audit' web gateway.",
+      "This week, I will publish 5 video testimonials of non-demolition commercial vastu success.",
+      "This week, I will offer an auspicious business entrance energy checkup for GBS members."
+    ],
+    referralAsk: "Please introduce me to factory owners, retail showroom founders, or families buying new apartments wanting scientific, non-demolition Vastu alignment.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "tarot_card_reader",
+    category: "Tarot Card Reader",
+    keywords: ["tarot", "tarot card reader", "tarot reading", "spiritual", "oracle", "energy healing", "guidance"],
+    statement: "“Clients personal session book karne se pehle clarity & privacy chahte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg>`,
+    desc: "Confidentiality assurance aur structured appointment slots web par na hone se clients casual WhatsApp messages par reading discuss karne lagte hain.",
+    recommendation: "Confidential 1-on-1 Tarot Slot Booking & Digital Guidance Deck",
+    sankalps: [
+      "This week, I will set up a private appointment scheduler with automated calendar invites.",
+      "This week, I will clearly articulate our 3 consultation tiers (Career, Relationship, Personal Growth).",
+      "This week, I will gift a festive annual guidance reading to 3 chapter leaders."
+    ],
+    referralAsk: "Please introduce me to individuals or business leaders facing crossroads in career, partnership, or life who seek intuitive, confidential guidance.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "health_insurance",
+    category: "Health Insurance",
+    keywords: ["health insurance", "mediclaim", "critical illness", "cashless hospital", "family floater", "super topup"],
+    statement: "“Emergency ke time policy wording aur cashless claim me confusion ho jata hai!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>`,
+    desc: "Room rent capping, waiting periods aur cashless network hospitals ka instant search link na hone se client generic aggregators par chala jata hai.",
+    recommendation: "1-Tap Family Mediclaim Coverage Comparer & Emergency Cashless Claim Desk",
+    sankalps: [
+      "This week, I will create a transparent 1-page health policy comparison matrix.",
+      "This week, I will provide all existing clients an emergency 24x7 cashless hospital assistance card.",
+      "This week, I will audit the medical coverage of 5 GBS member families to eliminate hidden sub-limits."
+    ],
+    referralAsk: "Please introduce me to families with senior citizen parents or business owners wanting group health mediclaim for their staff without room rent limits.",
+    previewType: "clinic_slots"
+  },
+  {
+    id: "general_insurance",
+    category: "General Insurance",
+    keywords: ["general insurance", "car insurance", "motor insurance", "marine insurance", "fire insurance", "factory insurance"],
+    statement: "“Renewal reminder na hone par policy lapse ho jati hai aur claim reject hota hai!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+    desc: "Commercial vehicles, factory machinery aur stock marine transit insurance me instant renewal quote na milne se client portal comparison me kho jata hai.",
+    recommendation: "Automated Policy Renewal Vault & Rapid Marine/Fire Quote Engine",
+    sankalps: [
+      "This week, I will deploy an automated policy expiry alert system that pings clients 30 days prior.",
+      "This week, I will launch an instant motor & factory insurance quote request page.",
+      "This week, I will audit commercial fire & burglary insurance for 3 GBS warehouse owners."
+    ],
+    referralAsk: "Please introduce me to logistics fleet operators, factory owners, or showroom managers wanting prompt claim settlement and lowest corporate renewal premiums.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "lic",
+    category: "LIC",
+    keywords: ["lic", "life insurance", "pension plan", "jeevan umang", "jeevan labh", "endowment", "term plan"],
+    statement: "“Clients policy surrender ya maturity returns ka exact chart demand karte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>`,
+    desc: "Guaranteed lifetime pension aur maturity amount WhatsApp par calculate karne ka fast digital calculator na hone se deal close hone me delay hota hai.",
+    recommendation: "Guaranteed Maturity & Pension Return Visualizer with WhatsApp Benefit Illustrator",
+    sankalps: [
+      "This week, I will create a 1-tap maturity & life cover illustrator for flagship LIC plans.",
+      "This week, I will send personalized policy health checkups to 20 long-term policyholders.",
+      "This week, I will present guaranteed pension retirement plans to fellow GBS business leaders."
+    ],
+    referralAsk: "Please introduce me to parents planning their child's higher education fund, or self-employed professionals wanting guaranteed lifetime pension post age 60.",
+    previewType: "finance_calculator"
+  },
+  {
+    id: "dental_saving_plans",
+    category: "Dental Saving Plans",
+    keywords: ["dental saving plans", "dental shop plan", "dental", "dentist", "teeth cleaning", "dental clinic", "orthodontics", "root canal", "dental amc"],
+    statement: "“Patients cosmetic dental treatment sunkar price me drop kar dete hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>`,
+    desc: "Clear visual smile transformation lookbook aur transparent annual family dental saving plans online na hone se patients clinic aane me jhijhakte hain.",
+    recommendation: "Interactive Smile Makeover Lookbook & Annual Family Dental Plan Portal",
+    sankalps: [
+      "This week, I will publish our family dental membership plans with transparent inclusions.",
+      "This week, I will showcase before/after smile alignment results on a clean patient link.",
+      "This week, I will offer a festive dental hygiene screening voucher for GBS members' families."
+    ],
+    referralAsk: "Please introduce me to families looking for gentle, modern dental care, or professionals interested in invisible aligners and smile makeovers.",
+    previewType: "clinic_slots"
+  },
+  {
+    id: "cakes_chocolates",
+    category: "Cakes & Chocolates",
+    keywords: ["cakes & chocolates", "cakes", "chocolates", "bakery", "pastry", "custom cakes", "birthday cakes", "artisan chocolate"],
+    statement: "“Custom cake designs ke 100 screenshots WhatsApp par confuse kar dete hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s2-1 4-1 4 1 4 1 2-1 4-1 4 1 4 1"/><path d="M2 21h20"/><circle cx="12" cy="6" r="2"/></svg>`,
+    desc: "Flavour, weight, delivery time aur customized photo theme finalize karne me customer se 20 messages exchange karne padte hain.",
+    recommendation: "Interactive Celebration Cake Lookbook & Instant Flavour Booking Engine",
+    sankalps: [
+      "This week, I will organise our bestselling custom cake themes into an easy visual link.",
+      "This week, I will automate delivery date & time slot selection for celebration orders.",
+      "This week, I will launch corporate anniversary & birthday celebration hamper packages."
+    ],
+    referralAsk: "Please introduce me to event planners, corporate HRs, or families hosting birthdays and weddings who want custom designer cakes and luxury chocolates.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "sweets_chocolates",
+    category: "Sweets",
+    keywords: ["sweets", "mithai", "mithai shop", "namkeen", "dryfruit", "kaju katli", "ladoo"],
+    statement: "“Festive season me corporate bulk buyers custom hamper rate maangte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>`,
+    desc: "50 ya 500 box ke orders me company branding aur fresh delivery date lock karne ka fast digital calculator na hone se deal miss ho jati hai.",
+    recommendation: "Festive Corporate Mithai Hamper Builder with Live Slab Pricing",
+    sankalps: [
+      "This week, I will publish our 2026 festive corporate gifting catalog with live tier rates.",
+      "This week, I will enable custom company logo embossing preview on gift boxes.",
+      "This week, I will send sample tasting boxes to fellow GBS business leaders."
+    ],
+    referralAsk: "Please introduce me to corporate HRs, business founders, or chartered accountants looking for premium festive mithai and dryfruit hampers for clients.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "mobile_sales_services",
+    category: "Mobile Sales & Services",
+    keywords: ["mobile sales & services", "mobile repair", "screen replacement", "iphone repair", "smartphones", "mobile accessories"],
+    statement: "“Part quality original hai ya duplicate, customer doubt karta hai!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>`,
+    desc: "Original display vs copy display ka visual quality proof aur warranty card digital na hone se customer road-side repairer par chala jata hai.",
+    recommendation: "Live Repair Cost Estimator & 90-Day Verified Warranty Card Portal",
+    sankalps: [
+      "This week, I will launch a 1-tap repair price estimator for iPhone & flagship Android screens.",
+      "This week, I will issue digital warranty cards on WhatsApp for every serviced device.",
+      "This week, I will offer a festive phone battery & screen health check for GBS members."
+    ],
+    referralAsk: "Please introduce me to smartphone owners needing genuine screen/battery replacements, or corporate firms needing mobile fleet maintenance.",
+    previewType: "tech_store_catalog"
+  },
+  {
+    id: "computer_sales",
+    category: "Computer Sales",
+    keywords: ["computer sales", "laptops", "desktop pc", "gaming pc", "refurbished laptop", "macbook", "it hardware"],
+    statement: "“Customers online ecommerce portals se price compare karke drop ho jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
+    desc: "Local on-site warranty support aur custom configuration (RAM, SSD, GPU) ka instant WhatsApp quotation na milne se client impersonal website se order karta hai.",
+    recommendation: "Custom PC/Laptop Configurator with Local On-Site Support Warranty Badge",
+    sankalps: [
+      "This week, I will launch an interactive laptop & custom PC builder with live pricing.",
+      "This week, I will promote our 24-hour on-site doorstep repair guarantee for corporate offices.",
+      "This week, I will audit the PC & server hardware infrastructure for 3 GBS firms."
+    ],
+    referralAsk: "Please introduce me to corporate offices, chartered accountant firms, or schools needing bulk laptops, desktops, or IT networking hardware.",
+    previewType: "tech_store_catalog"
+  },
+  {
+    id: "makeup_artist",
+    category: "Makeup Artist",
+    keywords: ["makeup artist", "bridal makeup", "makeover", "hairstyling", "party makeup", "beauty artist"],
+    statement: "“Brides bridal look ki high-resolution portfolio link bina filter maangti hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`,
+    desc: "Instagram algorithm kabhi-kabhi top posts chupa deta hai aur WhatsApp photos compress ho jati hain, jisse premium bridal clients doubt karte hain.",
+    recommendation: "High-Definition Bridal Transformation Lookbook & Wedding Date Booking Calendar",
+    sankalps: [
+      "This week, I will organise our bridal, engagement & reception looks into a high-res digital album.",
+      "This week, I will enable direct wedding date availability checks on WhatsApp.",
+      "This week, I will offer a festive glamour makeover consultation for GBS chapter leaders."
+    ],
+    referralAsk: "Please introduce me to brides-to-be, event planners, or wedding photography teams looking for a certified luxury bridal makeup artist.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "social_media_manager",
+    category: "Social Media Manager",
+    keywords: ["social media manager", "digital marketing", "reels", "instagram growth", "content creator", "branding"],
+    statement: "“Clients ko organic reach aur viral growth ka actual case study proof chahiye!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>`,
+    desc: "Past client viral reach metrics, monthly deliverables package aur return on ad spend (ROAS) ka live dashboard na hone se clients low retainers offer karte hain.",
+    recommendation: "Interactive Social Media Growth Case Study Portal & Monthly ROI Tracker",
+    sankalps: [
+      "This week, I will document our top 3 viral client reel campaigns with actual reach data.",
+      "This week, I will publish standardized monthly social media packages with transparent deliverables.",
+      "This week, I will conduct an Instagram profile audit for 5 fellow GBS business owners."
+    ],
+    referralAsk: "Please introduce me to retail brands, doctors, or B2B founders wanting high-impact Instagram Reels, lead generation ads, and consistent organic branding.",
+    previewType: "trainer_syllabus"
+  },
+  {
+    id: "chair_car_doctor",
+    category: "Chair Car Doctor",
+    keywords: ["chair car doctor", "chair doctor", "chair repair", "car seat repair", "ergonomic chair", "hydraulic gas lift", "upholstery"],
+    statement: "“Corporate offices purani chairs scrap kar deti hain jabki 80% repair ho sakti hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9l-7 7-7-7"/></svg>`,
+    desc: "New chair vs repair savings calculator web par na hone se corporate administrative managers unrepairable maanke new expensive chairs khareedte hain.",
+    recommendation: "On-Site Office Chair Health Audit Scheduler & Savings Calculator",
+    sankalps: [
+      "This week, I will launch a 1-tap calculator showing 'Save ₹3,500 per chair by reconditioning'.",
+      "This week, I will offer a complimentary 10-chair health checkup for 5 corporate offices in GBS.",
+      "This week, I will publish before-and-after hydraulic and mesh restoration videos."
+    ],
+    referralAsk: "Please introduce me to office facility managers, corporate HRs, or co-working space owners with 50+ office chairs needing maintenance or restoration.",
+    previewType: "chair_doctor_booking"
+  },
+  {
+    id: "stallion_comfort_chairs",
+    category: "Stallion Comfort Chairs",
+    keywords: ["stallion comfort chairs", "stallion comfort", "office chairs", "mesh chairs", "ergonomic furniture", "executive chairs"],
+    statement: "“B2B buyers bulk quantity me comfort test aur warranty assurance chahte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>`,
+    desc: "Ergonomic back support certifications aur 3-year warranty card online showcase na hone se corporate clients branded commercial brands ki taraf jhukte hain.",
+    recommendation: "Ergonomic Posture Chair Selector & Bulk Corporate Trial Request Portal",
+    sankalps: [
+      "This week, I will launch an interactive posture & lumbar support chair selector link.",
+      "This week, I will offer a 7-day free trial chair demo to 5 corporate founders in our network.",
+      "This week, I will showcase our high-tensile mesh & BIFMA standard durability certifications."
+    ],
+    referralAsk: "Please introduce me to architects, interior contractors, or founders setting up new office spaces who need durable, ergonomic seating.",
+    previewType: "chair_doctor_booking"
+  },
+  {
+    id: "cash_counting_machines",
+    category: "Cash Counting Machines",
+    keywords: ["cash counting machines", "cash counting machine", "currency counter", "fake note detector", "note counting", "bundle counter"],
+    statement: "“B2B buyers live demo dekhe bina order confirm nahi karte!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>`,
+    desc: "Traders, petrol pumps aur jewellers ko fake note detection live test karna hota hai, par phone call par machine feature compare nahi kar paate.",
+    recommendation: "3-Model Feature Comparison & 1-Tap 'Request Free On-Site Demo' Engine",
+    sankalps: [
+      "This week, I will launch a 1-tap 'Book Free On-Site Demo' page for local retail shops & jewellers.",
+      "This week, I will showcase side-by-side fake note detection videos online.",
+      "This week, I will offer our GBS network an exclusive festive exchange offer on currency counters."
+    ],
+    referralAsk: "Please introduce me to retail store owners, petrol pumps, jewellers, or wholesale traders who handle heavy cash daily and need fake note protection.",
+    previewType: "cash_machine_compare"
+  },
+  {
+    id: "cctv_security_amc",
+    category: "CCTV Security & AMC",
+    keywords: ["cctv security & amc", "cctv amc", "security maintenance", "camera repair", "annual maintenance", "biometric amc"],
+    statement: "“Existing clients ka camera band hone par hi phone aata hai!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
+    desc: "Annual Maintenance Contract (AMC) renewable portal aur scheduled monthly maintenance verification digital na hone se clients slip ho jaate hain.",
+    recommendation: "Digital AMC Service Tracker & 1-Tap Breakdown Service Ticket Portal",
+    sankalps: [
+      "This week, I will launch an automated Annual Maintenance renewal reminder system.",
+      "This week, I will publish verified response time guarantees for commercial clients.",
+      "This week, I will sign 3 new commercial CCTV AMC contracts in our GBS network."
+    ],
+    referralAsk: "Please introduce me to commercial office administrators, warehouse owners, or school principals seeking prompt AMC maintenance for existing CCTV setups.",
+    previewType: "cctv_packages"
+  },
+  {
+    id: "cctv_security_systems",
+    category: "CCTV Security Systems",
+    keywords: ["cctv security systems", "cctv security", "surveillance", "ip camera", "biometrics", "access control", "video door phone"],
+    statement: "“Builders aur commercial sites par technical specifications match nahi hoti!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
+    desc: "Access control, boom barriers aur CCTV systems ka integrated technical architecture document online present na hone se tenders me delay hota hai.",
+    recommendation: "Integrated Security & Access Architecture Showcase Portal with Package Configurator",
+    sankalps: [
+      "This week, I will build an integrated security specification sheet for architects & builders.",
+      "This week, I will demonstrate our smartphone biometric integration in a 60-second video.",
+      "This week, I will connect with GBS real estate and redevelopment members for site security."
+    ],
+    referralAsk: "Please introduce me to builders, architects, or commercial facility managers who need integrated security, biometrics, and fire alarm systems.",
+    previewType: "cctv_packages"
+  },
+  {
+    id: "corporate_trainer",
+    category: "Corporate Trainer",
+    keywords: ["corporate trainer", "soft skills", "leadership", "sales training", "executive coach", "communication trainer"],
+    statement: "“HR heads aur decision makers ko workshop syllabus online nahi milta!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
+    desc: "Training methodology aur past corporate participant transformations ek professional company profile ke bina HR heads tak nahi pahunchte.",
+    recommendation: "Executive Corporate Training Syllabus Portal with 1-Tap Discovery Session Booking",
+    sankalps: [
+      "This week, I will publish our 3 flagship corporate modules with curriculum outlines.",
+      "This week, I will gather 5 short video recommendations from corporate clients.",
+      "This week, I will share a direct booking link for HR leaders to schedule a 20-min strategy call."
+    ],
+    referralAsk: "Please introduce me to HR Heads, Managing Directors, or Business Owners with teams of 20+ looking to boost sales performance and leadership skills.",
+    previewType: "trainer_syllabus"
+  },
+  {
+    id: "business_consultant",
+    category: "Business Consultant",
+    keywords: ["business consultant", "management consultant", "sme scaling", "business audit", "process automation", "kpi"],
+    statement: "“Founders routine aag bujhane me fase hain aur scaling strategy ke liye waqt nahi!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`,
+    desc: "Process bottlenecks, standard operating procedures (SOPs) aur delegation framework ka clear diagnostic link na hone se founders consultation lene me hesitate karte hain.",
+    recommendation: "SME Business Bottleneck Diagnostic Tool & Executive Strategy Session Portal",
+    sankalps: [
+      "This week, I will create an online 2-minute business health checkup diagnostic tool.",
+      "This week, I will document a 3-step case study showing how we automated an SME founder's weekly reviews.",
+      "This week, I will host a 30-minute growth strategy teardown for 3 GBS business owners."
+    ],
+    referralAsk: "Please introduce me to established business owners with ₹2Cr+ turnover who want to step out of daily fire-fighting and build self-running systems.",
+    previewType: "trainer_syllabus"
+  },
+  {
+    id: "pest_control_hygiene",
+    category: "Pest Control & Hygiene Products",
+    keywords: ["pest control & hygiene products", "pest control", "hygiene products", "sanitizer", "termite", "cockroach", "disinfectant"],
+    statement: "“Customers phone par price sunke delay kar dete hain aur safety proof maangte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
+    desc: "Home vs commercial kitchen treatments, herbal non-toxic chemical safety certificates aur transparent pricing online na hone se client decision delay karta hai.",
+    recommendation: "Instant 1-Tap Home & Commercial AMC Estimator with Safety Certificate Vault",
+    sankalps: [
+      "This week, I will create an instant quote selector for 1BHK/2BHK/3BHK herbal pest treatments.",
+      "This week, I will display our government approved non-toxic safety certifications clearly.",
+      "This week, I will offer a festive home pest safety audit for all GBS chapter members."
+    ],
+    referralAsk: "Please introduce me to restaurant owners, housing society secretaries, or families moving into new homes who need certified, odourless pest control.",
+    previewType: "pest_control_selector"
+  },
+  {
+    id: "water_purification",
+    category: "Water Purification",
+    keywords: ["water purification", "water purifier", "ro filter", "uv filter", "commercial ro", "water softener", "alkaline water"],
+    statement: "“Clients TDS reading aur filter replacement schedule bhool jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`,
+    desc: "Regular membrane maintenance aur pure water TDS testing proof digital na hone se clients filter service miss kar dete hain aur water quality drop hoti hai.",
+    recommendation: "TDS Health Checker & Automated Filter Cartridge Replacement Reminder Bot",
+    sankalps: [
+      "This week, I will launch a free doorstep water TDS testing booking link for housing societies.",
+      "This week, I will automate membrane service reminder messages on WhatsApp.",
+      "This week, I will audit the drinking water purification system of 5 fellow GBS member offices."
+    ],
+    referralAsk: "Please introduce me to homeowners, restaurant managers, or dialysis/school centers wanting certified RO/UV water purification and guaranteed prompt servicing.",
+    previewType: "pest_control_selector"
+  },
+  {
+    id: "tours_travels",
+    category: "Tours & Travels",
+    keywords: ["tours & travels", "travel agent", "holiday packages", "dubai package", "kashmir", "bali", "visa"],
+    statement: "“Clients online portals se flight compare karke drop ho jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>`,
+    desc: "Curated day-wise luxury itinerary aur 1-tap WhatsApp visa assistance na hone se prospect impersonal OTA apps par chala jata hai.",
+    recommendation: "Interactive Curated International Holiday Itinerary Planner with 1-Tap Visa Lead Engine",
+    sankalps: [
+      "This week, I will publish our top 3 festive holiday itineraries (Dubai, Kashmir, Bali) with day-wise details.",
+      "This week, I will showcase client video reels of hassle-free overseas trips.",
+      "This week, I will share our exclusive corporate retreat packages with GBS business owners."
+    ],
+    referralAsk: "Please introduce me to families planning their Diwali vacations, or business owners arranging corporate incentive tours for their top performers.",
+    previewType: "travel_itinerary"
+  },
+  {
+    id: "hotel_resort",
+    category: "Hotel & Resort",
+    keywords: ["hotel & resort", "resort", "hotel", "staycation", "destination wedding", "banquet hall", "weekend getaway"],
+    statement: "“Direct bookings miss ho rahi hain aur OTAs 20% commission le rahe hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>`,
+    desc: "Guest OTA par search karta hai, jabki direct booking par complimentary upgrade ya direct WhatsApp booking link na hone se commission cut ho jata hai.",
+    recommendation: "Direct High-Margin Room & Destination Wedding Banquet Booking Engine",
+    sankalps: [
+      "This week, I will launch a direct WhatsApp booking offer that saves guest 15% vs OTA.",
+      "This week, I will showcase a 360-degree virtual tour of our resort rooms and banquet lawn.",
+      "This week, I will offer a festive weekend staycation package exclusively to GBS members."
+    ],
+    referralAsk: "Please introduce me to families planning destination weddings, event planners, or companies planning an offsite executive retreat.",
+    previewType: "travel_itinerary"
+  },
+  {
+    id: "real_estate_property",
+    category: "Real Estate Property",
+    keywords: ["real estate property", "real estate", "property", "flats", "apartments", "plots", "residential property", "broker"],
+    statement: "“Buyers 10 brokers se property shortlist karke confuse ho jaate hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>`,
+    desc: "Carpet area transparency, RERA registration numbers aur verified video walkthroughs web link par na hone se buyers site visit postpone karte hain.",
+    recommendation: "Verified Direct Builder & Resale Property Showcase with Instant Video Walkthroughs",
+    sankalps: [
+      "This week, I will launch an interactive property inventory link with verified RERA certificates.",
+      "This week, I will share video walkthrough links with carpet area breakdowns on WhatsApp.",
+      "This week, I will connect with 5 GBS investors seeking high rental yield residential units."
+    ],
+    referralAsk: "Please introduce me to home seekers looking for 2BHK/3BHK flats with clear titles, or investors seeking verified high-rental properties.",
+    previewType: "property_showcase"
+  },
+  {
+    id: "commercial_property",
+    category: "Commercial Property",
+    keywords: ["commercial property", "retail shops", "office spaces", "industrial shed", "warehouse", "corporate leasing"],
+    statement: "“Commercial investors exact rental yields aur carpet area floor plans maangte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/><path d="M3 21h18"/><path d="M9 7h6M9 11h6M9 15h6"/></svg>`,
+    desc: "Floor loading capacity, power load, ceiling height aur clear lease ROI documents online na hone se corporate deals me 6 mahine lagte hain.",
+    recommendation: "Commercial ROI & Rental Yield Visualizer with Floor-Plan Downloads",
+    sankalps: [
+      "This week, I will publish our commercial leasing listings with certified ROI and footfall analytics.",
+      "This week, I will build an instant floor-plan download link for corporate retail brands.",
+      "This week, I will assist 2 fellow GBS business owners in acquiring high-growth office/retail space."
+    ],
+    referralAsk: "Please introduce me to retail brand expansion heads, doctors, or corporate companies looking to buy or lease 1,000+ sq.ft commercial and office properties.",
+    previewType: "property_showcase"
+  },
+  {
+    id: "building_redevelopment",
+    category: "Building Redevelopment",
+    keywords: ["building redevelopment", "redevelopment", "society redevelopment", "slum rehabilitation", "builder", "construction"],
+    statement: "“Society members trust issue ki wajah se project 2 saal tak delay karte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="2"/><line x1="15" y1="22" x2="15" y2="2"/></svg>`,
+    desc: "Past project delivery track records, additional carpet area benefit calculators aur bank guarantee proofs online na hone se society meetings me consensus nahi banta.",
+    recommendation: "Transparent Society Redevelopment Portal with 3D Architectural Vision",
+    sankalps: [
+      "This week, I will publish a transparent society redevelopment FAQ portal.",
+      "This week, I will demonstrate a live carpet area enhancement calculator for housing societies.",
+      "This week, I will present our verified financial strength credentials to prospective housing societies."
+    ],
+    referralAsk: "Please introduce me to Housing Society Committee Members or Managing Secretaries in 30+ year old buildings planning structured redevelopment.",
+    previewType: "property_showcase"
+  },
+  {
+    id: "diamond_jewellery",
+    category: "Diamond Jewellery",
+    keywords: ["diamond jewellery", "diamond", "gold jewellery", "solitaire", "engagement rings", "gia certified", "fine jewellery"],
+    statement: "“Customers certification aur carat authenticity ke clear documents online chahte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 18 3 22 9 12 22 2 9 6 3"/><line x1="2" y1="9" x2="22" y2="9"/></svg>`,
+    desc: "Solitaire 4Cs (Cut, Clarity, Color, Carat) aur GIA/IGI certificates interactive online viewer me na hone se buyers showroom aane se jhijhakte hain.",
+    recommendation: "Certified Solitaire Lookbook with Live 360° Ring Preview & Consultation Booker",
+    sankalps: [
+      "This week, I will launch an interactive Solitaire Diamond guide with transparent 4C pricing.",
+      "This week, I will showcase our top 10 bridal engagement ring designs in high resolution.",
+      "This week, I will provide a complimentary diamond authenticity check for GBS members' families."
+    ],
+    referralAsk: "Please introduce me to families planning weddings, or individuals looking for certified natural and lab-grown solitaire diamond jewellery.",
+    previewType: "jewellery_lookbook"
+  },
+  {
+    id: "jewellery_manufacturing",
+    category: "Jewellery Manufacturing",
+    keywords: ["jewellery manufacturing", "jewellery manufacturer", "cad cam jewellery", "casting", "gold casting", "diamond casting", "b2b jewellery"],
+    statement: "“Retail jewellers casting finish aur weight precision par instant updates maangte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><polyline points="12 9 12 12 13.5 13.5"/></svg>`,
+    desc: "CAD designs, casting sample approvals aur live order job status WhatsApp par manually coordinate karne se manufacturing errors aur delays aate hain.",
+    recommendation: "B2B Custom Jewellery CAD/CAM Order Tracker & Weight Precision Portal",
+    sankalps: [
+      "This week, I will launch a 1-tap design submission portal for retail jeweller clients.",
+      "This week, I will automate job-card stage tracking from CAD casting to final rhodium polish.",
+      "This week, I will demonstrate our zero-loss micro-setting technology to 3 retail jeweller chains."
+    ],
+    referralAsk: "Please introduce me to retail jewellery showroom owners wanting high-precision custom CAD/CAM casting and timely festive order delivery.",
+    previewType: "jewellery_lookbook"
+  },
+  {
+    id: "plastic_bag_manufacturing",
+    category: "Plastic Bag Manufacturing",
+    keywords: ["plastic bag manufacturing", "plastic bags", "poly bags", "packaging bags", "ldpe", "hdpe", "custom printed bags", "courier bags"],
+    statement: "“Buyers custom micron thickness, size aur bulk slab rates phone par calculate nahi kar paate!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
+    desc: "Clients size (inches), thickness (microns) aur printing cylinder costs phone par calculate karne me confuse ho jaate hain, jisse quote finalizing me delay hota hai.",
+    recommendation: "Instant Bag Dimension & Micron GSM Estimator with Bulk Slab Pricing Calculator",
+    sankalps: [
+      "This week, I will launch an instant dimension-to-weight calculation tool for B2B buyers.",
+      "This week, I will showcase government-compliant bio-degradable & recyclable certified options.",
+      "This week, I will audit the packaging bag requirements of 5 fellow GBS e-commerce/retail members."
+    ],
+    referralAsk: "Please introduce me to garment manufacturers, ecommerce brands, or supermarket chains needing bulk custom-printed packaging and courier bags.",
+    previewType: "manufacturing_spec"
+  },
+  {
+    id: "tarpaulin",
+    category: "Tarpaulin",
+    keywords: ["tarpaulin", "tirpal", "waterproof covers", "monsoon shed", "truck tarpaulin", "hdpe sheet", "agriculture tarpaulin"],
+    statement: "“Monsoon aane par customers last minute rate aur GSM durability verify karna chahte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 12 1 23 6 12 23 1 6"/></svg>`,
+    desc: "Heavy GSM vs light GSM comparison, eyelet strength aur UV protection life span digital catalog me na hone se client cheap inferior quality se compare karta hai.",
+    recommendation: "Rapid GSM Durability Selector & Waterproof Area Calculator Engine",
+    sankalps: [
+      "This week, I will publish our visual GSM durability comparison guide (120 GSM to 500 GSM).",
+      "This week, I will launch an instant square-meter area cost calculator on WhatsApp.",
+      "This week, I will connect with logistics fleet owners in our network for seasonal tarpaulin replacement."
+    ],
+    referralAsk: "Please introduce me to transport fleet owners, warehouse operators, or construction project heads needing heavy-duty waterproof tarpaulins and monsoon covers.",
+    previewType: "manufacturing_spec"
+  },
+  {
+    id: "curtains_sofa_material",
+    category: "Curtains & Sofa Material",
+    keywords: ["curtains & sofa material", "curtains", "sofa material", "furnishings", "upholstery", "velvet", "sheer", "sofa fabric", "drapes", "curtainess and sofa material"],
+    statement: "“Customers phone par fabric texture aur room matching samajh nahi paate!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>`,
+    desc: "Velvet, sheer, blackout drapes aur sofa fabric rubbing fastness (Martindale count) phone par describe nahi hoti, jisse client showroom aane me mahino lagata hai.",
+    recommendation: "Interactive Fabric Texture Visualizer & Window Yardage Estimation Engine",
+    sankalps: [
+      "This week, I will launch a digital fabric swatch selector with high-res texture zoom.",
+      "This week, I will create an instant window dimension to fabric meterage calculator.",
+      "This week, I will offer a complimentary festive home curtain styling audit for 3 GBS members."
+    ],
+    referralAsk: "Please introduce me to interior designers, architects, or homeowners looking for premium blackout curtains, sheer drapes, and luxury sofa upholstery fabrics.",
+    previewType: "curtains_visualizer"
+  },
+  {
+    id: "education",
+    category: "Education",
+    keywords: ["education", "coaching", "classes", "tuition", "entrance exam", "school", "college", "tutoring", "admissions"],
+    statement: "“Parents results aur teaching methodology ka authentic visual proof maangte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
+    desc: "Toppers' verified marks, faculty experience aur free demo class booking web par na hone se parents admission lene se pehle 4 competitor coaching centers visit karte hain.",
+    recommendation: "Student Success Testimonials Wall & 1-Tap Free Trial Class Scheduler",
+    sankalps: [
+      "This week, I will showcase our past students' success stories and rankers on a verified link.",
+      "This week, I will enable 1-click booking for a free diagnostic assessment trial class.",
+      "This week, I will offer academic career counselling sessions for children of GBS members."
+    ],
+    referralAsk: "Please introduce me to parents of 9th-12th standard students seeking focused academic coaching, entrance test guidance, and guaranteed personal attention.",
+    previewType: "trainer_syllabus"
+  },
+  {
+    id: "swimming_pool",
+    category: "Swimming Pool",
+    keywords: ["swimming pool", "pool construction", "pool maintenance", "filtration plant", "jacuzzi", "swimming academy", "pool chemicals"],
+    statement: "“Resort owners aur societies water clarity filtration AMC ke liye trustworthy partner chahte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 16h20M2 20h20"/><circle cx="12" cy="7" r="3"/></svg>`,
+    desc: "Leak-proof swimming pool construction specs, water turnover cycles aur monthly chemical dosing records digital format me na hone se tenders me clarity nahi hoti.",
+    recommendation: "Pool Construction 3D Portfolio & Water Filtration AMC Service Ticket Portal",
+    sankalps: [
+      "This week, I will launch a digital showcase of our luxury infinity and skimmer pool installations.",
+      "This week, I will create an instant maintenance pricing calculator for housing societies and resorts.",
+      "This week, I will conduct a complimentary pool water safety test for 2 GBS member properties."
+    ],
+    referralAsk: "Please introduce me to hotel owners, bungalow owners, or housing society committees planning to build or renovate a crystal-clear swimming pool.",
+    previewType: "generic_showcase"
+  },
+  {
+    id: "foreign_exchange",
+    category: "Foreign Exchange (Forex)",
+    keywords: ["foreign exchange", "forex", "currency exchange", "travel card", "international money transfer", "usd inr", "forex card", "forgin exchange"],
+    statement: "“Overseas travellers live exchange rates aur doorstep currency delivery transparency chahte hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/></svg>`,
+    desc: "Live daily currency rates (USD, EUR, AED, GBP) phone par poochte-poochte customer online forex portals par chala jata hai jahan transparent rate visible hota hai.",
+    recommendation: "Live Real-Time Forex Rate Calculator & 1-Tap Doorstep Currency Delivery Desk",
+    sankalps: [
+      "This week, I will publish our live daily exchange rates with zero-hidden-markup transparency.",
+      "This week, I will enable 1-tap WhatsApp booking for international multi-currency travel cards.",
+      "This week, I will offer VIP doorstep currency exchange service to fellow GBS outbound travellers."
+    ],
+    referralAsk: "Please introduce me to students going abroad for higher studies, corporate travelers, or families holidaying internationally needing fast, certified foreign currency.",
+    previewType: "finance_calculator"
+  },
+  {
+    id: "general_business",
+    category: "Other / General Business",
+    keywords: ["business", "trading", "services", "manufacturing", "retail", "general"],
+    statement: "“Inquiries aati hain par follow-up automated na hone se 50% deals slip ho jaati hain!”",
+    svgIcon: `<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>`,
+    desc: "Inquiries phone ya WhatsApp par aati hain, par transparent digital catalog aur fast quotation calculator na hone se prospective clients delay karte hain.",
+    recommendation: "Standardised 24/7 Digital Sales Funnel & Instant WhatsApp Credential Hub",
+    sankalps: [
+      "This week, I will organise our core offerings into a clean, mobile-friendly link.",
+      "This week, I will automate answering repetitive basic customer questions on WhatsApp.",
+      "This week, I will share our verified credibility credentials with my networking circle."
+    ],
+    referralAsk: "Please introduce me to business leaders who value genuine quality and want to elevate their brand credibility through modern web systems.",
+    previewType: "generic_showcase"
+  }
+]
 };
 
 // 3-Question Diagnostic Questions System
@@ -775,7 +791,7 @@ const QUIZ_QUESTIONS = [
       { id: "whatsapp_photos", icon: "💬", title: "Send 40-50 photos or PDFs on WhatsApp", desc: "Scrolling through phone gallery to forward loose photos & heavy PDFs." },
       { id: "official_site", icon: "🌐", title: "Modern Official Fast Website", desc: "An organised digital showcase link with our best projects." },
       { id: "manual_call", icon: "📞", title: "I explain everything manually on phone calls", desc: "Spending 20-30 minutes on calls describing our services and pricing." },
-      { id: "showroom", icon: "🏬", title: "Invite them to visit showroom / office", desc: "Insisting they come over in person to see samples and catalogs." }
+      { id: "showroom", icon: "🏢", title: "Invite them to visit showroom / office", desc: "Insisting they come over in person to see samples and catalogs." }
     ]
   },
   {
@@ -792,7 +808,7 @@ const QUIZ_QUESTIONS = [
   }
 ];
 
-// App State
+// App State (Default Sound ON as requested!)
 const state = {
   ownerName: '',
   businessName: '',
@@ -804,7 +820,7 @@ const state = {
     timeSink: 'repetitive_info'
   },
   selectedSankalp: '',
-  soundEnabled: false
+  soundEnabled: true
 };
 
 // Web Audio API Synthesis for Pure Temple Bells & Chimes
@@ -820,6 +836,9 @@ class TempleAcousticAudio {
         this.ctx = new AudioCtx();
       }
     }
+    if (this.ctx && this.ctx.state === 'suspended') {
+      this.ctx.resume().catch(() => {});
+    }
   }
 
   playTempleBell() {
@@ -827,29 +846,25 @@ class TempleAcousticAudio {
     try {
       this.init();
       if (!this.ctx) return;
-      if (this.ctx.state === 'suspended') {
-        this.ctx.resume();
-      }
-
       const now = this.ctx.currentTime;
-      // High-purity layered temple bell harmonics
-      const freqs = [528, 1056, 1584, 2112];
-      freqs.forEach((freq, idx) => {
+      const fundamentals = [587.33, 880, 1174.66, 1760];
+
+      fundamentals.forEach((freq, idx) => {
         const osc = this.ctx.createOscillator();
         const gain = this.ctx.createGain();
-
-        osc.type = idx === 0 ? 'sine' : 'triangle';
+        osc.type = 'sine';
         osc.frequency.setValueAtTime(freq, now);
 
-        const initialGain = 0.18 / (idx + 1);
-        gain.gain.setValueAtTime(initialGain, now);
-        gain.gain.exponentialRampToValueAtTime(0.0001, now + (idx === 0 ? 2.4 : 1.2));
+        const decay = 2.4 - idx * 0.4;
+        const initialVol = 0.16 / (idx + 1);
+
+        gain.gain.setValueAtTime(initialVol, now);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + decay);
 
         osc.connect(gain);
         gain.connect(this.ctx.destination);
-
         osc.start(now);
-        osc.stop(now + 2.5);
+        osc.stop(now + decay);
       });
     } catch (e) {}
   }
@@ -859,26 +874,23 @@ class TempleAcousticAudio {
     try {
       this.init();
       if (!this.ctx) return;
-      if (this.ctx.state === 'suspended') {
-        this.ctx.resume();
-      }
-
       const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
+      const notes = [659.25, 783.99, 1046.50];
 
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(784, now); // G5
-      osc.frequency.exponentialRampToValueAtTime(1174, now + 0.15); // D6
+      notes.forEach((freq, idx) => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, now + idx * 0.05);
 
-      gain.gain.setValueAtTime(0.12, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+        gain.gain.setValueAtTime(0.08, now + idx * 0.05);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.05 + 0.6);
 
-      osc.connect(gain);
-      gain.connect(this.ctx.destination);
-
-      osc.start(now);
-      osc.stop(now + 0.28);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now + idx * 0.05);
+        osc.stop(now + idx * 0.05 + 0.65);
+      });
     } catch (e) {}
   }
 }
@@ -899,57 +911,62 @@ function initFloralCanvas() {
   });
 
   const petals = [];
-  const petalCount = window.innerWidth < 600 ? 16 : 24;
+  const petalCount = window.innerWidth < 600 ? 18 : 34;
+  const colors = [
+    'rgba(235, 120, 23, 0.45)', // Saffron
+    'rgba(247, 183, 49, 0.55)', // Marigold Gold
+    'rgba(197, 146, 57, 0.40)', // Metallic Gold
+    'rgba(183, 28, 28, 0.30)'   // Kumkum Crimson
+  ];
 
   for (let i = 0; i < petalCount; i++) {
     petals.push({
       x: Math.random() * width,
       y: Math.random() * height,
-      size: Math.random() * 7 + 5,
-      speedY: Math.random() * 0.7 + 0.35,
-      speedX: Math.sin(Math.random() * Math.PI) * 0.45,
-      angle: Math.random() * 360,
-      angularSpeed: (Math.random() - 0.5) * 1.2,
-      color: ['#FFA000', '#F57C00', '#FFD54F', '#E65100'][Math.floor(Math.random() * 4)],
-      opacity: Math.random() * 0.35 + 0.2
+      size: Math.random() * 5 + 3.5,
+      speedY: Math.random() * 0.55 + 0.25,
+      speedX: Math.random() * 0.4 - 0.2,
+      rotation: Math.random() * 360,
+      rotSpeed: Math.random() * 1.2 - 0.6,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      sway: Math.random() * 2 + 1
     });
   }
 
-  function draw() {
+  let time = 0;
+  function animate() {
     ctx.clearRect(0, 0, width, height);
+    time += 0.015;
 
     petals.forEach(p => {
-      ctx.save();
-      ctx.translate(p.x, p.y);
-      ctx.rotate((p.angle * Math.PI) / 180);
-      ctx.fillStyle = p.color;
-      ctx.globalAlpha = p.opacity;
-
-      ctx.beginPath();
-      ctx.ellipse(0, 0, p.size, p.size * 0.6, 0, 0, Math.PI * 2);
-      ctx.fill();
-
-      ctx.restore();
-
       p.y += p.speedY;
-      p.x += p.speedX;
-      p.angle += p.angularSpeed;
+      p.x += Math.sin(time + p.sway) * 0.35 + p.speedX;
+      p.rotation += p.rotSpeed;
 
       if (p.y > height + 20) {
-        p.y = -20;
+        p.y = -15;
         p.x = Math.random() * width;
       }
-      if (p.x > width + 20) p.x = -20;
-      if (p.x < -20) p.x = width + 20;
+      if (p.x > width + 20) p.x = -10;
+      if (p.x < -20) p.x = width + 10;
+
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate((p.rotation * Math.PI) / 180);
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, p.size, p.size * 0.65, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
     });
 
-    requestAnimationFrame(draw);
+    requestAnimationFrame(animate);
   }
 
-  draw();
+  animate();
 }
 
-// Populate the Category Dropdown with all 45+ GBS Profiles
+// Populate Category Dropdown
 function populateCategoryDropdown() {
   const select = document.getElementById('businessCategory');
   if (!select) return;
@@ -1059,15 +1076,9 @@ function startSynthesisCeremony() {
     document.getElementById('scanStep4')
   ];
 
-  nodes.forEach(n => {
-    n.classList.remove('active', 'completed');
-  });
-
-  fill.style.width = '0%';
-
-  // Step 1
+  nodes.forEach(n => { n.classList.remove('active', 'completed'); });
+  fill.style.width = '10%';
   nodes[0].classList.add('active');
-  fill.style.width = '25%';
 
   setTimeout(() => {
     nodes[0].classList.remove('active');
@@ -1094,7 +1105,7 @@ function startSynthesisCeremony() {
   }, 2400);
 
   setTimeout(() => {
-    // Show quick sweet Prasad seal transition
+    // Show sweet Prasad seal transition
     showScreen('modakLoadingScreen');
     const modakFill = document.getElementById('modakProgressFill');
     modakFill.style.width = '0%';
@@ -1108,6 +1119,185 @@ function startSynthesisCeremony() {
   }, 3200);
 }
 
+// Generate Detailed Solutions for the 3 Questions Answered by the User
+function generateDetailedSolutions(quizAnswers, cat) {
+  const catName = cat.category;
+
+  // 1. Client Discovery Solution
+  const discoverySolutions = {
+    referrals: {
+      questionTitle: "Question 1 • Discovery Strategy",
+      userResponse: "Word-of-Mouth & GBS Referrals",
+      frictionTitle: "The Vighna: Verbal referrals get lost because chapter peers lack an instant link",
+      frictionDesc: `Your clients and GBS chapter members genuinely trust your work in ${catName}. But when a friend or prospect asks for a recommendation, members have to type long messages or search for your old card. Over 60% of warm word-of-mouth referrals drop off before they ever reach your WhatsApp.`,
+      solutionTitle: "Bappa’s Solution: 1-Tap GBS Chapter Referral Card & Digital Credentials",
+      steps: [
+        `Equip every GBS member with your personalized 10-second web showcase highlighting ${catName} capabilities.`,
+        `Pre-fill WhatsApp referral inquiry links with your services so clients can message you in 1 tap.`,
+        `Showcase 3 verified past client testimonials & project photos right at the top for instant credibility.`
+      ],
+      impact: "⚡ Result: Converts 3x more verbal recommendations into confirmed WhatsApp business inquiries."
+    },
+    social: {
+      questionTitle: "Question 1 • Discovery Strategy",
+      userResponse: "Instagram & Social Media",
+      frictionTitle: "The Vighna: Casual 'Price please?' comments & DMs that never convert",
+      frictionDesc: `Social media brings likes and direct messages, but 80% of prospects ask 'What is the price?' and disappear once you reply. Typing out pricing in DMs wastes hours and attracts bargain hunters who don't understand the craft of ${catName}.`,
+      solutionTitle: "Bappa’s Solution: Interactive Bio-Link Funnel & Instant Specification Filter",
+      steps: [
+        `Place an interactive, high-speed estimator link in your Instagram bio and post descriptions.`,
+        `Allow serious buyers to filter by budget, service type, or timeline before contacting you.`,
+        `Direct high-intent prospects straight to your WhatsApp with their selected specifications already filled out.`
+      ],
+      impact: "⚡ Result: Filters out casual window-shoppers and delivers pre-qualified, serious buyer leads."
+    },
+    search: {
+      questionTitle: "Question 1 • Discovery Strategy",
+      userResponse: "Google Search & Local Maps",
+      frictionTitle: "The Vighna: High search traffic dropping off due to slow or outdated links",
+      frictionDesc: `When local buyers search for ${catName} on Google, they compare 3 to 4 local businesses in seconds. If your link is slow, not mobile-optimized, or lacks verified reviews, prospects immediately bounce to your competitor.`,
+      solutionTitle: "Bappa’s Solution: High-Speed Mobile Landing Page with Verified Trust Badges",
+      steps: [
+        `Fast, mobile-first Google-optimized landing page with sub-1-second loading speed.`,
+        `Live Google Business reviews and project location tags directly integrated on the page.`,
+        `Instant 'Click to Call / WhatsApp' sticky action bar for immediate mobile conversions.`
+      ],
+      impact: "⚡ Result: Boosts visitor-to-call conversion rate by over 65% for local search traffic."
+    },
+    direct: {
+      questionTitle: "Question 1 • Discovery Strategy",
+      userResponse: "Direct Walk-ins & Outbound Calls",
+      frictionTitle: "The Vighna: Manual follow-ups get lost after the initial conversation",
+      frictionDesc: `Walk-ins and cold discussions take heavy energy, but after prospects leave your counter or hang up, there is no automated touchpoint. Paper brochures and business cards end up misplaced in drawers.`,
+      solutionTitle: "Bappa’s Solution: Instant QR-Code Digital Brochure & Automated WhatsApp Ping",
+      steps: [
+        `Place a dignified QR counter stand: prospects scan once to receive your complete ${catName} lookbook on WhatsApp.`,
+        `Automatically capture their number for polite, scheduled festive follow-up broadcasts.`,
+        `Replace printed paper catalogs with a zero-cost digital lookbook that you can update anytime.`
+      ],
+      impact: "⚡ Result: Captures 90%+ of walk-in contact details for long-term repeat orders."
+    }
+  };
+
+  // 2. Portfolio / Showcase Solution
+  const portfolioSolutions = {
+    whatsapp_photos: {
+      questionTitle: "Question 2 • Work Presentation",
+      userResponse: "Send 40-50 photos or PDFs on WhatsApp",
+      frictionTitle: "The Vighna: WhatsApp media fatigue & buried high-ticket projects",
+      frictionDesc: `Sending 40 loose photos or a 35MB PDF floods the client's phone storage. Clients get overwhelmed, scroll past your finest ${catName} work, and ask for heavy discounts because loose photos look unorganized.`,
+      solutionTitle: "Bappa’s Solution: Curated 1-Tap Mobile Lookbook & Category Filter",
+      steps: [
+        `Organise your best ${catName} projects into high-resolution, instant-loading digital galleries.`,
+        `Let clients tap categories (e.g. Budget, Luxury, Fast Delivery, Commercial) to view exact relevant samples.`,
+        `Include clear 'Budget Starts From' guidelines and client outcome stories alongside each project.`
+      ],
+      impact: "⚡ Result: Projects look 10x more premium; clients make decisions in minutes instead of days."
+    },
+    official_site: {
+      questionTitle: "Question 2 • Work Presentation",
+      userResponse: "Modern Official Fast Website",
+      frictionTitle: "The Vighna: Static brochure site with zero interactive lead capture",
+      frictionDesc: `Having a website is great, but standard static websites act like digital visiting cards where visitors browse for 20 seconds and leave without giving their contact info.`,
+      solutionTitle: "Bappa’s Solution: High-Conversion Lead Magnet & Live WhatsApp Integration",
+      steps: [
+        `Embed interactive calculators or instant catalog download buttons that capture visitor phone numbers.`,
+        `Add 1-tap WhatsApp consultation buttons that ping your phone with the exact project the client was viewing.`,
+        `Display live social proof, client badges, and GBS chapter credibility seals.`
+      ],
+      impact: "⚡ Result: Turns passive website readers into active, inbound WhatsApp consultations."
+    },
+    manual_call: {
+      questionTitle: "Question 2 • Work Presentation",
+      userResponse: "Explain everything manually on phone calls",
+      frictionTitle: "The Vighna: Exhausting 30-minute calls repeating the same explanations",
+      frictionDesc: `Spending half your day on phone calls explaining materials, processes, or scope drains your key executive energy. Without visual proof on screen, clients still remain skeptical about ${catName} pricing.`,
+      solutionTitle: "Bappa’s Solution: Visual Explainer Guide & 3-Step Interactive Process Page",
+      steps: [
+        `Create a clean, visual 3-step walkthrough of how your ${catName} workflow operates.`,
+        `Send a polite 1-tap link before the phone call: 'Please take 60 seconds to review our visual scope here'.`,
+        `Calls shorten from 30 minutes to 5 minutes of focused deal closing.`
+      ],
+      impact: "⚡ Result: Saves 2-3 hours of proprietor time daily while dramatically increasing closing rates."
+    },
+    showroom: {
+      questionTitle: "Question 2 • Work Presentation",
+      userResponse: "Invite them to visit showroom / office",
+      frictionTitle: "The Vighna: Busy decision-makers delay visiting in person",
+      frictionDesc: `Asking modern corporate founders or busy clients to travel through traffic to visit your office creates friction. Many postpone for weeks or choose a competitor who offered an instant virtual preview.`,
+      solutionTitle: "Bappa’s Solution: 360° Virtual Walkthrough & Digital Sample Selector",
+      steps: [
+        `Provide an interactive online preview of your showroom samples, models, and material swatches.`,
+        `Enable clients to shortlist 3 favorite items online first before scheduling their VIP physical visit.`,
+        `Offer an instant 'Book a VIP Showroom Slot' scheduler that sends directions and calendar reminder.`
+      ],
+      impact: "⚡ Result: Converts remote and out-of-town inquiries into confirmed in-person showroom visits."
+    }
+  };
+
+  // 3. Operational Time Sink Solution
+  const timeSinkSolutions = {
+    repetitive_info: {
+      questionTitle: "Question 3 • Operational Automation",
+      userResponse: "Repeating same basic rates & specs",
+      frictionTitle: "The Vighna: Highly paid staff acting like human answering machines",
+      frictionDesc: `Answering 'What is the starting rate?', 'What are the dimensions?', or 'What is the warranty?' 25 times a day drains your staff's focus from doing actual revenue-generating work in ${catName}.`,
+      solutionTitle: "Bappa’s Solution: Self-Service WhatsApp FAQ & Dynamic Price Estimator",
+      steps: [
+        `Deploy an interactive digital rate card & specification selector with instant transparent estimates.`,
+        `Provide a 1-tap automated WhatsApp FAQ bot that handles standard inquiries 24/7 without manual intervention.`,
+        `Free your team to focus exclusively on negotiation and closing finalized high-margin deals.`
+      ],
+      impact: "⚡ Result: Eliminates 80% of repetitive inquiry calls and replies instantly even at 11 PM."
+    },
+    chasing_quotes: {
+      questionTitle: "Question 3 • Operational Automation",
+      userResponse: "Chasing unpaid quotes & follow-ups",
+      frictionTitle: "The Vighna: The awkward quote chase & lost revenue in follow-up limbo",
+      frictionDesc: `Sending written quotations only to have clients ghost or say 'We are reviewing' creates severe cash flow uncertainty. Manual follow-ups feel desperate and often get delayed.`,
+      solutionTitle: "Bappa’s Solution: Interactive Digital Quotation with Expiry & Automated Follow-Up",
+      steps: [
+        `Send clean web-based quotations with itemized breakdowns and instant 1-tap WhatsApp accept buttons.`,
+        `Add polite, automated scheduled reminders: 'Your festive rate lock expires in 48 hours'.`,
+        `Get notified the exact second the prospective client opens and views your proposal.`
+      ],
+      impact: "⚡ Result: Cuts quote decision cycles from 14 days down to 48 hours with zero awkwardness."
+    },
+    coordinating_slots: {
+      questionTitle: "Question 3 • Operational Automation",
+      userResponse: "Coordinating appointments & visits",
+      frictionTitle: "The Vighna: 10 back-and-forth messages just to fix one meeting time",
+      frictionDesc: `'Are you free Tuesday at 3 PM?' 'No, how about Thursday?' This endless back-and-forth leads to missed appointments, double-bookings, and frustrated prospective clients.`,
+      solutionTitle: "Bappa’s Solution: 1-Tap Calendar Booking with Automated WhatsApp Confirmations",
+      steps: [
+        `Provide a dedicated booking link where clients choose available inspection or consultation slots.`,
+        `Automate instant WhatsApp & calendar confirmations with Google Maps directions attached.`,
+        `Send an automated reminder 2 hours prior to eliminate no-shows and last-minute cancellations.`
+      ],
+      impact: "⚡ Result: Zero double bookings, zero no-shows, and 100% professional scheduling experience."
+    },
+    manual_estimates: {
+      questionTitle: "Question 3 • Operational Automation",
+      userResponse: "Manually drafting custom proposals",
+      frictionTitle: "The Vighna: Spending hours in Excel/Word drafting proposals from scratch",
+      frictionDesc: `Every time an inquiry comes in, spending 2 hours calculating area, quantities, and terms delays proposal delivery. The fastest responder in ${catName} wins 70% of deals.`,
+      solutionTitle: "Bappa’s Solution: Rapid Modular Proposal Builder & Template Engine",
+      steps: [
+        `Standardize your ${catName} offerings into modular pricing building blocks.`,
+        `Generate professional, branded PDF/web proposals in under 3 minutes with pre-set terms.`,
+        `Include digital signature and token advance payment integration for immediate deal locking.`
+      ],
+      impact: "⚡ Result: Deliver stunning, professional proposals within 15 minutes of the client's call."
+    }
+  };
+
+  return [
+    discoverySolutions[quizAnswers.discovery] || discoverySolutions.referrals,
+    portfolioSolutions[quizAnswers.portfolio] || portfolioSolutions.whatsapp_photos,
+    timeSinkSolutions[quizAnswers.timeSink] || timeSinkSolutions.repetitive_info
+  ];
+}
+
 // Populate Shubh Patrika with Reasoned Diagnosis
 function populatePatrikaResults() {
   const cat = state.categoryObj;
@@ -1117,76 +1307,117 @@ function populatePatrikaResults() {
   document.getElementById('reportIndustryCategory').textContent = cat.category;
   document.getElementById('previewBizTitle').textContent = state.businessName;
 
-  // 1. Build Personalized Strengths based on Answers
+  const solCatLabel = document.getElementById('solutionsCategoryLabel');
+  if (solCatLabel) solCatLabel.textContent = cat.category;
+
+  // 1. Render Detailed 3-Answer Solutions
+  const threeSolutionsContainer = document.getElementById('threeSolutionsCardsGrid');
+  if (threeSolutionsContainer) {
+    threeSolutionsContainer.innerHTML = '';
+    const solutions = generateDetailedSolutions(state.quizAnswers, cat);
+
+    solutions.forEach(sol => {
+      const card = document.createElement('div');
+      card.className = 'solution-detail-card';
+
+      const stepsHtml = sol.steps.map(step => `
+        <li class="sol-step-item">
+          <span class="sol-check-icon">✓</span>
+          <span>${step}</span>
+        </li>
+      `).join('');
+
+      card.innerHTML = `
+        <div class="sol-tag-row">
+          <span class="sol-q-badge">${sol.questionTitle}</span>
+          <span class="sol-ans-pill">Your Answer: "${sol.userResponse}"</span>
+        </div>
+        <div class="sol-friction-box">
+          <div class="sol-friction-title">⚠️ ${sol.frictionTitle}</div>
+          <p class="sol-friction-desc">${sol.frictionDesc}</p>
+        </div>
+        <div class="sol-solution-box">
+          <div class="sol-solution-title">✨ ${sol.solutionTitle}</div>
+          <ul class="sol-steps-list">
+            ${stepsHtml}
+          </ul>
+        </div>
+        <div class="sol-impact-badge">${sol.impact}</div>
+      `;
+
+      threeSolutionsContainer.appendChild(card);
+    });
+  }
+
+  // 2. Strengths based on Answers
   const strengthsContainer = document.getElementById('strengthsContainer');
-  strengthsContainer.innerHTML = '';
+  if (strengthsContainer) {
+    strengthsContainer.innerHTML = '';
+    const strengthsList = [];
 
-  const strengthsList = [];
+    if (state.quizAnswers.discovery === 'referrals') {
+      strengthsList.push({
+        title: "Strong Referral Goodwill & Chapter Trust",
+        desc: "Built on authentic word-of-mouth and deep peer trust across the GBS network."
+      });
+    } else if (state.quizAnswers.discovery === 'social') {
+      strengthsList.push({
+        title: "Modern Social Presence & Visual Appeal",
+        desc: "Great aesthetic sense and openness to connecting with younger digital audiences."
+      });
+    } else if (state.quizAnswers.discovery === 'search') {
+      strengthsList.push({
+        title: "High Intent & Direct Search Discovery",
+        desc: "Clients actively looking for your industry expertise search and discover your firm."
+      });
+    } else {
+      strengthsList.push({
+        title: "High-Touch Personal Rapport",
+        desc: "Mastery of face-to-face relationship building and direct customer satisfaction."
+      });
+    }
 
-  // Discovery Strength
-  if (state.quizAnswers.discovery === 'referrals') {
+    if (state.quizAnswers.portfolio === 'official_site') {
+      strengthsList.push({
+        title: "Forward-Thinking Digital Approach",
+        desc: "Awareness that serious clients require a credible, modern web presence."
+      });
+    } else {
+      strengthsList.push({
+        title: "Hands-on Proprietor Dedication",
+        desc: "100% genuine effort and personalized, high-touch consultation for every client."
+      });
+    }
+
     strengthsList.push({
-      title: "Strong Referral Goodwill & Trust",
-      desc: "Built on authentic word-of-mouth and deep peer trust across the GBS network."
+      title: "Proven Trade Reliability",
+      desc: `Delivering genuine value and earning consistent repeat orders in ${cat.category}.`
     });
-  } else if (state.quizAnswers.discovery === 'social') {
-    strengthsList.push({
-      title: "Modern Social Presence & Visual Appeal",
-      desc: "Great aesthetic sense and openness to connecting with younger digital audiences."
-    });
-  } else if (state.quizAnswers.discovery === 'search') {
-    strengthsList.push({
-      title: "High Intent & Direct Search Discovery",
-      desc: "Clients actively looking for your industry expertise search and discover your firm."
-    });
-  } else {
-    strengthsList.push({
-      title: "High-Touch Personal Rapport",
-      desc: "Mastery of face-to-face relationship building and direct customer satisfaction."
+
+    strengthsList.forEach(s => {
+      const row = document.createElement('div');
+      row.className = 'strength-row';
+      row.innerHTML = `
+        <div class="strength-icon-box">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="strength-details">
+          <h4 class="strength-title">${s.title}</h4>
+          <p class="strength-desc">${s.desc}</p>
+        </div>
+      `;
+      strengthsContainer.appendChild(row);
     });
   }
 
-  // Process Strength
-  if (state.quizAnswers.portfolio === 'official_site') {
-    strengthsList.push({
-      title: "Forward-Thinking Digital Approach",
-      desc: "Awareness that serious clients require a credible, modern web presence."
-    });
-  } else {
-    strengthsList.push({
-      title: "Hands-on Proprietor Dedication",
-      desc: "100% genuine effort and personalized, high-touch consultation for every client."
-    });
-  }
-
-  // Business Integrity Strength
-  strengthsList.push({
-    title: "Proven Trade Reliability",
-    desc: `Delivering genuine value and earning consistent repeat orders in ${cat.category}.`
-  });
-
-  strengthsList.forEach(s => {
-    const row = document.createElement('div');
-    row.className = 'strength-row';
-    row.innerHTML = `
-      <div class="strength-icon-box">
-        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-      </div>
-      <div class="strength-details">
-        <h4 class="strength-title">${s.title}</h4>
-        <p class="strength-desc">${s.desc}</p>
-      </div>
-    `;
-    strengthsContainer.appendChild(row);
-  });
-
-  // 2. Identified Vighna & Direct Reasoning
+  // 3. Primary Identified Vighna
   const vighnaEmoji = document.getElementById('vighnaEmoji');
-  vighnaEmoji.innerHTML = cat.svgIcon;
+  if (vighnaEmoji) vighnaEmoji.innerHTML = cat.svgIcon;
 
-  document.getElementById('vighnaStatement').textContent = cat.statement;
+  const vighnaStatement = document.getElementById('vighnaStatement');
+  if (vighnaStatement) vighnaStatement.textContent = cat.statement;
 
   let portfolioAnswerText = "sending loose portfolio photos on WhatsApp";
   if (state.quizAnswers.portfolio === 'manual_call') portfolioAnswerText = "explaining everything manually on calls";
@@ -1197,50 +1428,58 @@ function populatePatrikaResults() {
   if (state.quizAnswers.timeSink === 'coordinating_slots') timeSinkText = "coordinating meeting & service time slots";
   if (state.quizAnswers.timeSink === 'manual_estimates') timeSinkText = "manually drafting proposals from scratch";
 
-  document.getElementById('vighnaReasoningTag').textContent = `Reasoning from your answers:`;
-  document.getElementById('vighnaDesc').innerHTML = `
-    You mentioned that you rely on <strong>${portfolioAnswerText}</strong> and spend too much time <strong>${timeSinkText}</strong>.<br><br>
-    ${cat.desc}
-  `;
+  const vighnaReasoningTag = document.getElementById('vighnaReasoningTag');
+  if (vighnaReasoningTag) vighnaReasoningTag.textContent = `Reasoning from your answers:`;
 
-  // 3. Ek Sankalp Commitment Options
-  const sankalpContainer = document.getElementById('sankalpOptionsList');
-  sankalpContainer.innerHTML = '';
-
-  state.selectedSankalp = cat.sankalps[0];
-
-  cat.sankalps.forEach((sankalpText, idx) => {
-    const item = document.createElement('div');
-    item.className = `sankalp-choice-item ${idx === 0 ? 'active' : ''}`;
-    item.innerHTML = `
-      <div class="sankalp-radio-bullet"></div>
-      <span class="sankalp-choice-text">${sankalpText}</span>
+  const vighnaDesc = document.getElementById('vighnaDesc');
+  if (vighnaDesc) {
+    vighnaDesc.innerHTML = `
+      You mentioned that you rely on <strong>${portfolioAnswerText}</strong> and spend too much time <strong>${timeSinkText}</strong>.<br><br>
+      ${cat.desc}
     `;
+  }
 
-    item.addEventListener('click', () => {
-      templeAudio.playChime();
-      sankalpContainer.querySelectorAll('.sankalp-choice-item').forEach(el => el.classList.remove('active'));
-      item.classList.add('active');
-      state.selectedSankalp = sankalpText;
-      updateSankalpCanvas();
-      updateWhatsAppCta();
+  // 4. Ek Sankalp Commitment Options
+  const sankalpContainer = document.getElementById('sankalpOptionsList');
+  if (sankalpContainer) {
+    sankalpContainer.innerHTML = '';
+    state.selectedSankalp = cat.sankalps[0];
+
+    cat.sankalps.forEach((sankalpText, idx) => {
+      const item = document.createElement('div');
+      item.className = `sankalp-choice-item ${idx === 0 ? 'active' : ''}`;
+      item.innerHTML = `
+        <div class="sankalp-radio-bullet"></div>
+        <span class="sankalp-choice-text">${sankalpText}</span>
+      `;
+
+      item.addEventListener('click', () => {
+        templeAudio.playChime();
+        sankalpContainer.querySelectorAll('.sankalp-choice-item').forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+        state.selectedSankalp = sankalpText;
+        updateSankalpCanvas();
+        updateWhatsAppCta();
+      });
+
+      sankalpContainer.appendChild(item);
     });
+  }
 
-    sankalpContainer.appendChild(item);
-  });
-
-  // 4. "See It For My Business" (Interactive Miniature Website Preview)
+  // 5. Interactive Live Working Preview
   renderInteractivePreview(cat);
 
-  // 5. GBS 30-Second Referral Pitch Prompt
+  // 6. GBS 30-Second Referral Pitch Prompt
   const referralBox = document.getElementById('referralTextBox');
-  const customAsk = `“Hello GBS Glory members! My name is ${state.ownerName} from ${state.businessName}. ${cat.referralAsk}”`;
-  referralBox.textContent = customAsk;
+  if (referralBox) {
+    const customAsk = `“Hello GBS Glory members! My name is ${state.ownerName} from ${state.businessName}. ${cat.referralAsk}”`;
+    referralBox.textContent = customAsk;
+  }
 
-  // 6. Update Climax WhatsApp Link to Yash
+  // 7. Update Climax WhatsApp Link to Yash
   updateWhatsAppCta();
 
-  // 7. Update Canvas Card Preview
+  // 8. Update Canvas Card Preview
   updateSankalpCanvas();
 }
 
@@ -1264,31 +1503,24 @@ function renderInteractivePreview(cat) {
           <span class="demo-badge-live">● Live Demo Online</span>
         </div>
         <div class="demo-tabs-row">
-          <button type="button" class="demo-tab-btn active" data-filter="all">All Models</button>
-          <button type="button" class="demo-tab-btn" data-filter="retail">Retail Stores</button>
-          <button type="button" class="demo-tab-btn" data-filter="heavy">Heavy Cash / Jewellers</button>
+          <button type="button" class="demo-tab-btn active" onclick="switchMachineTab(this, 'all')">All Models</button>
+          <button type="button" class="demo-tab-btn" onclick="switchMachineTab(this, 'retail')">Retail Stores</button>
+          <button type="button" class="demo-tab-btn" onclick="switchMachineTab(this, 'heavy')">Heavy Cash / Jewellers</button>
         </div>
         <div class="demo-cards-grid" id="demoCardsGrid">
           <div class="demo-item-card">
             <div class="demo-item-info">
-              <strong class="demo-item-title">Smart Note Counter V2</strong>
-              <span class="demo-item-meta">1000 notes/min • UV/MG Fake Note Detection</span>
+              <strong class="demo-item-title" id="machTitle1">Smart Note Counter V2</strong>
+              <span class="demo-item-meta" id="machMeta1">1000 notes/min • UV/MG Fake Note Detection</span>
             </div>
-            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Requested Free On-Site Demo for Smart Note Counter V2!')">Request Demo</button>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Requested Free On-Site Demo for Note Counter!')">Request Demo</button>
           </div>
           <div class="demo-item-card">
             <div class="demo-item-info">
-              <strong class="demo-item-title">Value Sorter Pro 3D</strong>
-              <span class="demo-item-meta">Mix Note Total Value Counter • Color TFT Display</span>
+              <strong class="demo-item-title" id="machTitle2">Value Sorter Pro 3D</strong>
+              <span class="demo-item-meta" id="machMeta2">Mix Note Total Value Counter • Color TFT Display</span>
             </div>
-            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Requested Free On-Site Demo for Value Sorter Pro 3D!')">Request Demo</button>
-          </div>
-          <div class="demo-item-card">
-            <div class="demo-item-info">
-              <strong class="demo-item-title">Heavy Bank Bundle Counter</strong>
-              <span class="demo-item-meta">Heavy Vacuum Mechanism • Petrol Pumps & Banks</span>
-            </div>
-            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Requested Free On-Site Demo for Heavy Bank Bundle Counter!')">Request Demo</button>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Requested Free On-Site Demo for Value Sorter!')">Request Demo</button>
           </div>
         </div>
         <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Request received! Yash & ${bizName} team will deliver demo machine within 24 hours.</div>
@@ -1338,7 +1570,7 @@ function renderInteractivePreview(cat) {
       <div class="demo-inner-content">
         <div class="demo-navbar-mini">
           <span class="demo-brand-name">${bizName}</span>
-          <span class="demo-badge-live">● Corporate Masterclasses</span>
+          <span class="demo-badge-live">● Executive Curriculum</span>
         </div>
         <div class="demo-tabs-row">
           <button type="button" class="demo-tab-btn active" onclick="switchTrainerTab(this, 'pitch')">Sales Pitch Mastery</button>
@@ -1381,7 +1613,7 @@ function renderInteractivePreview(cat) {
             <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Free Inspection Slot Booked!')">Book Free Audit</button>
           </div>
         </div>
-        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Free home inspection scheduled instantly without telephone back-and-forth!</div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Free inspection scheduled instantly without telephone back-and-forth!</div>
       </div>
     `;
   } else if (cat.previewType === 'travel_itinerary') {
@@ -1457,8 +1689,8 @@ function renderInteractivePreview(cat) {
         <div class="demo-cards-grid">
           <div class="demo-item-card">
             <div class="demo-item-info">
-              <strong class="demo-item-title">Implant & Smile Consultation</strong>
-              <span class="demo-item-meta">Dr. Verified Slot: 6:30 PM (No Waiting Queue)</span>
+              <strong class="demo-item-title">Care & Smile Consultation</strong>
+              <span class="demo-item-meta">Dr. Verified Slot: 6:30 PM (Zero Waiting Queue)</span>
             </div>
             <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Appointment slot confirmed for 6:30 PM!')">Confirm Slot</button>
           </div>
@@ -1466,8 +1698,234 @@ function renderInteractivePreview(cat) {
         <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Patient confirmed slot via WhatsApp reminder! Zero receptionist delay.</div>
       </div>
     `;
+  } else if (cat.previewType === 'finance_calculator') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.in/wealth-calculator</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● Financial Growth Desk</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchFinanceTab(this, 'sip')">Wealth SIP</button>
+          <button type="button" class="demo-tab-btn" onclick="switchFinanceTab(this, 'hni')">HNI Portfolio</button>
+          <button type="button" class="demo-tab-btn" onclick="switchFinanceTab(this, 'tax')">Tax Optimization</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card" style="flex-direction: column; align-items: flex-start;">
+            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+              <strong class="demo-item-title" id="finTitle">15-Year Compounding Wealth Blueprint</strong>
+              <span class="demo-badge-live" id="finBadge">14.8% CAGR</span>
+            </div>
+            <div style="font-size: 0.76rem; color: #555; margin: 4px 0 8px 0;" id="finMeta">Monthly ₹25,000 Invested • Projected Wealth: <strong>₹1.52 Crores</strong></div>
+            <button type="button" class="demo-item-btn" style="width: 100%;" onclick="triggerDemoAction('Personalized financial plan delivered to client WhatsApp!')">Request Customized Blueprint</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Personalized wealth growth roadmap sent to prospective client on WhatsApp!</div>
+      </div>
+    `;
+  } else if (cat.previewType === 'curtains_visualizer') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.living/fabrics</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● Premium Textures</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchCurtainsTab(this, 'velvet')">Royal Velvet</button>
+          <button type="button" class="demo-tab-btn" onclick="switchCurtainsTab(this, 'sheer')">Sheer Linen</button>
+          <button type="button" class="demo-tab-btn" onclick="switchCurtainsTab(this, 'blackout')">100% Blackout</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card">
+            <div class="demo-item-info">
+              <strong class="demo-item-title" id="curtTitle">Imperial Velvet Drapery & Sofa Fabric</strong>
+              <span class="demo-item-meta" id="curtMeta">450 GSM • High Martindale Rub Count • Stain Resistant</span>
+            </div>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Fabric Swatch & Yardage Calculator sent to customer!')">Get Swatch Box</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Fabric swatch sample & window yardage quote dispatched to client!</div>
+      </div>
+    `;
+  } else if (cat.previewType === 'manufacturing_spec') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.factory/specs</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● Factory Direct B2B</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchMfgTab(this, 'bulk')">Bulk 500kg+</button>
+          <button type="button" class="demo-tab-btn" onclick="switchMfgTab(this, 'custom')">Custom Print</button>
+          <button type="button" class="demo-tab-btn" onclick="switchMfgTab(this, 'bio')">Bio-Degradable</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card" style="flex-direction: column; align-items: flex-start;">
+            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+              <strong class="demo-item-title" id="mfgTitle">Industrial Dimension & GSM Calculator</strong>
+              <span class="demo-badge-live">ISO 9001 Certified</span>
+            </div>
+            <div style="font-size: 0.76rem; color: #555; margin: 4px 0 8px 0;" id="mfgMeta">Thickness: 50 Microns • Tensile Tested • Instant Wholesale Rate</div>
+            <button type="button" class="demo-item-btn" style="width: 100%;" onclick="triggerDemoAction('Wholesale factory rate & sample pack dispatched!')">Download Bulk Price Matrix</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ B2B wholesale price quotation generated with delivery timeline!</div>
+      </div>
+    `;
+  } else if (cat.previewType === 'cctv_packages') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.security/packages</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● 2K/4K Surveillance</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchCctvTab(this, '4cam')">4-Camera Setup</button>
+          <button type="button" class="demo-tab-btn" onclick="switchCctvTab(this, '8cam')">8-Camera Setup</button>
+          <button type="button" class="demo-tab-btn" onclick="switchCctvTab(this, 'amc')">Commercial AMC</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card">
+            <div class="demo-item-info">
+              <strong class="demo-item-title" id="cctvTitle">Ultra HD 4-Camera Color Night Vision</strong>
+              <span class="demo-item-meta" id="cctvMeta">5MP Audio Cameras • 1TB Surveillance Hard Drive • Mobile Live View</span>
+            </div>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Booked complimentary on-site security survey!')">Book Free Site Audit</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Free on-site security layout inspection scheduled!</div>
+      </div>
+    `;
+  } else if (cat.previewType === 'jewellery_lookbook') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.jewels/lookbook</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● Hallmarked & Certified</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchJewelleryTab(this, 'rings')">Solitaire Rings</button>
+          <button type="button" class="demo-tab-btn" onclick="switchJewelleryTab(this, 'bridal')">Bridal Sets</button>
+          <button type="button" class="demo-tab-btn" onclick="switchJewelleryTab(this, 'cad')">Custom CAD Casting</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card">
+            <div class="demo-item-info">
+              <strong class="demo-item-title" id="jewelTitle">Solitaire Eternal Promise Ring</strong>
+              <span class="demo-item-meta" id="jewelMeta">1.02 Carat VVS1 • GIA Certified • 18K Hallmarked Gold</span>
+            </div>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Certificate & live video view sent on WhatsApp!')">Enquire Design</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Design specs, 4C certificate & live consultation confirmed!</div>
+      </div>
+    `;
+  } else if (cat.previewType === 'property_showcase') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.realty/listings</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● RERA Registered</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchPropertyTab(this, 'ready')">Ready Possession</button>
+          <button type="button" class="demo-tab-btn" onclick="switchPropertyTab(this, 'launch')">Pre-Launch VIP</button>
+          <button type="button" class="demo-tab-btn" onclick="switchPropertyTab(this, 'commercial')">Commercial Hub</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card">
+            <div class="demo-item-info">
+              <strong class="demo-item-title" id="propTitle">Skyline Residency • 3BHK Deck Apartment</strong>
+              <span class="demo-item-meta" id="propMeta">1,180 sq.ft Carpet • Rooftop Clubhouse • RERA Approved</span>
+            </div>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Brochure & verified floor plan sent on WhatsApp!')">Download Floor Plan</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Verified floor plan and video walkthrough delivered to prospect!</div>
+      </div>
+    `;
+  } else if (cat.previewType === 'chair_doctor_booking') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.care/chair-service</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● Doorstep Doctor</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchChairDoctorTab(this, 'gas')">Gas Lift & Mechanism</button>
+          <button type="button" class="demo-tab-btn" onclick="switchChairDoctorTab(this, 'mesh')">Mesh & Re-Upholstery</button>
+          <button type="button" class="demo-tab-btn" onclick="switchChairDoctorTab(this, 'amc')">Corporate AMC</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card">
+            <div class="demo-item-info">
+              <strong class="demo-item-title" id="chairTitle">Heavy Class-4 Gas Lift Replacement</strong>
+              <span class="demo-item-meta" id="chairMeta">150kg weight tested • 2-Year Replacement Warranty • On-Site Fix</span>
+            </div>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Technician inspection booked for tomorrow 11 AM!')">Schedule Doorstep Fix</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Doorstep chair repair inspection scheduled without office disruption!</div>
+      </div>
+    `;
+  } else if (cat.previewType === 'tech_store_catalog') {
+    viewport.innerHTML = `
+      <div class="demo-chrome-bar">
+        <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
+        <div class="demo-url-pill">https://${bizName.toLowerCase().replace(/[^a-z0-9]/g, '')}.tech/store</div>
+      </div>
+      <div class="demo-inner-content">
+        <div class="demo-navbar-mini">
+          <span class="demo-brand-name">${bizName}</span>
+          <span class="demo-badge-live">● Genuine Parts Warranty</span>
+        </div>
+        <div class="demo-tabs-row">
+          <button type="button" class="demo-tab-btn active" onclick="switchTechStoreTab(this, 'repair')">Device Repair</button>
+          <button type="button" class="demo-tab-btn" onclick="switchTechStoreTab(this, 'laptop')">Laptops & PCs</button>
+          <button type="button" class="demo-tab-btn" onclick="switchTechStoreTab(this, 'fleet')">Corporate AMC</button>
+        </div>
+        <div class="demo-cards-grid">
+          <div class="demo-item-card">
+            <div class="demo-item-info">
+              <strong class="demo-item-title" id="techTitle">Flagship Screen & Battery Service</strong>
+              <span class="demo-item-meta" id="techMeta">Original OLED display • 90-Day Guarantee • 30-min express fix</span>
+            </div>
+            <button type="button" class="demo-item-btn" onclick="triggerDemoAction('Instant repair quote & warranty certificate issued!')">Get Repair Estimate</button>
+          </div>
+        </div>
+        <div class="demo-feedback-banner" id="demoFeedbackBanner">✓ Instant repair estimate & digital warranty card sent to customer!</div>
+      </div>
+    `;
   } else {
-    // High-Converting Generic Showcase (for all remaining GBS profiles!)
+    // High-Converting Generic Showcase
     viewport.innerHTML = `
       <div class="demo-chrome-bar">
         <div class="demo-dots"><span class="demo-dot red"></span><span class="demo-dot yellow"></span><span class="demo-dot green"></span></div>
@@ -1510,6 +1968,35 @@ window.triggerDemoAction = function(msg) {
     setTimeout(() => {
       banner.style.display = 'none';
     }, 3500);
+  }
+};
+
+window.switchMachineTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title1 = document.getElementById('machTitle1');
+  const meta1 = document.getElementById('machMeta1');
+  const title2 = document.getElementById('machTitle2');
+  const meta2 = document.getElementById('machMeta2');
+
+  if (type === 'retail') {
+    title1.textContent = "Countertop Compact Sorter";
+    meta1.textContent = "Ideal for grocery, pharmacies & retail outlets • UV/MG Sensor";
+    title2.textContent = "Desktop High-Speed Counter";
+    meta2.textContent = "1200 notes/min • Fake note beep alarm • Batch count";
+  } else if (type === 'heavy') {
+    title1.textContent = "Heavy Vacuum Bundle Counter";
+    meta1.textContent = "Built for banks, petrol pumps & jewellers • Handles soiled notes";
+    title2.textContent = "Dual CIS 2-Pocket Value Sorter";
+    meta2.textContent = "Denomination wise sorting • Serial number recording";
+  } else {
+    title1.textContent = "Smart Note Counter V2";
+    meta1.textContent = "1000 notes/min • UV/MG Fake Note Detection";
+    title2.textContent = "Value Sorter Pro 3D";
+    meta2.textContent = "Mix Note Total Value Counter • Color TFT Display";
   }
 };
 
@@ -1602,6 +2089,178 @@ window.switchTravelTab = function(btn, type) {
   }
 };
 
+window.switchFinanceTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('finTitle');
+  const badge = document.getElementById('finBadge');
+  const meta = document.getElementById('finMeta');
+
+  if (type === 'sip') {
+    title.textContent = "15-Year Compounding Wealth Blueprint";
+    badge.textContent = "14.8% CAGR";
+    meta.innerHTML = "Monthly ₹25,000 Invested • Projected Wealth: <strong>₹1.52 Crores</strong>";
+  } else if (type === 'hni') {
+    title.textContent = "HNI Multi-Asset Strategy Portfolio";
+    badge.textContent = "Risk-Adjusted Alpha";
+    meta.innerHTML = "₹1 Crore Corpus • Equity + Debt + Gold Dynamic Allocation";
+  } else {
+    title.textContent = "Section 80C & Corporate Tax Shield";
+    badge.textContent = "Zero Surcharge";
+    meta.innerHTML = "Save up to <strong>₹3,85,000</strong> annually in statutory tax deductions";
+  }
+};
+
+window.switchCurtainsTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('curtTitle');
+  const meta = document.getElementById('curtMeta');
+
+  if (type === 'velvet') {
+    title.textContent = "Imperial Velvet Drapery & Sofa Fabric";
+    meta.textContent = "450 GSM • High Martindale Rub Count • Stain Resistant";
+  } else if (type === 'sheer') {
+    title.textContent = "Belgian Sheer Linen Breeze";
+    meta.textContent = "Natural daylight filter • Anti-dust weave • Soft flowing drape";
+  } else {
+    title.textContent = "Thermal Blackout 3-Pass Coating";
+    meta.textContent = "100% Light blocking • Sound dampening • AC energy saver";
+  }
+};
+
+window.switchMfgTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('mfgTitle');
+  const meta = document.getElementById('mfgMeta');
+
+  if (type === 'bulk') {
+    title.textContent = "Heavy Wholesale Slab (500kg+)";
+    meta.textContent = "Wholesale tiered rates • Rapid dispatch • Micron quality certificate";
+  } else if (type === 'custom') {
+    title.textContent = "Custom 4-Color Rotogravure Printing";
+    meta.textContent = "High-definition brand logo • Zero bleed ink • Multiple handles";
+  } else {
+    title.textContent = "CPCB Certified Bio-Degradable Bags";
+    meta.textContent = "100% Compostable • Government verified barcoded compliance";
+  }
+};
+
+window.switchCctvTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('cctvTitle');
+  const meta = document.getElementById('cctvMeta');
+
+  if (type === '4cam') {
+    title.textContent = "Ultra HD 4-Camera Color Night Vision";
+    meta.textContent = "5MP Audio Cameras • 1TB Surveillance Hard Drive • Mobile Live View";
+  } else if (type === '8cam') {
+    title.textContent = "Commercial 8-Camera IP POE Setup";
+    meta.textContent = "4K Resolution • AI Human Detection • 2TB NVR Storage";
+  } else {
+    title.textContent = "Annual Maintenance & Breakdown AMC";
+    meta.textContent = "Quarterly preventive checks • 4-hour breakdown SLA • Cloud backup";
+  }
+};
+
+window.switchJewelleryTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('jewelTitle');
+  const meta = document.getElementById('jewelMeta');
+
+  if (type === 'rings') {
+    title.textContent = "Solitaire Eternal Promise Ring";
+    meta.textContent = "1.02 Carat VVS1 • GIA Certified • 18K Hallmarked Gold";
+  } else if (type === 'bridal') {
+    title.textContent = "Royal Heritage Bridal Choker & Jhumkas";
+    meta.textContent = "Uncut Polki & Emerald accents • Antique finish • Certified Gold";
+  } else {
+    title.textContent = "B2B Precision CAD/CAM Casting";
+    meta.textContent = "0.01mm tolerance • Micro-prong setting ready • Rapid turnaround";
+  }
+};
+
+window.switchPropertyTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('propTitle');
+  const meta = document.getElementById('propMeta');
+
+  if (type === 'ready') {
+    title.textContent = "Skyline Residency • 3BHK Deck Apartment";
+    meta.textContent = "1,180 sq.ft Carpet • Rooftop Clubhouse • RERA Approved";
+  } else if (type === 'launch') {
+    title.textContent = "Pre-Launch Exclusive Township Investment";
+    meta.textContent = "Special Early-Bird pricing • 10:90 Developer subvention scheme";
+  } else {
+    title.textContent = "Prime Retail Commercial Showroom";
+    meta.textContent = "High road frontage • 8.2% Rental yield • Pre-leased to bank";
+  }
+};
+
+window.switchChairDoctorTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('chairTitle');
+  const meta = document.getElementById('chairMeta');
+
+  if (type === 'gas') {
+    title.textContent = "Heavy Class-4 Gas Lift Replacement";
+    meta.textContent = "150kg weight tested • 2-Year Replacement Warranty • On-Site Fix";
+  } else if (type === 'mesh') {
+    title.textContent = "Breathable Korean Mesh & Seat Foam";
+    meta.textContent = "High-density moulded foam • Zero sagging • Fresh color fabric";
+  } else {
+    title.textContent = "Office 50+ Chairs Annual AMC Health Care";
+    meta.textContent = "Routine castor oiling • Hydraulic testing • Flat 70% cost savings vs new";
+  }
+};
+
+window.switchTechStoreTab = function(btn, type) {
+  templeAudio.playChime();
+  const parent = btn.parentElement;
+  parent.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const title = document.getElementById('techTitle');
+  const meta = document.getElementById('techMeta');
+
+  if (type === 'repair') {
+    title.textContent = "Flagship Screen & Battery Service";
+    meta.textContent = "Original OLED display • 90-Day Guarantee • 30-min express fix";
+  } else if (type === 'laptop') {
+    title.textContent = "Custom Workstation Laptop & PC";
+    meta.textContent = "Intel Core i7 / Ryzen 7 • 32GB RAM • 1TB NVMe SSD • Local On-Site Support";
+  } else {
+    title.textContent = "Corporate IT Fleet Hardware AMC";
+    meta.textContent = "Antivirus, scheduled cleanup & zero downtime backup standby laptops";
+  }
+};
+
 // Pre-filled WhatsApp link to Yash Panchal
 function updateWhatsAppCta() {
   const cat = state.categoryObj;
@@ -1658,65 +2317,62 @@ function updateSankalpCanvas() {
   drawCorner(w - 26, h - 26);
 
   // Sacred Top Mantra
-  ctx.font = 'bold 20px "Rozha One", serif';
+  ctx.font = 'bold 18px "Rozha One", serif';
   ctx.fillStyle = '#751113';
   ctx.textAlign = 'center';
-  ctx.fillText('॥ श्री गणेशाय नमः ॥', w / 2, 70);
+  ctx.fillText('॥ श्री गणेशाय नमः ॥', w / 2, 60);
 
-  ctx.font = '600 13px "Plus Jakarta Sans", sans-serif';
+  ctx.font = '600 13px "Cinzel", serif';
   ctx.fillStyle = '#9E6C18';
-  ctx.letterSpacing = '2px';
-  ctx.fillText('GANESHUTSAV SPECIAL • GBS GLORY', w / 2, 94);
+  ctx.fillText('BAPPA’S BUSINESS DRISHTI • SHUBH SANKALP', w / 2, 85);
 
-  // Title Ribbon
-  ctx.font = 'bold 28px "Rozha One", "Cinzel", serif';
-  ctx.fillStyle = '#751113';
-  ctx.fillText('SHUBH BUSINESS SANKALP', w / 2, 140);
-
-  // Thin Gold Divider
+  // Decorative Horizontal Divider
   ctx.strokeStyle = '#C59239';
-  ctx.lineWidth = 1.5;
+  ctx.lineWidth = 1;
   ctx.beginPath();
-  ctx.moveTo(160, 160);
-  ctx.lineTo(480, 160);
+  ctx.moveTo(100, 105);
+  ctx.lineTo(w - 100, 105);
   ctx.stroke();
 
-  // Business Details Card
+  // Business Details Card Box
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+  ctx.strokeStyle = 'rgba(197, 146, 57, 0.35)';
+  ctx.lineWidth = 1.5;
+  ctx.fillRect(50, 125, w - 100, 120);
+  ctx.strokeRect(50, 125, w - 100, 120);
+
+  ctx.font = 'bold 24px "Cinzel", Georgia, serif';
+  ctx.fillStyle = '#751113';
+  ctx.fillText(state.businessName || "Your Enterprise", w / 2, 165);
+
+  ctx.font = '600 14px "Plus Jakarta Sans", sans-serif';
+  ctx.fillStyle = '#2A1713';
+  ctx.fillText(`Proprietor: ${state.ownerName || "Member"} • ${state.categoryObj ? state.categoryObj.category : "GBS Member"}`, w / 2, 195);
+
+  ctx.font = '500 12px "Plus Jakarta Sans", sans-serif';
+  ctx.fillStyle = '#6B544E';
+  ctx.fillText(`GBS Chapter: ${CONFIG.CHAPTER_NAME}`, w / 2, 222);
+
+  // Vighna & Sankalp Medallion Ribbon
+  ctx.fillStyle = '#751113';
+  ctx.fillRect(60, 275, w - 120, 36);
+
+  ctx.font = 'bold 15px "Plus Jakarta Sans", sans-serif';
+  ctx.fillStyle = '#FFF8E7';
+  ctx.fillText('MY SHUBH SANKALP FOR THIS WEEK', w / 2, 298);
+
+  // Sankalp Text Container
   ctx.fillStyle = '#FFFFFF';
-  ctx.strokeStyle = 'rgba(197, 146, 57, 0.4)';
-  ctx.lineWidth = 1.5;
-  ctx.beginPath();
-  ctx.roundRect(50, 180, w - 100, 110, [12]);
-  ctx.fill();
-  ctx.stroke();
-
-  ctx.font = 'bold 24px "Cinzel", "Rozha One", serif';
-  ctx.fillStyle = '#751113';
-  ctx.fillText(state.businessName || "Your Enterprise", w / 2, 222);
-
-  ctx.font = 'bold 14px "Plus Jakarta Sans", sans-serif';
-  ctx.fillStyle = '#9E6C18';
-  const catName = state.categoryObj ? state.categoryObj.category : "Business Member";
-  ctx.fillText(`CATEGORY: ${catName.toUpperCase()}`, w / 2, 248);
-
-  ctx.font = '500 14px "Plus Jakarta Sans", sans-serif';
-  ctx.fillStyle = '#5A4640';
-  ctx.fillText(`Proprietor: ${state.ownerName || "Member"}`, w / 2, 272);
-
-  // The Sacred Sankalp Commitment Box
-  ctx.fillStyle = '#FFF8EE';
   ctx.strokeStyle = '#C59239';
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  ctx.roundRect(50, 315, w - 100, 200, [14]);
-  ctx.fill();
-  ctx.stroke();
+  ctx.lineWidth = 1.5;
+  ctx.fillRect(50, 330, w - 100, 200);
+  ctx.strokeRect(50, 330, w - 100, 200);
 
-  ctx.font = 'bold 13px "Plus Jakarta Sans", sans-serif';
-  ctx.fillStyle = '#751113';
-  ctx.fillText('✦ MY CHOSEN COMMITMENT FOR THIS WEEK ✦', w / 2, 350);
+  // Gold Quotation Marks
+  ctx.font = 'bold 44px Georgia, serif';
+  ctx.fillStyle = '#C59239';
+  ctx.fillText('“', 80, 375);
 
-  // Wrap Sankalp text
   ctx.font = 'italic bold 20px "Plus Jakarta Sans", Georgia, serif';
   ctx.fillStyle = '#2A1713';
   const words = (state.selectedSankalp || "Organise my best projects into a digital portfolio link.").split(' ');
@@ -1725,79 +2381,73 @@ function updateSankalpCanvas() {
   for (let n = 0; n < words.length; n++) {
     const testLine = line + words[n] + ' ';
     const metrics = ctx.measureText(testLine);
-    if (metrics.width > 480 && n > 0) {
-      ctx.fillText(line, w / 2, y);
+    if (metrics.width > w - 150 && n > 0) {
+      ctx.fillText(line.trim(), w / 2, y);
       line = words[n] + ' ';
-      y += 32;
+      y += 34;
     } else {
       line = testLine;
     }
   }
-  ctx.fillText(line, w / 2, y);
+  ctx.fillText(line.trim(), w / 2, y);
 
-  // Auspicious Blessing Quote
-  ctx.font = '600 15px "Rozha One", serif';
-  ctx.fillStyle = '#1B5E20';
-  ctx.fillText('“May Lord Vighnaharta remove all obstacles and bring Siddhi & Labh!”', w / 2, 555);
+  // Bappa's Blessing Quote
+  ctx.font = 'bold 14px "Rozha One", serif';
+  ctx.fillStyle = '#751113';
+  ctx.fillText('🐘 “Business ke vighna main dekh lunga... Digital wale Yash ko de do!”', w / 2, 570);
 
-  // Bottom Signature & Mahant Software Tag
-  ctx.strokeStyle = 'rgba(197, 146, 57, 0.3)';
+  // Bottom Signature & Verification Seal
+  ctx.strokeStyle = '#C59239';
   ctx.lineWidth = 1;
   ctx.beginPath();
-  ctx.moveTo(80, 595);
-  ctx.lineTo(w - 80, 595);
+  ctx.moveTo(120, 605);
+  ctx.lineTo(w - 120, 605);
   ctx.stroke();
 
-  ctx.font = 'bold 15px "Plus Jakarta Sans", sans-serif';
-  ctx.fillStyle = '#751113';
-  ctx.fillText('Crafted for GBS Glory & Business Owners', w / 2, 630);
+  ctx.font = 'bold 13px "Cinzel", serif';
+  ctx.fillStyle = '#2A1713';
+  ctx.fillText('MAHANT SOFTWARE • YASH PANCHAL', w / 2, 635);
 
-  ctx.font = '600 13px "Plus Jakarta Sans", sans-serif';
-  ctx.fillStyle = '#5A4640';
-  ctx.fillText('Dedicated by Yash Panchal · Mahant Software', w / 2, 655);
+  ctx.font = '500 12px "Plus Jakarta Sans", sans-serif';
+  ctx.fillStyle = '#6B544E';
+  ctx.fillText('WhatsApp: +91 90041 68049 • High-Speed Web Systems & Automation', w / 2, 658);
 
-  ctx.font = 'bold 13px "Plus Jakarta Sans", sans-serif';
-  ctx.fillStyle = '#075E54';
-  ctx.fillText('WhatsApp: +91 90041 68049', w / 2, 680);
-
-  ctx.font = '12px "Rozha One", serif';
+  ctx.font = 'italic 11px "Plus Jakarta Sans", sans-serif';
   ctx.fillStyle = '#9E6C18';
-  ctx.fillText('॥ गणपती बाप्पा मोरया, पुढच्या वर्षा लवकर या ॥', w / 2, 725);
+  ctx.fillText('शुभ गणेशोत्सव २०२६ • Specially crafted for GBS Members', w / 2, 720);
 }
 
-// Download Canvas Image
+// Download Canvas as PNG
 function downloadSankalpCard() {
+  templeAudio.playChime();
   const canvas = document.getElementById('sankalpCardCanvas');
   if (!canvas) return;
 
   const link = document.createElement('a');
-  link.download = `Shubh_Sankalp_${(state.businessName || 'Business').replace(/[^a-zA-Z0-9]/g, '_')}.png`;
+  link.download = `Shubh_Sankalp_${(state.businessName || 'Business').replace(/\s+/g, '_')}.png`;
   link.href = canvas.toDataURL('image/png');
   link.click();
 }
 
-// Share Patrika App Handler
+// Native Web Share or WhatsApp Share
 function shareApp() {
-  const currentUrl = window.location.href;
-  const shareText = 
-    `🐘 *Ask Ganpati Bappa About Your Business!* 🙏\n\n` +
-    `Receive Bappa's divine business audit and discover your single biggest Vighna & practical weekly Sankalp for our GBS network!\n\n` +
-    `Check your business here 👉 ${currentUrl}\n\n` +
-    `_Dedicated to GBS by Yash Panchal · Mahant Software (+91 90041 68049)_`;
+  templeAudio.playChime();
+  const shareTitle = "Ganpati Bappa's Business Drishti • GBS Glory";
+  const shareText = `🐘 Ganpati Bappa just reviewed my business (*${state.businessName || "My Business"}*) and diagnosed our key digital bottleneck!\n\n✨ My Shubh Sankalp for this week:\n"${state.selectedSankalp}"\n\nGet your personalized Business Patrika here 👉 ${window.location.href}\n\n— Crafted for GBS Glory by Yash Panchal · Mahant Software (+91 90041 68049)`;
 
   if (navigator.share) {
     navigator.share({
-      title: "Bappa’s Business Drishti | Ek Vighna, Ek Sankalp",
+      title: shareTitle,
       text: shareText,
-      url: currentUrl
+      url: window.location.href
     }).catch(() => {});
   } else {
-    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
-    window.open(whatsappUrl, '_blank');
+    const encoded = encodeURIComponent(shareText);
+    window.open(`https://api.whatsapp.com/send?text=${encoded}`, '_blank');
   }
 }
 
-// Event Listeners Initialization
+// App Initialization
 document.addEventListener('DOMContentLoaded', () => {
   initFloralCanvas();
   populateCategoryDropdown();
@@ -1818,38 +2468,54 @@ document.addEventListener('DOMContentLoaded', () => {
   const sankalpModal = document.getElementById('sankalpModal');
   const sankalpOverlay = document.getElementById('sankalpOverlay');
   const btnCloseSankalpModal = document.getElementById('btnCloseSankalpModal');
-  const btnOpenSankalpModal = document.getElementById('btnOpenSankalpModal');
-  const btnViewSankalpCardFinal = document.getElementById('btnViewSankalpCardFinal');
-  const btnDownloadSankalpImg = document.getElementById('btnDownloadSankalpImg');
-  const btnShareSankalpWhatsApp = document.getElementById('btnShareSankalpWhatsApp');
+  const copyReferralText = document.getElementById('copyReferralText');
+  const btnDownloadCanvas = document.getElementById('btnDownloadCanvas');
+  const btnShareCanvas = document.getElementById('btnShareCanvas');
 
+  // Pulse Modal
+  const btnOpenPulse = document.getElementById('btnOpenPulse');
   const pulseModal = document.getElementById('pulseModal');
   const pulseOverlay = document.getElementById('pulseOverlay');
-  const btnOpenPulse = document.getElementById('btnOpenPulse');
   const btnClosePulseModal = document.getElementById('btnClosePulseModal');
 
-  const btnCopyReferral = document.getElementById('btnCopyReferral');
-  const copyReferralText = document.getElementById('copyReferralText');
-
-  // Sound Toggle (Starts OFF as requested in review)
-  soundToggle.addEventListener('click', () => {
-    state.soundEnabled = !state.soundEnabled;
-    const text = soundToggle.querySelector('.sound-text');
+  // Unlock Audio on First User Interaction (Ensures sound is ON and working!)
+  const unlockAudio = () => {
     if (state.soundEnabled) {
-      text.textContent = 'Sound: On';
-      soundToggle.style.opacity = '1';
-      templeAudio.playTempleBell();
-    } else {
-      text.textContent = 'Sound: Off';
-      soundToggle.style.opacity = '0.7';
+      templeAudio.init();
+      if (templeAudio.ctx && templeAudio.ctx.state === 'suspended') {
+        templeAudio.ctx.resume().catch(() => {});
+      }
     }
-  });
+    window.removeEventListener('click', unlockAudio);
+    window.removeEventListener('touchstart', unlockAudio);
+  };
+  window.addEventListener('click', unlockAudio);
+  window.addEventListener('touchstart', unlockAudio);
+
+  // Sound Toggle (Default ON)
+  if (soundToggle) {
+    soundToggle.addEventListener('click', () => {
+      state.soundEnabled = !state.soundEnabled;
+      const text = soundToggle.querySelector('.sound-text');
+      if (state.soundEnabled) {
+        if (text) text.textContent = 'Sound: On';
+        soundToggle.classList.add('active');
+        soundToggle.style.opacity = '1';
+        templeAudio.playTempleBell();
+      } else {
+        if (text) text.textContent = 'Sound: Off';
+        soundToggle.classList.remove('active');
+        soundToggle.style.opacity = '0.7';
+      }
+    });
+  }
 
   // Open/Close Sankalp Modal
   const openSankalpModal = () => {
-    updateSankalpCanvas();
+    templeAudio.playChime();
     sankalpModal.classList.add('active');
     sankalpModal.setAttribute('aria-hidden', 'false');
+    updateSankalpCanvas();
   };
 
   const closeSankalpModal = () => {
@@ -1857,25 +2523,10 @@ document.addEventListener('DOMContentLoaded', () => {
     sankalpModal.setAttribute('aria-hidden', 'true');
   };
 
+  const btnOpenSankalpModal = document.getElementById('btnOpenSankalpModal');
   if (btnOpenSankalpModal) btnOpenSankalpModal.addEventListener('click', openSankalpModal);
-  if (btnViewSankalpCardFinal) btnViewSankalpCardFinal.addEventListener('click', openSankalpModal);
   if (btnCloseSankalpModal) btnCloseSankalpModal.addEventListener('click', closeSankalpModal);
   if (sankalpOverlay) sankalpOverlay.addEventListener('click', closeSankalpModal);
-  if (btnDownloadSankalpImg) btnDownloadSankalpImg.addEventListener('click', downloadSankalpCard);
-
-  if (btnShareSankalpWhatsApp) {
-    btnShareSankalpWhatsApp.addEventListener('click', () => {
-      const shareMsg = encodeURIComponent(
-        `॥ श्री गणेशाय नमः ॥ 🙏\n\n` +
-        `I just took Ganpati Bappa's Business Drishti for *${state.businessName}*!\n\n` +
-        `✨ *My Shubh Sankalp for this week:*\n` +
-        `"${state.selectedSankalp}"\n\n` +
-        `Discover your business obstacle (Vighna) & weekly Sankalp here 👉 ${window.location.href}\n\n` +
-        `_Created for GBS Glory by Yash Panchal · Mahant Software (+91 90041 68049)_`
-      );
-      window.open(`https://api.whatsapp.com/send?text=${shareMsg}`, '_blank');
-    });
-  }
 
   // Open/Close Pulse Modal
   if (btnOpenPulse) {
@@ -1886,21 +2537,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  if (btnClosePulseModal) {
-    btnClosePulseModal.addEventListener('click', () => {
-      pulseModal.classList.remove('active');
-      pulseModal.setAttribute('aria-hidden', 'true');
-    });
-  }
+  const closePulseModal = () => {
+    pulseModal.classList.remove('active');
+    pulseModal.setAttribute('aria-hidden', 'true');
+  };
+  if (btnClosePulseModal) btnClosePulseModal.addEventListener('click', closePulseModal);
+  if (pulseOverlay) pulseOverlay.addEventListener('click', closePulseModal);
 
-  if (pulseOverlay) {
-    pulseOverlay.addEventListener('click', () => {
-      pulseModal.classList.remove('active');
-      pulseModal.setAttribute('aria-hidden', 'true');
+  // Download / Share Canvas
+  if (btnDownloadCanvas) btnDownloadCanvas.addEventListener('click', downloadSankalpCard);
+  if (btnShareCanvas) {
+    btnShareCanvas.addEventListener('click', () => {
+      templeAudio.playChime();
+      const shareMsg = encodeURIComponent(
+        `I just took Ganpati Bappa's Business Drishti for *${state.businessName}*!\n\n` +
+        `✨ *My Shubh Sankalp for this week:*\n` +
+        `"${state.selectedSankalp}"\n\n` +
+        `Discover your business obstacle (Vighna) & weekly Sankalp here 👉 ${window.location.href}\n\n` +
+        `_Created for GBS Glory by Yash Panchal · Mahant Software (+91 90041 68049)_`
+      );
+      window.open(`https://api.whatsapp.com/send?text=${shareMsg}`, '_blank');
     });
   }
 
   // Copy Referral Ask
+  const btnCopyReferral = document.getElementById('btnCopyReferral');
   if (btnCopyReferral) {
     btnCopyReferral.addEventListener('click', () => {
       templeAudio.playChime();
@@ -1909,15 +2570,14 @@ document.addEventListener('DOMContentLoaded', () => {
         navigator.clipboard.writeText(text).then(() => {
           copyReferralText.textContent = "Copied to Clipboard!";
           setTimeout(() => { copyReferralText.textContent = "Copy GBS Referral Ask"; }, 2000);
+        }).catch(() => {
+          copyReferralText.textContent = "Copied!";
         });
-      } else {
-        copyReferralText.textContent = "Copied!";
-        setTimeout(() => { copyReferralText.textContent = "Copy GBS Referral Ask"; }, 2000);
       }
     });
   }
 
-  // Auto-suggest category if business name matches keywords
+  // Business Name Auto-Detector for Category
   businessInput.addEventListener('input', () => {
     const val = businessInput.value.trim().toLowerCase();
     if (!categorySelect.value && val.length > 2) {
@@ -1930,7 +2590,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Step 1 Validation -> Go to Questions
+  // Step 1 Validation & Go To Questions
   function handleGoToQuestions() {
     const owner = ownerInput.value.trim();
     const business = businessInput.value.trim();

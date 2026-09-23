@@ -18,12 +18,12 @@
   <!-- Ambient Marigold & Gold Petal Canvas -->
   <canvas id="particles-canvas"></canvas>
 
-  <!-- Audio Toggle (Auspicious Temple Bell - Default Muted) -->
-  <button id="soundToggle" class="sound-toggle" aria-label="Toggle Sound" title="Sound Effects">
+  <!-- Audio Toggle (Auspicious Temple Bell - Default ON) -->
+  <button id="soundToggle" class="sound-toggle active" aria-label="Toggle Sound" title="Sound Effects">
     <svg class="bell-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
       <path d="M12 2a4 4 0 0 0-4 4v1.2C5.5 8.1 4 10.4 4 13v4l-2 2v1h20v-1l-2-2v-4c0-2.6-1.5-4.9-4-5.8V6a4 4 0 0 0-4-4zm0 20a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22z"/>
     </svg>
-    <span class="sound-text">Sound: Off</span>
+    <span class="sound-text">Sound: On</span>
   </button>
 
   <!-- GBS Vighna Pulse Quick Pill (Top Left) -->
@@ -330,6 +330,23 @@
 
           <div class="cert-divider-line">
             <span class="divider-gem">♦</span>
+          </div>
+
+          <!-- ============================================ -->
+          <!-- DETAILED SOLUTIONS FOR YOUR 3 ANSWERS -->
+          <!-- ============================================ -->
+          <div class="three-solutions-container">
+            <div class="solutions-header-card">
+              <div class="solutions-sacred-pill">॥ विघ्नहर्ता 3-सूत्रीय समाधान ॥</div>
+              <h3 class="solutions-header-title">Tailored Solutions for Your 3 Responses</h3>
+              <p class="solutions-header-subtitle">
+                Based on your answers, here is the exact digital strategy for <strong><span id="solutionsCategoryLabel">Your Industry</span></strong>:
+              </p>
+            </div>
+
+            <div class="three-solutions-cards-grid" id="threeSolutionsCardsGrid">
+              <!-- Populated dynamically with rich, workable solutions for Q1, Q2, and Q3 -->
+            </div>
           </div>
 
           <!-- Section 1: What’s Working For You (Based on their answers) -->
