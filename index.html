@@ -3,41 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Bappa's Business Drishti | Mahant Software</title>
-  <meta name="description" content="Ask Ganpati Bappa about your business and discover your digital blessings & vighna!">
+  <title>Bappa's Business Drishti | Ek Vighna, Ek Sankalp • Mahant Software</title>
+  <meta name="description" content="Discover your business obstacle (Vighna) and practical weekly action (Sankalp) with Ganpati Bappa's Business Drishti for GBS members.">
   <meta name="theme-color" content="#751113">
 
-  <!-- Typography: Authentic Indian Editorial Craft -->
+  <!-- Typography: Authentic Indian Editorial Craft & Modern UI -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rozha+One&family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&family=Yatra+One&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=4.0">
+  <link rel="stylesheet" href="style.css?v=5.0">
 </head>
 <body>
   <!-- Ambient Marigold & Gold Petal Canvas -->
   <canvas id="particles-canvas"></canvas>
 
-  <!-- Audio Toggle (Auspicious Temple Bell) -->
+  <!-- Audio Toggle (Auspicious Temple Bell - Default Muted) -->
   <button id="soundToggle" class="sound-toggle" aria-label="Toggle Sound" title="Sound Effects">
     <svg class="bell-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
       <path d="M12 2a4 4 0 0 0-4 4v1.2C5.5 8.1 4 10.4 4 13v4l-2 2v1h20v-1l-2-2v-4c0-2.6-1.5-4.9-4-5.8V6a4 4 0 0 0-4-4zm0 20a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22z"/>
     </svg>
-    <span class="sound-text">Bell Sound</span>
+    <span class="sound-text">Sound: Off</span>
   </button>
 
-  <!-- Mobile App Frame Container -->
+  <!-- GBS Vighna Pulse Quick Pill (Top Left) -->
+  <button id="btnOpenPulse" class="pulse-quick-pill" aria-label="View GBS Vighna Wall" title="GBS Chapter Pulse">
+    <span class="pulse-indicator"></span>
+    <span class="pulse-text">GBS Vighna Pulse</span>
+  </button>
+
+  <!-- Main Mobile-First Application Container -->
   <main class="mobile-container">
 
     <!-- ============================================ -->
-    <!-- STEP 1: WELCOME & AUSPICIOUS BUSINESS INPUT -->
+    <!-- STEP 1: WELCOME & BUSINESS DETAILS -->
     <!-- ============================================ -->
     <section id="step1Screen" class="app-screen active">
       <div class="patrika-envelope">
         <!-- Auspicious Top Ribbon -->
         <div class="auspicious-heading-band">
           <div class="shree-symbol">॥ श्री गणेशाय नमः ॥</div>
-          <div class="band-subtext">विघ्नहर्ता बिज़नेस दृष्टि • गणेशोत्सव विशेष</div>
+          <div class="band-subtext">विघ्नहर्ता बिज़नेस दृष्टि • एक विघ्न, एक संकल्प</div>
         </div>
 
         <!-- Sacred Deity Arch Frame -->
@@ -67,11 +73,14 @@
         <div class="patrika-header-text">
           <h1 class="patrika-title">Bappa’s Business Drishti</h1>
           <p class="patrika-desc">
-            Take 30 seconds this festive season to see what divine blessings and digital gaps Bappa discovers in your enterprise.
+            Identify your single biggest business obstacle (Vighna) and take home one practical, high-impact weekly action (Sankalp).
           </p>
+          <div class="gbs-special-badge">
+            <span>🤝 Specially crafted for <strong>GBS Glory</strong> Members</span>
+          </div>
         </div>
 
-        <!-- Thoughtfully Crafted Form -->
+        <!-- Form -->
         <form id="businessForm" class="patrika-form" onsubmit="return false;">
           <!-- Corner Filigree Ornaments -->
           <div class="corner-filigree top-left"></div>
@@ -81,7 +90,7 @@
 
           <div class="form-field">
             <label for="ownerName">
-              <span class="field-title">Business Owner’s Name</span>
+              <span class="field-title">Your Name</span>
               <span class="field-hint">e.g. Ramesh Patel</span>
             </label>
             <div class="input-container">
@@ -95,8 +104,8 @@
 
           <div class="form-field">
             <label for="businessName">
-              <span class="field-title">Enterprise / Firm Name</span>
-              <span class="field-hint">e.g. Patel Engineering Works</span>
+              <span class="field-title">Your Business Name</span>
+              <span class="field-hint">e.g. Patel Engineering / Studio Design</span>
             </label>
             <div class="input-container">
               <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -107,31 +116,30 @@
                 <path d="M9 13h1"></path>
                 <path d="M9 17h1"></path>
               </svg>
-              <input type="text" id="businessName" placeholder="Your business or trade name" autocomplete="organization" required>
+              <input type="text" id="businessName" placeholder="Your firm or trade name" autocomplete="organization" required>
             </div>
           </div>
 
           <div class="form-field">
-            <label for="digitalStatus">
-              <span class="field-title">Business Category / Trade</span>
-              <span class="field-hint">Optional • Auto-detects</span>
+            <label for="businessCategory">
+              <span class="field-title">Confirm Your GBS Profile / Category</span>
+              <span class="field-hint">Select from 45+ member trades</span>
             </label>
             <div class="input-container select-box">
               <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
               </svg>
-              <select id="digitalStatus">
-                <option value="auto">✨ Let Bappa Auto-Detect from Business Name</option>
+              <select id="businessCategory" required>
+                <!-- Populated dynamically with all 45+ GBS categories -->
               </select>
             </div>
           </div>
 
-          <button type="submit" id="btnAskBappa" class="btn-royal-cta">
+          <button type="button" id="btnGoToQuestions" class="btn-royal-cta">
             <span class="btn-emboss-layer"></span>
             <span class="btn-content">
-              <span class="btn-text">Consult Bappa for My Business</span>
+              <span class="btn-text">Answer 3 Quick Questions</span>
               <svg class="btn-arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -141,14 +149,60 @@
         </form>
 
         <div class="patrika-credit-note">
-          <span>A festive initiative by <strong>Mahant Software</strong> • Dedicated to SME Growth</span>
+          <span>A festive initiative by <strong>Yash Panchal · Mahant Software</strong> • Web & Software Solutions</span>
         </div>
       </div>
     </section>
 
 
     <!-- ============================================ -->
-    <!-- STEP 2: AUSPICIOUS CONTEMPLATION & BLESSING -->
+    <!-- STEP 2: 3 QUICK DIAGNOSTIC QUESTIONS -->
+    <!-- ============================================ -->
+    <section id="questionsScreen" class="app-screen">
+      <div class="quiz-card">
+        <!-- Corner Filigrees -->
+        <div class="corner-filigree top-left"></div>
+        <div class="corner-filigree top-right"></div>
+        <div class="corner-filigree bottom-left"></div>
+        <div class="corner-filigree bottom-right"></div>
+
+        <div class="quiz-top-bar">
+          <button type="button" id="btnQuizBack" class="quiz-back-btn" aria-label="Go Back">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Back</span>
+          </button>
+          <div class="quiz-step-tag" id="quizStepTag">Question 1 of 3</div>
+        </div>
+
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" id="quizProgressFill" style="width: 33.3%;"></div>
+        </div>
+
+        <!-- Question Container -->
+        <div class="quiz-body">
+          <div class="question-header">
+            <span class="question-badge-icon" id="qBadgeIcon">🤝</span>
+            <h2 class="question-prompt" id="questionPrompt">How do new clients usually discover you?</h2>
+            <p class="question-subtext" id="questionSubtext">Tap the option closest to your actual daily business flow.</p>
+          </div>
+
+          <div class="quiz-options-grid" id="quizOptionsGrid">
+            <!-- Dynamically populated options -->
+          </div>
+        </div>
+
+        <div class="quiz-footer-hint">
+          <span>✨ Your honest answers help Bappa uncover your exact bottleneck</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- STEP 3: CEREMONIAL SYNTHESIS & ANALYSIS -->
     <!-- ============================================ -->
     <section id="step2Screen" class="app-screen">
       <div class="ceremony-container">
@@ -164,16 +218,16 @@
         <div class="ceremony-mantra">
           ॥ ॐ गं गणपतये नमः ॥
         </div>
-        <p class="ceremony-tagline">Opening the divine ledger for your business...</p>
+        <p class="ceremony-tagline" id="ceremonyTagline">Analyzing your answers to prepare your personalized Shubh Patrika...</p>
 
-        <!-- Elegant Contemplation Progress Steps -->
+        <!-- Honest, Thoughtful Synthesis Steps -->
         <div class="ceremony-timeline">
           <div class="ceremony-node" id="scanStep1">
             <div class="node-indicator">
               <span class="node-bullet"></span>
             </div>
             <div class="node-content">
-              <span class="node-label">Observing enterprise commitment & hard work</span>
+              <span class="node-label">Analyzing customer discovery & referral momentum</span>
             </div>
           </div>
 
@@ -182,7 +236,7 @@
               <span class="node-bullet"></span>
             </div>
             <div class="node-content">
-              <span class="node-label">Reading client trust & word-of-mouth goodwill</span>
+              <span class="node-label">Evaluating where your team spends manual repetitive hours</span>
             </div>
           </div>
 
@@ -191,7 +245,7 @@
               <span class="node-bullet"></span>
             </div>
             <div class="node-content">
-              <span class="node-label">Examining modern digital presence & reach</span>
+              <span class="node-label">Synthesizing tailored benchmarks for your category</span>
             </div>
           </div>
 
@@ -200,7 +254,7 @@
               <span class="node-bullet"></span>
             </div>
             <div class="node-content">
-              <span class="node-label">Preparing Bappa's customized Shubh Patrika</span>
+              <span class="node-label">Formulating your personalized Vighna & Shubh Sankalp</span>
             </div>
           </div>
         </div>
@@ -213,13 +267,13 @@
 
 
     <!-- ============================================ -->
-    <!-- STEP 2.5: SWEET PRASAD SEAL UNVEILING -->
+    <!-- STEP 3.5: SWEET PRASAD SEAL UNVEILING -->
     <!-- ============================================ -->
     <section id="modakLoadingScreen" class="app-screen">
       <div class="modak-ritual-card">
         <div class="modak-emblem-wrap">
           <div class="modak-gold-plate"></div>
-          <!-- Handcrafted Pure SVG Modak -->
+          <!-- Pure SVG Modak -->
           <svg class="modak-vector-art" viewBox="0 0 100 100" width="80" height="80">
             <defs>
               <linearGradient id="modakGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -229,9 +283,7 @@
                 <stop offset="100%" stop-color="#D63031"/>
               </linearGradient>
             </defs>
-            <!-- Modak Pleats and Body -->
             <path d="M50 12 C46 22 24 45 22 66 C20 80 32 88 50 88 C68 88 80 80 78 66 C76 45 54 22 50 12 Z" fill="url(#modakGrad)" stroke="#B71540" stroke-width="1.5"/>
-            <!-- Saffron Tilak and Carved Lines -->
             <path d="M50 12 Q42 50 36 78" fill="none" stroke="#D63031" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
             <path d="M50 12 Q58 50 64 78" fill="none" stroke="#D63031" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
             <path d="M50 12 L50 84" fill="none" stroke="#E17055" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
@@ -241,7 +293,7 @@
 
         <div class="prasad-stamp-badge">बाप्पांचा प्रसाद • Aashirwaad</div>
         <h2 class="ritual-title">Unsealing Your Business Patrika</h2>
-        <p class="ritual-subtitle">Just a moment as Bappa finalizes the auspicious observations for your firm.</p>
+        <p class="ritual-subtitle">Just a moment as Bappa finalizes the auspicious observations for your business.</p>
 
         <div class="ritual-meter">
           <div class="ritual-meter-fill" id="modakProgressFill"></div>
@@ -251,28 +303,28 @@
 
 
     <!-- ============================================ -->
-    <!-- STEP 3: AUTHENTIC SHUBH BUSINESS PATRIKA -->
+    <!-- STEP 4: AUTHENTIC SHUBH BUSINESS PATRIKA -->
     <!-- ============================================ -->
     <section id="step3Screen" class="app-screen">
       <div class="patrika-certificate">
-        <!-- Traditional Parchment Seal & Border -->
         <div class="certificate-inner-border">
           <div class="cert-corner tl"></div>
           <div class="cert-corner tr"></div>
           <div class="cert-corner bl"></div>
           <div class="cert-corner br"></div>
 
+          <!-- Header -->
           <div class="cert-header">
             <div class="cert-auspicious-mantra">॥ ॐ श्री सिद्धिविनायकाय नमः ॥</div>
             <div class="cert-seal-stamp">
               <span class="seal-inner">शुभ<br>लाभ</span>
             </div>
-            <span class="cert-subheading">गणेशोत्सव बिज़नेस अवलोकन पत्र</span>
+            <span class="cert-subheading">गणेशोत्सव बिज़नेस अवलोकन पत्र • GBS Glory</span>
             <h2 class="cert-business-name" id="reportBusinessName">Your Business</h2>
             <div class="cert-category-pill" id="reportIndustryCategory">General Enterprise</div>
             <div class="cert-proprietor-tag">
-              <span>Owner & Proprietor: </span>
-              <strong id="reportOwnerName">Hardworking Owner</strong>
+              <span>Proprietor / Partner: </span>
+              <strong id="reportOwnerName">Member Name</strong>
             </div>
           </div>
 
@@ -280,69 +332,94 @@
             <span class="divider-gem">♦</span>
           </div>
 
-          <!-- The Verified Strengths List -->
-          <div class="strengths-container">
-            <div class="strength-row">
-              <div class="strength-icon-box">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="strength-details">
-                <h3 class="strength-title">Relentless Proprietor Dedication</h3>
-                <p class="strength-desc">100% genuine effort, personal integrity, and hands-on customer focus.</p>
-              </div>
-            </div>
-
-            <div class="strength-row">
-              <div class="strength-icon-box">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="strength-details">
-                <h3 class="strength-title">Reliable Quality & Service</h3>
-                <p class="strength-desc">Delivering proven value and earning repeat trust from real patrons.</p>
-              </div>
-            </div>
-
-            <div class="strength-row">
-              <div class="strength-icon-box">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="strength-details">
-                <h3 class="strength-title">High Peer Goodwill & Network</h3>
-                <p class="strength-desc">Strong word-of-mouth reputation built brick-by-brick in the local trade.</p>
-              </div>
-            </div>
+          <!-- Section 1: What’s Working For You (Based on their answers) -->
+          <div class="cert-section-title-wrap">
+            <span class="cert-badge-check">✓</span>
+            <h3 class="cert-section-title">What’s Working For You</h3>
           </div>
 
-          <!-- The Relatable Twist: A Chhota Sa Digital Vighna -->
+          <div class="strengths-container" id="strengthsContainer">
+            <!-- Populated dynamically based on answers -->
+          </div>
+
+          <!-- Section 2: Identified Business Vighna -->
           <div class="vighna-editorial-card">
             <div class="vighna-header-row">
               <span class="vighna-ornament">✦</span>
-              <span class="vighna-label">Par Ek Chhota Sa Digital Vighna...</span>
+              <span class="vighna-label">Your Identified Business Vighna (Obstacle)</span>
               <span class="vighna-ornament">✦</span>
             </div>
 
             <div class="vighna-statement-box">
               <div class="vighna-vector-badge" id="vighnaEmoji">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                </svg>
+                <!-- SVG Icon -->
               </div>
               <div class="vighna-copy">
-                <h4 class="vighna-highlight" id="vighnaStatement">“Official Website missing.”</h4>
-                <p class="vighna-explanation" id="vighnaDesc">In today's digital era, customers look for your business online before visiting, but find no official presence!</p>
+                <div class="vighna-reasoning-tag" id="vighnaReasoningTag">Based on your answers:</div>
+                <h4 class="vighna-highlight" id="vighnaStatement">“Client inquiries slipping away.”</h4>
+                <p class="vighna-explanation" id="vighnaDesc">In today's fast market, prospective buyers need instant clarity.</p>
               </div>
             </div>
           </div>
 
-          <!-- Next Action Button -->
+          <!-- Section 3: Ek Sankalp (Practical Action for This Week) -->
+          <div class="sankalp-box-card">
+            <div class="sankalp-badge-ribbon">
+              <span class="sankalp-star">✦</span>
+              <span>Your Shubh Sankalp for This Week</span>
+              <span class="sankalp-star">✦</span>
+            </div>
+            <p class="sankalp-instruction">Select the commitment you want to focus on starting this week:</p>
+            <div class="sankalp-options-list" id="sankalpOptionsList">
+              <!-- Dynamically populated interactive Sankalp options -->
+            </div>
+          </div>
+
+          <!-- Section 4: "See It For My Business" (Interactive Working Mini-Preview) -->
+          <div class="preview-feature-card">
+            <div class="preview-header-bar">
+              <div class="preview-chip">
+                <span class="live-pulse-dot"></span>
+                <span>Interactive Live Preview</span>
+              </div>
+              <h3 class="preview-title">See It For <span id="previewBizTitle">Your Business</span></h3>
+              <p class="preview-subtitle">Here is a miniature working example of how modern digital systems solve this exact bottleneck:</p>
+            </div>
+
+            <!-- Sleek Interactive Frame -->
+            <div class="interactive-demo-viewport" id="interactiveDemoViewport">
+              <!-- Dynamically rendered industry-tailored working preview -->
+            </div>
+            <div class="preview-watermark-note">
+              <span>Crafted by <strong>Mahant Software</strong> • Custom built for your specific workflow</span>
+            </div>
+          </div>
+
+          <!-- Section 5: GBS 30-Second Referral Pitch Prompt -->
+          <div class="referral-prompt-card">
+            <div class="referral-header">
+              <span class="referral-icon">🤝</span>
+              <div class="referral-title-wrap">
+                <h4 class="referral-title">Your 30-Second GBS Meeting Ask</h4>
+                <span class="referral-sub">Use this in your next GBS 30-second presentation</span>
+              </div>
+            </div>
+            <div class="referral-text-box" id="referralTextBox" contenteditable="true">
+              Loading your tailored GBS referral prompt...
+            </div>
+            <div class="referral-actions-row">
+              <button type="button" id="btnCopyReferral" class="btn-copy-action">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span id="copyReferralText">Copy GBS Referral Ask</span>
+              </button>
+              <button type="button" id="btnOpenSankalpModal" class="btn-sankalp-action">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Get Sankalp Card</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Next Step Button -->
           <div class="cert-footer-action">
             <button id="btnSeeBappasSolution" class="btn-royal-cta">
               <span class="btn-emboss-layer"></span>
@@ -361,7 +438,7 @@
 
 
     <!-- ============================================ -->
-    <!-- STEP 4: BAPPA'S VERDICT & YASH'S CARD -->
+    <!-- STEP 5: BAPPA'S VERDICT & YASH PANCHAL'S CARD -->
     <!-- ============================================ -->
     <section id="step4Screen" class="app-screen">
       <div class="climax-card-frame">
@@ -386,57 +463,67 @@
             “Business ke vighna main dekh lunga...<br>
             <span class="punchline-accent">Digital wale Yash ko de do!”</span>
           </blockquote>
-          <div class="speech-namaste-sign">🙏 शुभ गणेशोत्सव 🙏</div>
+          <div class="speech-namaste-sign">🙏 शुभ गणेशोत्सव • GBS Glory 🙏</div>
         </div>
 
-        <!-- Mahant Software & Yash: Bespoke Artisan Agency Card -->
+        <!-- Mahant Software & Yash Panchal Visiting Card -->
         <div class="agency-visiting-card">
           <div class="card-gold-accent-bar"></div>
           <div class="agency-head">
             <div class="agency-crest">
-              <span class="crest-letter">M</span>
+              <span class="crest-symbol">🕉️</span>
             </div>
             <div class="agency-brand">
               <h3 class="agency-title">Mahant Software</h3>
-              <p class="agency-subtitle">Websites & Digital Growth for Serious Businesses</p>
+              <p class="agency-subtitle">Websites, Web Apps & Automation for Serious SMEs</p>
             </div>
           </div>
 
           <div class="agency-services-summary">
             <div class="service-pill">
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <span>Custom Fast Websites</span>
-            </div>
-            <div class="service-pill">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Google Maps & SEO</span>
+              <span>High-Conversion Fast Websites</span>
             </div>
             <div class="service-pill">
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-              <span>WhatsApp Lead Systems</span>
+              <span>1-Tap WhatsApp Lead Engines</span>
+            </div>
+            <div class="service-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <span>Interactive Digital Portfolios</span>
             </div>
           </div>
 
           <div class="agency-founder-row">
             <div class="founder-info">
               <span class="founder-label">Connect Directly with Founder:</span>
-              <strong class="founder-name">Yash & Team</strong>
+              <strong class="founder-name">Yash Panchal</strong>
+              <span class="founder-phone-badge">📞 +91 90041 68049</span>
             </div>
           </div>
         </div>
 
         <!-- Action Buttons -->
         <div class="action-buttons-stack">
-          <!-- WhatsApp CTA to Yash -->
-          <a id="btnChatYash" href="#" target="_blank" class="btn-whatsapp-direct">
+          <!-- WhatsApp CTA to Yash with Correct Number -->
+          <a id="btnChatYash" href="https://api.whatsapp.com/send?phone=919004168049" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-direct">
             <svg class="whatsapp-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
               <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.17c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.41c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.26-8.22 8.26zm4.52-6.19c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.74 2.66 4.21 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.28z"/>
             </svg>
             <div class="whatsapp-btn-text">
               <span class="line-primary">Message Yash on WhatsApp</span>
-              <span class="line-secondary">Discuss solutions for your business</span>
+              <span class="line-secondary">Discuss solutions for your business (+91 90041 68049)</span>
             </div>
           </a>
+
+          <!-- Download / View Sankalp Card -->
+          <button id="btnViewSankalpCardFinal" class="btn-royal-cta" style="background: linear-gradient(135deg, #9E6C18 0%, #751113 100%);">
+            <span class="btn-emboss-layer"></span>
+            <span class="btn-content">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span class="btn-text">Download My Personal Sankalp Card</span>
+            </span>
+          </button>
 
           <!-- Viral Share Button -->
           <button id="btnShareApp" class="btn-secondary-share">
@@ -447,7 +534,7 @@
               <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
               <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
             </svg>
-            <span>Share Patrika with Business Friends</span>
+            <span>Share Patrika with GBS Members</span>
           </button>
 
           <!-- Check Another Business -->
@@ -468,6 +555,108 @@
 
   </main>
 
-  <script src="app.js?v=4.0"></script>
+  <!-- ============================================ -->
+  <!-- MODAL: PERSONALIZED SANKALP CARD DOWNLOAD -->
+  <!-- ============================================ -->
+  <div id="sankalpModal" class="app-modal" aria-hidden="true">
+    <div class="modal-overlay" id="sankalpOverlay"></div>
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="btnCloseSankalpModal" aria-label="Close Modal">✕</button>
+      <div class="modal-inner">
+        <h3 class="modal-title">Your Auspicious Sankalp Card</h3>
+        <p class="modal-subtitle">Keep this commitment on your phone or share it with fellow business owners!</p>
+
+        <!-- Live Generated Canvas Card Preview -->
+        <div class="sankalp-canvas-wrapper">
+          <canvas id="sankalpCardCanvas" width="640" height="780"></canvas>
+        </div>
+
+        <div class="modal-actions-row">
+          <button type="button" id="btnDownloadSankalpImg" class="btn-royal-cta">
+            <span class="btn-content">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Card Image</span>
+            </span>
+          </button>
+          <button type="button" id="btnShareSankalpWhatsApp" class="btn-whatsapp-direct" style="padding: 12px 16px; border-radius: 12px;">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.17c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.41c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.26-8.22 8.26zm4.52-6.19c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.74 2.66 4.21 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.28z"/>
+            </svg>
+            <span>Share on WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- MODAL: GBS VIGHNA WALL / PULSE (FOR MEETING) -->
+  <!-- ============================================ -->
+  <div id="pulseModal" class="app-modal" aria-hidden="true">
+    <div class="modal-overlay" id="pulseOverlay"></div>
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="btnClosePulseModal" aria-label="Close Pulse Modal">✕</button>
+      <div class="modal-inner">
+        <div class="pulse-header-band">
+          <span class="pulse-dot-live"></span>
+          <span class="pulse-sub">Live Chapter Pulse</span>
+        </div>
+        <h3 class="modal-title">GBS Vighna Wall</h3>
+        <p class="modal-subtitle">Anonymous aggregate breakdown of what takes the most time for businesses in our room today:</p>
+
+        <div class="pulse-metrics-list">
+          <div class="pulse-metric-row">
+            <div class="pulse-label-row">
+              <span class="metric-title">Repeating same pricing & basic info manually</span>
+              <strong class="metric-pct">43%</strong>
+            </div>
+            <div class="pulse-bar-track">
+              <div class="pulse-bar-fill" style="width: 43%; background: #C0392B;"></div>
+            </div>
+            <span class="metric-caption">43 of 100 members lose 1-2 hours daily sending repetitive messages</span>
+          </div>
+
+          <div class="pulse-metric-row">
+            <div class="pulse-label-row">
+              <span class="metric-title">Sending 40+ photos / heavy PDFs on WhatsApp</span>
+              <strong class="metric-pct">28%</strong>
+            </div>
+            <div class="pulse-bar-track">
+              <div class="pulse-bar-fill" style="width: 28%; background: #C59239;"></div>
+            </div>
+            <span class="metric-caption">Portfolio gets lost or client phone gets cluttered</span>
+          </div>
+
+          <div class="pulse-metric-row">
+            <div class="pulse-label-row">
+              <span class="metric-title">Chasing unpaid quotes & manual follow-ups</span>
+              <strong class="metric-pct">19%</strong>
+            </div>
+            <div class="pulse-bar-track">
+              <div class="pulse-bar-fill" style="width: 19%; background: #1B5E20;"></div>
+            </div>
+            <span class="metric-caption">Leads get cold without automated reminders or instant booking</span>
+          </div>
+
+          <div class="pulse-metric-row">
+            <div class="pulse-label-row">
+              <span class="metric-title">Drafting manual proposals & coordinating slots</span>
+              <strong class="metric-pct">10%</strong>
+            </div>
+            <div class="pulse-bar-track">
+              <div class="pulse-bar-fill" style="width: 10%; background: #751113;"></div>
+            </div>
+            <span class="metric-caption">Slow quotation turnaround causes prospective buyers to compare</span>
+          </div>
+        </div>
+
+        <div class="pulse-footer-note">
+          <span>Presented by <strong>Yash Panchal</strong> · Mahant Software (+91 90041 68049)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=5.0"></script>
 </body>
 </html>
