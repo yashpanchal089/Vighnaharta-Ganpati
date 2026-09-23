@@ -1119,88 +1119,86 @@ function startSynthesisCeremony() {
   }, 3200);
 }
 
-// Generate Detailed Solutions for the 3 Questions Answered by the User (Strictly 1-2 lines each)
+// Generate Detailed Solutions for the 3 Questions Answered by the User (Ultra-short, crisp, 1 line each)
 function generateDetailedSolutions(quizAnswers, cat) {
-  const catName = cat.category;
-
   const discoverySolutions = {
     referrals: {
-      questionTitle: "Question 1 • Discovery Strategy",
-      userResponse: "Word-of-Mouth & GBS Referrals",
-      vighna: "Word-of-mouth recommendations drop off because chapter peers lack an instant link to forward on WhatsApp.",
-      solution: "1-tap digital chapter showcase card with verified project credentials and direct WhatsApp inquiry."
+      questionTitle: "Q1 • Discovery",
+      userResponse: "Word-of-Mouth & GBS",
+      vighna: "Peers lack an instant digital link to forward your work on WhatsApp.",
+      solution: "1-tap digital portfolio card that members can share in seconds."
     },
     social: {
-      questionTitle: "Question 1 • Discovery Strategy",
-      userResponse: "Instagram & Social Media",
-      vighna: "Casual social media DMs and 'price please?' comments take hours to reply and rarely convert.",
-      solution: "Interactive bio-link estimator that qualifies serious prospects and routes them to WhatsApp with specs pre-filled."
+      questionTitle: "Q1 • Discovery",
+      userResponse: "Instagram & Social",
+      vighna: "Casual DMs and 'price please' comments waste hours with low conversion.",
+      solution: "Smart bio-link estimator routing serious leads directly to WhatsApp."
     },
     search: {
-      questionTitle: "Question 1 • Discovery Strategy",
-      userResponse: "Google Search & Local Maps",
-      vighna: "Local Google searchers bounce away within seconds if your business lacks a fast, mobile-friendly portfolio.",
-      solution: "Sub-1-second mobile landing page with verified Google reviews and 1-tap call/WhatsApp action bar."
+      questionTitle: "Q1 • Discovery",
+      userResponse: "Google Search & Maps",
+      vighna: "Visitors bounce away quickly if your page is slow or not mobile-friendly.",
+      solution: "Fast mobile page with Google reviews and direct WhatsApp call button."
     },
     direct: {
-      questionTitle: "Question 1 • Discovery Strategy",
-      userResponse: "Direct Walk-ins & Outbound Calls",
-      vighna: "Walk-in inquiries and counter discussions get misplaced with no automated follow-up system.",
-      solution: "Dignified counter QR stand that sends your full digital catalog directly to their WhatsApp."
+      questionTitle: "Q1 • Discovery",
+      userResponse: "Walk-ins & Calls",
+      vighna: "Walk-in inquiries get lost with zero automated follow-up.",
+      solution: "Desk QR stand that sends your full catalog to their phone instantly."
     }
   };
 
   const portfolioSolutions = {
     whatsapp_photos: {
-      questionTitle: "Question 2 • Work Presentation",
-      userResponse: "Send 40-50 photos or PDFs on WhatsApp",
-      vighna: "Sending 40 loose photos or heavy PDFs floods clients' storage, looks unorganized, and invites bargaining.",
-      solution: "Curated 1-tap mobile lookbook with category filters that loads in 1 second on any smartphone."
+      questionTitle: "Q2 • Work Presentation",
+      userResponse: "WhatsApp Photos / PDFs",
+      vighna: "Sending 40 loose photos floods client phones and looks unorganized.",
+      solution: "Clean 1-tap mobile lookbook that loads in 1 second on any phone."
     },
     official_site: {
-      questionTitle: "Question 2 • Work Presentation",
-      userResponse: "Modern Official Fast Website",
-      vighna: "Standard static websites act like digital visiting cards with zero interactive lead capture.",
-      solution: "Interactive catalog with 1-tap WhatsApp consultation buttons that ping your phone with the exact project viewed."
+      questionTitle: "Q2 • Work Presentation",
+      userResponse: "Official Website",
+      vighna: "Static websites act like dead visiting cards with zero lead capture.",
+      solution: "Interactive catalog with 1-tap WhatsApp inquiry on every project."
     },
     manual_call: {
-      questionTitle: "Question 2 • Work Presentation",
-      userResponse: "Explain everything manually on phone calls",
-      vighna: "Spending 30 minutes on phone calls repeating basic explanations exhausts your daily time.",
-      solution: "Visual 3-step project scope page sent before the call so phone discussions focus only on deal closing."
+      questionTitle: "Q2 • Work Presentation",
+      userResponse: "Manual Phone Calls",
+      vighna: "Explaining basic scope on calls for 30 minutes drains your day.",
+      solution: "Visual 3-step project overview sent before calls to close faster."
     },
     showroom: {
-      questionTitle: "Question 2 • Work Presentation",
-      userResponse: "Invite them to visit showroom / office",
-      vighna: "Busy corporate decision-makers postpone physical showroom visits due to distance and traffic.",
-      solution: "360° virtual walkthrough and digital sample shortlist link with instant VIP slot booking."
+      questionTitle: "Q2 • Work Presentation",
+      userResponse: "Office / Showroom Visits",
+      vighna: "Busy decision-makers postpone physical visits due to distance.",
+      solution: "360° virtual showroom link with instant VIP slot booking."
     }
   };
 
   const timeSinkSolutions = {
     repetitive_info: {
-      questionTitle: "Question 3 • Operational Automation",
-      userResponse: "Repeating same basic rates & specs",
-      vighna: "Staff wastes 2-3 hours daily typing the exact same pricing, dimensions, and basic specs.",
-      solution: "Automated WhatsApp FAQ and dynamic rate estimator that replies to prospects 24/7."
+      questionTitle: "Q3 • Operations",
+      userResponse: "Repetitive Rates & Specs",
+      vighna: "Hours wasted daily typing the same basic rates and specifications.",
+      solution: "Instant WhatsApp FAQ and rate estimator active 24/7."
     },
     chasing_quotes: {
-      questionTitle: "Question 3 • Operational Automation",
-      userResponse: "Chasing unpaid quotes & follow-ups",
-      vighna: "Quotations sent on PDF get delayed in review limbo with awkward manual follow-ups.",
-      solution: "Interactive digital proposals with 1-tap WhatsApp acceptance and automated polite expiry reminders."
+      questionTitle: "Q3 • Operations",
+      userResponse: "Chasing Unpaid Quotes",
+      vighna: "PDF quotations get stuck in review with awkward follow-ups.",
+      solution: "Digital quote with 1-tap WhatsApp approval and auto-reminders."
     },
     coordinating_slots: {
-      questionTitle: "Question 3 • Operational Automation",
-      userResponse: "Coordinating appointments & visits",
-      vighna: "Endless back-and-forth messages to fix meeting times cause double-bookings and no-shows.",
-      solution: "1-tap calendar booking link with automated WhatsApp confirmations and location directions."
+      questionTitle: "Q3 • Operations",
+      userResponse: "Scheduling Meetings",
+      vighna: "Endless messages to fix meeting times cause delays and no-shows.",
+      solution: "1-tap booking link with automatic WhatsApp confirmation."
     },
     manual_estimates: {
-      questionTitle: "Question 3 • Operational Automation",
-      userResponse: "Manually drafting custom proposals",
-      vighna: "Drafting custom proposals from scratch in Excel delays quotes, giving competitors the advantage.",
-      solution: "Rapid modular quote generator that delivers branded, itemized proposals in under 3 minutes."
+      questionTitle: "Q3 • Operations",
+      userResponse: "Manual Custom Quotes",
+      vighna: "Drafting quotes in Excel delays proposals and loses deals.",
+      solution: "Fast modular quote builder delivering branded estimates in 2 minutes."
     }
   };
 
@@ -1222,7 +1220,7 @@ function populatePatrikaResults() {
   const solCatLabel = document.getElementById('solutionsCategoryLabel');
   if (solCatLabel) solCatLabel.textContent = cat.category;
 
-  // 1. Render Tailored Solutions for 3 Answers (Concise 1-2 lines each)
+  // 1. Render Tailored Solutions for 3 Answers (Ultra-short, crisp, 1-line each)
   const threeSolutionsContainer = document.getElementById('threeSolutionsCardsGrid');
   if (threeSolutionsContainer) {
     threeSolutionsContainer.innerHTML = '';
@@ -1245,21 +1243,14 @@ function populatePatrikaResults() {
     });
   }
 
-  // 2. Your Identified Business Vighna (Strictly 1 Line)
-  const vighnaEmoji = document.getElementById('vighnaEmoji');
-  if (vighnaEmoji) vighnaEmoji.innerHTML = cat.svgIcon;
-
-  const vighnaStatement = document.getElementById('vighnaStatement');
-  if (vighnaStatement) vighnaStatement.textContent = cat.statement;
-
-  // 3. GBS 30-Second Referral Pitch Prompt
+  // 2. GBS 30-Second Referral Pitch Prompt
   const referralBox = document.getElementById('referralTextBox');
   if (referralBox) {
     const customAsk = `“Hello GBS Glory members! My name is ${state.ownerName} from ${state.businessName}. ${cat.referralAsk}”`;
     referralBox.textContent = customAsk;
   }
 
-  // 4. Update Climax WhatsApp Link to Yash
+  // 3. Update Climax WhatsApp Link to Yash
   updateWhatsAppCta();
 }
 
